@@ -1,0 +1,468 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do C5G_HDMI_VPG_run_msim_rtl_verilog.do 
+# if ![file isdirectory C5G_HDMI_VPG_iputf_libs] {
+# 	file mkdir C5G_HDMI_VPG_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/tiny_god/affichage_jdv/sys_pll_sim/sys_pll.vo"                     
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sys_pll
+# 
+# Top level modules:
+# 	sys_pll
+# vlog "D:/tiny_god/affichage_jdv/vpg_source/pll_sim/pll.vo"                  
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# vlog "D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig_sim/pll_reconfig.vo"
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_reconfig
+# 
+# Top level modules:
+# 	pll_reconfig
+# 
+# vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+# 
+wave create -pattern none -portmode input -language vlog /vga_generator/clk
+# vga_generator
+wave create -pattern none -portmode input -language vlog /vga_generator/reset_n
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/h_total
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/h_sync
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/h_start
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/h_end
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_total
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_sync
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_start
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_end
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_active_14
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_active_24
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_active_34
+# vga_generator
+wave create -pattern none -portmode output -language vlog /vga_generator/vga_hs
+# vga_generator
+wave create -pattern none -portmode output -language vlog /vga_generator/vga_vs
+# vga_generator
+wave create -pattern none -portmode output -language vlog /vga_generator/vga_de
+# vga_generator
+wave create -pattern none -portmode output -language vlog -range 7 0 /vga_generator/vga_r
+# vga_generator
+wave create -pattern none -portmode output -language vlog -range 7 0 /vga_generator/vga_g
+# vga_generator
+wave create -pattern none -portmode output -language vlog -range 7 0 /vga_generator/vga_b
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue (no value) -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns NewSig:/vga_generator/clk
+# vga_generator
+# Can't move the Now cursor.
+# Load canceled
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+vsim +altera -do C5G_HDMI_VPG_run_msim_rtl_verilog.do -l msim_transcript -gui work.vga_generator
+# vsim +altera -do C5G_HDMI_VPG_run_msim_rtl_verilog.do -l msim_transcript -gui work.vga_generator 
+# Loading work.vga_generator
+# do C5G_HDMI_VPG_run_msim_rtl_verilog.do 
+# if ![file isdirectory C5G_HDMI_VPG_iputf_libs] {
+# 	file mkdir C5G_HDMI_VPG_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/tiny_god/affichage_jdv/sys_pll_sim/sys_pll.vo"                     
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sys_pll
+# 
+# Top level modules:
+# 	sys_pll
+# vlog "D:/tiny_god/affichage_jdv/vpg_source/pll_sim/pll.vo"                  
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# vlog "D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig_sim/pll_reconfig.vo"
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_reconfig
+# 
+# Top level modules:
+# 	pll_reconfig
+# 
+# vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+# 
+add wave -position insertpoint  \
+sim:/vga_generator/clk
+add wave -position insertpoint  \
+sim:/vga_generator/clk
+add wave -position insertpoint  \
+sim:/vga_generator/clk
+add wave -position insertpoint  \
+sim:/vga_generator/v_count
+add wave -position insertpoint  \
+sim:/vga_generator/h_count
+run
+run
+run
+# Break key hit 
+# Break key hit 
+run
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+restart
+# Loading work.vga_generator
+run
+restart
+run
+# Break key hit 
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+run
+run -all
+wave modify -driver freeze -pattern constant -value 1 -starttime 100ps -endtime 1000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern constant -value St1 -starttime 200ps -endtime 1000ps Edit:/vga_generator/reset_n
+# vga_generator
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+run
+run -all
+restart
+# Loading work.vga_generator
+wave modify -driver freeze -pattern constant -value 1 -starttime 200ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern constant -value 1 -starttime 20000ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 1000ps -dutycycle 20 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 20 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 20 -starttime 2000ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 100ps -dutycycle 80 -starttime 2000ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue St1 -period 100ps -dutycycle 10 -starttime 2000ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+restart
+wave modify -driver freeze -pattern repeater -initialvalue (no value) -period 50ps -sequence { 1  } -repeat 1 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern repeater -initialvalue StX -period 100ps -sequence { St1  } -repeat 1 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+run
+wave modify -driver freeze -pattern repeater -initialvalue StX -period 100ps -sequence { 0  } -repeat 1 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+restart
+run
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue StX -period 100ns -dutycycle 50 -starttime 0ns -endtime 200000ns Edit:/vga_generator/clk
+# vga_generator
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue StX -period 100ns -dutycycle 50 -starttime 0ps -endtime 2000ps Edit:/vga_generator/clk
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 100ns -dutycycle 50 -starttime 0ps -endtime 2000ps Edit:/vga_generator/clk
+# vga_generator
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue St1 -period 100ps -dutycycle 50 -starttime 0ns -endtime 2000ns Edit:/vga_generator/clk
+# vga_generator
+run
+restart
+run
+add wave -position insertpoint  \
+sim:/vga_generator/clk
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue St1 -period 100ps -dutycycle 50 -starttime 0ns -endtime 2000ns Edit:/vga_generator/clk
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue St12 -period 100ps -dutycycle 50 -starttime 0ns -endtime 2000ns Edit:/vga_generator/clk
+# vga_generator
+wave modify -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 50ps -step 1 -repeat forever -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern counter -startvalue St0 -endvalue St1 -type Range -direction Up -period 50ps -step 1 -repeat never -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 1000ps -dutycycle 90 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue St1 -period 1000ps -dutycycle 10 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+restart
+run
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 1000ps -dutycycle 10 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 1000ps -dutycycle 90 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+restart
+run
+restart
+run
+add wave -position insertpoint  \
+sim:/vga_generator/color_mode_N
+restart
+run
+add wave -position insertpoint  \
+sim:/vga_generator/h_count_int
+run
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 1000ps -dutycycle 95 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ns -endtime 2000ns Edit:/vga_generator/clk
+# vga_generator
+restart
+run
+restart
+run
+# Break key hit 
+# Break key hit 
+run
+# Break key hit 
+# Break key hit 
+run -all
+run -continue
+# 
+# Internal Error: In tclprim_ApplyStimulus for /vga_generator/reset_n "Time value must be greater than "now": 100000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+run -continue
+# 
+# Internal Error: In tclprim_ApplyStimulus for /vga_generator/reset_n "Time value must be greater than "now": 100000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+restart
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 10000ps -dutycycle 95 -starttime 0ns -endtime 2000ns Edit:/vga_generator/clk
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 50 -starttime 0ns -endtime 2000ns Edit:/vga_generator/clk
+# vga_generator
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 50 -starttime 0ns -endtime 2000ns Edit:/vga_generator/clk
+# vga_generator
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 100ps -dutycycle 50 -starttime 0ns -endtime 2000ns Edit:/vga_generator/clk
+# vga_generator
+restart
+run
+add wave -position insertpoint  \
+sim:/vga_generator/clk
+restart
+run
+wave modify -driver freeze -pattern clock -initialvalue St1 -period 100ps -dutycycle 50 -starttime 0ns -endtime 2000ns Edit:/vga_generator/clk
+# vga_generator
+run
+restart
+run
+run
+add wave -position insertpoint  \
+sim:/vga_generator/H_res
+restart
+run
+run
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+restart
+# Loading work.vga_generator
+run
+run
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# ** Error: D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v(95): (vlog-2730) Undefined variable: 'H_res'.
+# 
+# ** Error: D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v(96): (vlog-2730) Undefined variable: 'V_res'.
+# 
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# ** Error: D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v(95): (vlog-2730) Undefined variable: 'H_res'.
+# 
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# ** Error: D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v(95): (vlog-2730) Undefined variable: 'H_res'.
+# 
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# ** Error: D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v(120): (vlog-2110) Illegal reference to net "H_res".
+# 
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# ** Error: D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v(120): (vlog-2110) Illegal reference to net "H_res".
+# 
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# ** Error: D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v(120): (vlog-2110) Illegal reference to net "H_res".
+# 
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# ** Error: D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v(120): (vlog-2110) Illegal reference to net "H_res".
+# 
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# ** Error: D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v(120): (vlog-2110) Illegal reference to net "H_res".
+# 
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+restart
+# Loading work.vga_generator
+run
+run
+restart
+run
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+restart
+# Loading work.vga_generator
+run
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+run
+run
+add wave -position insertpoint  \
+sim:/vga_generator/vga_r
+add wave -position insertpoint  \
+sim:/vga_generator/vga_g
+add wave -position insertpoint  \
+sim:/vga_generator/vga_b
+restart
+# Loading work.vga_generator
+run
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+restart
+# Loading work.vga_generator
+run
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+restart
+# Loading work.vga_generator
+run
+run
+vlog -reportprogress 300 -work work D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+restart
+# Loading work.vga_generator
+run
+run
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 10000ps -dutycycle 95 -starttime 0ps -endtime 100000ps Edit:/vga_generator/reset_n
+# vga_generator
+run
+restart
+restart
+restart
+restart
+run
+run
+run

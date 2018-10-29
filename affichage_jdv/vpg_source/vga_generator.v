@@ -58,8 +58,8 @@ module vga_generator(
 reg			  [11:0]	h_count;
 reg			   [7:0]	pixel_x;
 reg			  [11:0]	v_count;
-reg               h_act;
-reg               h_act_d; // utile pour le degrade
+reg               h_act; 
+reg               h_act_d;
 reg               v_act; 
 reg               v_act_d; 
 reg               pre_vga_de;
@@ -68,13 +68,9 @@ wire              v_max, vs_end, vr_start, vr_end;
 wire              v_act_14, v_act_24, v_act_34;
 reg               boarder;
 reg        [3:0]  color_mode;
-reg        [3:0]  color_mode2;
-
-// Futur entry
-reg		  [11:0] H_res;
-reg 		  [4:0] grill_width;
-reg 		  [11:0] W_box;
-reg 		  [11:0] boarder_length;
+reg		  [3:0]  color_mode_N;
+integer				H_res;
+integer				V_res;
 
 //=======================================================
 //  Structural coding
@@ -93,12 +89,14 @@ assign v_act_34 = v_count == v_active_34;
 
 
 // Futur entry
-assign V_res = 640;
-assign grill_height = 6;
+//assign H_res = 640;
+//assign V_res = 640;
+//assign grill_height = 6;
 //assign grill_width = 6;
-//assign boarder_length = 3;
-//assign W_box =  H_res / grill_width;
-assign H_box =  V_res / grill_height;
+//assign border_length = 3;
+//assign len_H_box =  H_res / grill_width;
+//assign len_V_box =  V_res / grill_height;
+
 
 
 //=======================================================
@@ -110,45 +108,38 @@ assign H_box =  V_res / grill_height;
 //=======================================================
 
 
-
 //horizontal control signals
+integer h_count_int;
 always @ (posedge clk or negedge reset_n)
 	if (!reset_n)
 		begin
-			h_act_d   <=  1'b0;
-			h_count		<=	12'b0;
-			pixel_x   <=  8'b0;
-			vga_hs		<=	1'b1;
-			h_act	    <=	1'b0;
-			color_mode2 <=  4'b0;
-			H_res <= 12'd 480;
-			grill_width <= 6;
-			W_box <=  H_res / grill_width;
-			boarder_length <= 3;
+			h_act_d   	<=  	1'b0;
+			h_count		<=		12'b0;
+			pixel_x   	<=  	8'b0;
+			vga_hs		<=		1'b1;
+			h_act	    	<=		1'b0;
+			color_mode_N <=  	4'b0;
+			H_res 		<= 	640;
 		end
 	else
 		begin
 			h_act_d   <=  h_act;
-			
-			// Reinitialisation if end of line
+
 			if (h_max)
 			  h_count	<= 12'b0;
 			else
 			  h_count	<= h_count + 12'b1;
-			  
-			  
 
-		   // Color
-			//if (h_act_d)
-			//  pixel_x	<=	pixel_x + 8'b1;
-			//else
-			//  pixel_x	<=  8'b0;
-			if(h_count > H_res)
-				color_mode2 <= 4'b1111;
-			else if(W_box - (h_count % W_box) > boarder_length)
-				color_mode2 <= 4'b0001;
+//			if (h_act_d)
+//			  pixel_x	<=	pixel_x + 8'b1;
+//			else
+//			  pixel_x	<=  8'b0;
+			pixel_x <= 8'hFF;
+			h_count_int = h_count;
+			if (h_count > H_res)
+				color_mode_N <= 4'b1111;
 			else
-				color_mode2 <= 4'b0010;
+				color_mode_N <= 4'b0010;
 
 			if (hs_end && !h_max)
 			  vga_hs	<=	1'b1;
@@ -159,9 +150,10 @@ always @ (posedge clk or negedge reset_n)
 			  h_act	  <=	1'b1;
 			else if (hr_end)
 			  h_act	  <=	1'b0;
-	end
+		end
 
 //vertical control signals
+integer v_count_int;
 always@(posedge clk or negedge reset_n)
 	if(!reset_n)
 	begin
@@ -170,6 +162,7 @@ always@(posedge clk or negedge reset_n)
 		vga_vs		<=	1'b1;
 		v_act	    <=	1'b0;
 		color_mode<=  4'b0;
+		V_res 		<= 	640;
 	end
 	else 
 	begin		
@@ -192,28 +185,33 @@ always@(posedge clk or negedge reset_n)
 		  else if (vr_end)
 		    v_act <=	1'b0;
 
-  		if (vr_start)
-	  	  color_mode[0] <=	1'b1;
-		  else if (v_act_14)
-		    color_mode[0] <=	1'b0;
-
-  		if (v_act_14)
-	  	  color_mode[1] <=	1'b1;
-		  else if (v_act_24)
-		    color_mode[1] <=	1'b0;
-		    
-  		if (v_act_24)
-	  	  color_mode[2] <=	1'b1;
-		  else if (v_act_34)
-		    color_mode[2] <=	1'b0;
-		    
-  		if (v_act_34)
-	  	  color_mode[3] <=	1'b1;
-		  else if (vr_end)
-		    color_mode[3] <=	1'b0;
-		end
+//  		if (vr_start)
+//	  	  color_mode[0] <=	1'b1;
+//		  else if (v_act_14)
+//		    color_mode[0] <=	1'b0;
+//
+//  		if (v_act_14)
+//	  	  color_mode[1] <=	1'b1;
+//		  else if (v_act_24)
+//		    color_mode[1] <=	1'b0;
+//		    
+//  		if (v_act_24)
+//	  	  color_mode[2] <=	1'b1;
+//		  else if (v_act_34)
+//		    color_mode[2] <=	1'b0;
+//		    
+//  		if (v_act_34)
+//	  	  color_mode[3] <=	1'b1;
+//		  else if (vr_end)
+//		    color_mode[3] <=	1'b0;
+//		end
+		v_count_int = v_count;
+		if (v_count_int > V_res)
+			color_mode <= 4'b0;
+		else
+			color_mode <= 4'b0;
 	end
-
+end
 //pattern generator and display enable
 always @(posedge clk or negedge reset_n)
 begin
@@ -223,7 +221,7 @@ begin
     pre_vga_de <= 1'b0;
     boarder <= 1'b0;		
   end
-  else
+	else
 	begin
     vga_de <= pre_vga_de;
     pre_vga_de <= v_act && h_act;
@@ -234,20 +232,18 @@ begin
       boarder <= 1'b0;   		
 		
 		if (boarder)
-			{vga_r, vga_g, vga_b} <= {8'hAA,8'hB5,8'hFF};
+			{vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'hFF};
 		else
-		   case (color_mode2)
-				4'b0000 : {vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'hFF};
-				4'b0001 : {vga_r, vga_g, vga_b} <= {8'hFF,8'h00,8'h00};
-				4'b0010 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'h00};
-				4'b0011 : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'hFF};
-				4'b1111 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'hFF};
-				default  : {vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'h00};
-			endcase
-	end
-end	
+		  case (color_mode_N)
+      	4'b0001 : {vga_r, vga_g, vga_b} <= {8'hFF,8'h00,8'h00};
+      	4'b0010 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'h00};
+      	4'b0100 : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'hFF};
+      	4'b1000 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'hFF};
+      	default  : {vga_r, vga_g, vga_b} <= {8'h99,8'h99,8'h00};
+      endcase
 
-always @*
-    $display("%b",h_count);
+	end
+
+end	
 
 endmodule

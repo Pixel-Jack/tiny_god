@@ -161,19 +161,19 @@
          type = "boolean";
       }
    }
-   element i2c_scl.s1
+   element hdmi_tx_int_n.s1
    {
       datum baseAddress
       {
-         value = "1052736";
+         value = "1052704";
          type = "String";
       }
    }
-   element onchip_memory2.s1
+   element timer.s1
    {
       datum baseAddress
       {
-         value = "524288";
+         value = "1052672";
          type = "String";
       }
    }
@@ -193,19 +193,19 @@
          type = "String";
       }
    }
-   element hdmi_tx_int_n.s1
+   element onchip_memory2.s1
    {
       datum baseAddress
       {
-         value = "1052704";
+         value = "524288";
          type = "String";
       }
    }
-   element timer.s1
+   element i2c_scl.s1
    {
       datum baseAddress
       {
-         value = "1052672";
+         value = "1052736";
          type = "String";
       }
    }
@@ -250,7 +250,7 @@
  <parameter name="projectName" value="C5G_HDMI_VPG.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1539178849822" />
+ <parameter name="timeStamp" value="1538404291924" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="reset" internal="clk_50.clk_in_reset" type="reset" dir="end" />

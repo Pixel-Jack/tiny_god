@@ -1,5 +1,5 @@
 Assembler report for C5G_HDMI_VPG
-Wed Oct 17 16:46:25 2018
+Mon Oct 29 16:49:05 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Oct 17 16:46:25 2018 ;
+; Assembler Status      ; Successful - Mon Oct 29 16:49:05 2018 ;
 ; Revision Name         ; C5G_HDMI_VPG                          ;
 ; Top-level Entity Name ; C5G_HDMI_VPG                          ;
 ; Family                ; Cyclone V                             ;
@@ -104,8 +104,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                          ;
 +----------------+------------------------------------------------------------------+
 ; Device         ; 5CGXFC5C6F27C7                                                   ;
-; JTAG usercode  ; 0x071DAF48                                                       ;
-; Checksum       ; 0x071DAF48                                                       ;
+; JTAG usercode  ; 0x071A8DED                                                       ;
+; Checksum       ; 0x071A8DED                                                       ;
 +----------------+------------------------------------------------------------------+
 
 
@@ -115,14 +115,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Wed Oct 17 16:46:12 2018
-Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off affichage_jdv -c C5G_HDMI_VPG
+    Info: Processing started: Mon Oct 29 16:48:52 2018
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off C5G_HDMI_VPG -c C5G_HDMI_VPG
 Info (115030): Assembler is generating device programming files
 Info (115017): Design contains a time-limited core -- only a single, time-limited programming file can be generated
 Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 672 megabytes
-    Info: Processing ended: Wed Oct 17 16:46:25 2018
+    Info: Peak virtual memory: 668 megabytes
+    Info: Processing ended: Mon Oct 29 16:49:05 2018
     Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:13
 
