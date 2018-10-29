@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="C5G_HDMI_VPG">
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_jtag_uart:jtag_uart|HDMI_QSYS_jtag_uart_scfifo_w:the_HDMI_QSYS_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_3291.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_bht_module:HDMI_QSYS_nios2_qsys_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_tnn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_dc_data_module:HDMI_QSYS_nios2_qsys_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_4kl1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_dc_tag_module:HDMI_QSYS_nios2_qsys_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_fcn1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_dc_victim_module:HDMI_QSYS_nios2_qsys_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_baj1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_mult_cell:the_HDMI_QSYS_nios2_qsys_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_ujt2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_register_bank_a_module:HDMI_QSYS_nios2_qsys_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_t5n1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_25m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_jtag_uart:jtag_uart|HDMI_QSYS_jtag_uart_scfifo_r:the_HDMI_QSYS_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_3291.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_mult_cell:the_HDMI_QSYS_nios2_qsys_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_0kt2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_onchip_memory2:onchip_memory2|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_hfj1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_ic_data_module:HDMI_QSYS_nios2_qsys_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_spj1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_ic_tag_module:HDMI_QSYS_nios2_qsys_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_c4o1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_nios2_oci:the_HDMI_QSYS_nios2_qsys_nios2_oci|HDMI_QSYS_nios2_qsys_nios2_ocimem:the_HDMI_QSYS_nios2_qsys_nios2_ocimem|HDMI_QSYS_nios2_qsys_ociram_sp_ram_module:HDMI_QSYS_nios2_qsys_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ome1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_register_bank_b_module:HDMI_QSYS_nios2_qsys_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_u5n1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
