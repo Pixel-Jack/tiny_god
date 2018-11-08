@@ -597,7 +597,7 @@ GND                          : R2        : gnd    :                   :         
 VCCH_GXBL                    : R3        : power  :                   : 2.5V    :           :                
 GND                          : R4        : gnd    :                   :         :           :                
 VCCE_GXBL                    : R5        : power  :                   : 1.1V    :           :                
-altera_reserved_tms          : R6        : input  : 3.3-V LVTTL       :         : 3A        : N              
+TMS                          : R6        : input  :                   :         : 3A        :                
 GND                          : R7        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R8        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3A        :                
@@ -623,7 +623,7 @@ GND                          : T2        :        :                   :         
 GND                          : T3        : gnd    :                   :         :           :                
 VCCH_GXBL                    : T4        : power  :                   : 2.5V    :           :                
 GND                          : T5        : gnd    :                   :         :           :                
-altera_reserved_tdi          : T6        : input  : 3.3-V LVTTL       :         : 3A        : N              
+TDI                          : T6        : input  :                   :         : 3A        :                
 SD_DAT[1]                    : T7        : bidir  : 3.3-V LVTTL       :         : 3A        : Y              
 SD_DAT[3]                    : T8        : bidir  : 3.3-V LVTTL       :         : 3A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3B        :                
@@ -676,7 +676,7 @@ GND                          : V3        : gnd    :                   :         
 GND                          : V4        : gnd    :                   :         :           :                
 GND                          : V5        : gnd    :                   :         :           :                
 GND                          : V6        :        :                   :         : B0L       :                
-altera_reserved_tdo          : V7        : output : 3.3-V LVTTL       :         : 3A        : N              
+TDO                          : V7        : output :                   :         : 3A        :                
 SD_DAT[2]                    : V8        : bidir  : 3.3-V LVTTL       :         : 3A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3B        :                
 SW[6]                        : V10       : input  : 1.2 V             :         : 3B        : Y              
@@ -726,7 +726,7 @@ GND                          : Y1        :        :                   :         
 GND                          : Y2        :        :                   :         : B0L       :                
 GND                          : Y3        : gnd    :                   :         :           :                
 GND                          : Y4        : gnd    :                   :         :           :                
-altera_reserved_tck          : Y5        : input  : 3.3-V LVTTL       :         : 3A        : N              
+TCK                          : Y5        : input  :                   :         : 3A        :                
 nCSO, DATA4                  : Y6        : input  :                   :         : 3A        :                
 VCCIO3A                      : Y7        : power  :                   : 3.3V    : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y8        :        :                   :         : 3A        :                

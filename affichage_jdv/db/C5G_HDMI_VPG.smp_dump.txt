@@ -1,13 +1,4 @@
 
-State Machine - |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|color_mode_N
-Name color_mode_N.1111 color_mode_N.1000 color_mode_N.0100 color_mode_N.0010 color_mode_N.0001 color_mode_N.0000 
-color_mode_N.0000 0 0 0 0 0 0 
-color_mode_N.0001 0 0 0 0 1 1 
-color_mode_N.0010 0 0 0 1 0 1 
-color_mode_N.0100 0 0 1 0 0 1 
-color_mode_N.1000 0 1 0 0 0 1 
-color_mode_N.1111 1 0 0 0 0 1 
-
 State Machine - |C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller|state
 Name state.0111 state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 state.1000 
 state.0000 0 0 0 0 0 0 0 0 0 
@@ -78,12 +69,3 @@ dps_current_state.DPS_START 0 0 0 1 0 1
 dps_current_state.DPS_WAIT_PHASE_EN 0 0 1 0 0 1 
 dps_current_state.DPS_WAIT_DPRIO_WRITING 0 1 0 0 0 1 
 dps_current_state.DPS_CHANGED 1 0 0 0 0 1 
-
-State Machine - |C5G_HDMI_VPG|HDMI_QSYS:u0|HDMI_QSYS_nios2_qsys:nios2_qsys|HDMI_QSYS_nios2_qsys_nios2_oci:the_HDMI_QSYS_nios2_qsys_nios2_oci|HDMI_QSYS_nios2_qsys_jtag_debug_module_wrapper:the_HDMI_QSYS_nios2_qsys_jtag_debug_module_wrapper|HDMI_QSYS_nios2_qsys_jtag_debug_module_tck:the_HDMI_QSYS_nios2_qsys_jtag_debug_module_tck|DRsize
-Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
-DRsize.000 0 0 0 0 0 0 
-DRsize.001 0 0 0 0 1 1 
-DRsize.010 0 0 0 1 0 1 
-DRsize.011 0 0 1 0 0 1 
-DRsize.100 0 1 0 0 0 1 
-DRsize.101 1 0 0 0 0 1 

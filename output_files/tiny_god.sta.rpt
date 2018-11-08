@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for tiny_god
-Mon Oct 29 13:25:55 2018
+Mon Nov 05 13:34:17 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -389,7 +389,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Mon Oct 29 13:25:48 2018
+    Info: Processing started: Mon Nov 05 13:34:09 2018
 Info: Command: quartus_sta tiny_god -c tiny_god
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -450,9 +450,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 1059 megabytes
-    Info: Processing ended: Mon Oct 29 13:25:55 2018
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 1052 megabytes
+    Info: Processing ended: Mon Nov 05 13:34:17 2018
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:07
 
 

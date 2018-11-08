@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CGXFC5C6F27) Path("D:/tiny_god/affichage_jdv/") File("C5G_HDMI_VPG_time_limited.sof") MfrSpec(OpMask(1));
+		Device PartName(5CGXFC5C6F27) Path("C:/Users/ponthieu_cle/Documents/C5G_HDMI_VPG/") File("C5G_HDMI_VPG.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

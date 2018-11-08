@@ -44,6 +44,10 @@ module vga_generator(
   input       [11:0] v_active_14, 
   input       [11:0] v_active_24, 
   input       [11:0] v_active_34, 
+  
+  
+  
+  
   output  reg		     vga_hs,             
   output  reg        vga_vs,           
   output  reg 	     vga_de,
@@ -68,9 +72,6 @@ wire              v_max, vs_end, vr_start, vr_end;
 wire              v_act_14, v_act_24, v_act_34;
 reg               boarder;
 reg        [3:0]  color_mode;
-reg		  [3:0]  color_mode_N;
-integer				H_res;
-integer				V_res;
 
 //=======================================================
 //  Structural coding
@@ -88,72 +89,81 @@ assign v_act_24 = v_count == v_active_24;
 assign v_act_34 = v_count == v_active_34;
 
 
-// Futur entry
-//assign H_res = 640;
-//assign V_res = 640;
-//assign grill_height = 6;
-//assign grill_width = 6;
-//assign border_length = 3;
-//assign len_H_box =  H_res / grill_width;
-//assign len_V_box =  V_res / grill_height;
-
 
 
 //=======================================================
-//  Color_mode def
-//		0000: inactive cell state 0
-//		0001: border 
-//		0010: active cell state 1
-//    1111: out of the game pixel
+//  Parameters
 //=======================================================
+parameter vecteur_map = 16'b0000000100100011;
+parameter select_affichage = 1'b1;
+parameter largeur_grille = 4;
+parameter hauteur_grille = 4;
+parameter h_position_du_curseur = 4'b1;
+parameter v_position_du_curseur = 4'b1;
+parameter border = 10;
+
+//parameter largeur_cell=200;
+//assign largeur_cell =  h_total / largeur_cell;
+integer largeur_cell;
+integer h_in_cell;
+integer x_map;
+integer color_mode_h;
+parameter h_tot = 640;
+
+
+integer hauteur_cell;
+integer v_in_cell;
+integer y_map;
+integer color_mode_v;
+parameter v_tot = 640;
+
 
 
 //horizontal control signals
-integer h_count_int;
 always @ (posedge clk or negedge reset_n)
 	if (!reset_n)
-		begin
-			h_act_d   	<=  	1'b0;
-			h_count		<=		12'b0;
-			pixel_x   	<=  	8'b0;
-			vga_hs		<=		1'b1;
-			h_act	    	<=		1'b0;
-			color_mode_N <=  	4'b0;
-			H_res 		<= 	640;
-		end
+	begin
+    h_act_d   <=  1'b0;
+		h_count		<=	12'b0;
+		pixel_x   <=  8'b11111111;
+		vga_hs		<=	1'b1;
+		h_act	    <=	1'b0;
+		color_mode_h <=  0;
+		largeur_cell <= h_tot / largeur_grille;
+	end
 	else
-		begin
-			h_act_d   <=  h_act;
+	begin
+    h_act_d   <=  h_act;
 
-			if (h_max)
-			  h_count	<= 12'b0;
-			else
-			  h_count	<= h_count + 12'b1;
+    if (h_max)
+		  h_count	<= 12'b0;
+		else
+		  h_count	<= h_count + 12'b1;
 
-//			if (h_act_d)
-//			  pixel_x	<=	pixel_x + 8'b1;
-//			else
-//			  pixel_x	<=  8'b0;
-			pixel_x <= 8'hFF;
-			h_count_int = h_count;
-			if (h_count > H_res)
-				color_mode_N <= 4'b1111;
-			else
-				color_mode_N <= 4'b0010;
+		x_map = h_count / largeur_cell;
+		h_in_cell = h_count % largeur_cell;
+		if (x_map >= largeur_grille)
+			color_mode_h = 0;
+		else if(h_in_cell < border | h_in_cell >= largeur_cell - border)
+			color_mode_h = 2;
+		else
+			color_mode_h = 1;
+			
+			
+		
 
-			if (hs_end && !h_max)
-			  vga_hs	<=	1'b1;
-			else
-			  vga_hs	<= 1'b0;
+		if (hs_end && !h_max)
+		  vga_hs	<=	1'b1;
+		else
+		  vga_hs	<= 1'b0;
 
-			if (hr_start)
-			  h_act	  <=	1'b1;
-			else if (hr_end)
-			  h_act	  <=	1'b0;
-		end
+		if (hr_start)
+		  h_act	  <=	1'b1;
+		else if (hr_end)
+		  h_act	  <=	1'b0;
+	end
 
 //vertical control signals
-integer v_count_int;
 always@(posedge clk or negedge reset_n)
 	if(!reset_n)
 	begin
@@ -161,8 +171,8 @@ always@(posedge clk or negedge reset_n)
 		v_count		<=	12'b0;
 		vga_vs		<=	1'b1;
 		v_act	    <=	1'b0;
-		color_mode<=  4'b0;
-		V_res 		<= 	640;
+		color_mode_v <=  0;
+		hauteur_cell <= v_tot / hauteur_grille;
 	end
 	else 
 	begin		
@@ -184,7 +194,7 @@ always@(posedge clk or negedge reset_n)
 	  	  v_act <=	1'b1;
 		  else if (vr_end)
 		    v_act <=	1'b0;
-
+//
 //  		if (vr_start)
 //	  	  color_mode[0] <=	1'b1;
 //		  else if (v_act_14)
@@ -205,11 +215,16 @@ always@(posedge clk or negedge reset_n)
 //		  else if (vr_end)
 //		    color_mode[3] <=	1'b0;
 //		end
-		v_count_int = v_count;
-		if (v_count_int > V_res)
-			color_mode <= 4'b0;
-		else
-			color_mode <= 4'b0;
+		y_map = v_count / hauteur_cell;
+		v_in_cell = v_count % hauteur_cell;
+		
+		if (y_map >= hauteur_grille)
+			color_mode_v = 0;
+		else if (v_in_cell < border | v_in_cell >= hauteur_cell - border)
+			color_mode_v = 2;
+		else 
+			color_mode_v = 1;
+		
 	end
 end
 //pattern generator and display enable
@@ -234,14 +249,20 @@ begin
 		if (boarder)
 			{vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'hFF};
 		else
-		  case (color_mode_N)
-      	4'b0001 : {vga_r, vga_g, vga_b} <= {8'hFF,8'h00,8'h00};
-      	4'b0010 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'h00};
-      	4'b0100 : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'hFF};
-      	4'b1000 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'hFF};
-      	default  : {vga_r, vga_g, vga_b} <= {8'h99,8'h99,8'h00};
-      endcase
-
+//		  case (color_mode)
+//      	4'b0001 : {vga_r, vga_g, vga_b} <= {pixel_x,8'h00,8'hFF};
+//      	4'b0010 : {vga_r, vga_g, vga_b} <= {8'h00,pixel_x,8'h00};
+//      	4'b0100 : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,pixel_x};
+//      	4'b1000 : {vga_r, vga_g, vga_b} <= {pixel_x,pixel_x,pixel_x};
+//      	default  : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'h00};
+//      endcase
+			case (color_mode_h * color_mode_v)
+			0 : {vga_r, vga_g, vga_b} <= {8'hFF,8'h00,8'h00}; // out
+			2 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'h00}; // border
+			4 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'h00}; // border
+			1 : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'hFF}; // active / inactive
+			default : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'h00};
+			endcase
 	end
 
 end	

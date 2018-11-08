@@ -180,8 +180,6 @@ wire        reset_n;
 wire        pll_1200k;
 reg  [12:0] counter_1200k;
 reg         en_150;
-wire        vpg_mode_change;
-wire [3:0]	vpg_mode;
 //wire        loopback_mode;
 //wire        edid_writing;
 //Video Pattern Generator
@@ -200,7 +198,14 @@ sys_pll u_sys_pll (
 	.outclk_0(pll_1200k), // 1200K
 	.locked(reset_n) );
 
+
 //video pattern resolution select
+//`include "vpg_source/vpg.h"
+//parameter vpg_mode_change = 1'b0;
+//parameter vpg_mode = 0;
+wire        vpg_mode_change;
+wire [3:0]	vpg_mode;
+//
 vpg_mode u_vpg_mode (
 	.reset_n(reset_n),
 	.clk(pll_1200k),
@@ -240,9 +245,8 @@ assign HDMI_TX_VS  = vpg_vs;
 //  Structural coding
 //=======================================================
 
-//LED indication
+////LED indication
 assign LEDR = ~vpg_mode; // leds are turn on for loopback mode		
-
 
 
 
@@ -259,20 +263,6 @@ begin
     en_150 <= &counter_1200k;
   end	
 end
-
-
-////////////////////////////////////////
-// QSYS
-
-
-    HDMI_QSYS u0 (
-        .clk_clk                            (CLOCK_50_B7A),                            //                         clk.clk
-        .reset_reset_n                      (reset_n),                      //                       reset.reset_n
-        .led_external_connection_export     (LEDG),     //     led_external_connection.export
-        .i2c_sda_external_connection_export (I2C_SDA), // i2c_sda_external_connection.export
-        .i2c_scl_external_connection_export (I2C_SCL),  // i2c_scl_external_connection.export
-        .hdmi_tx_int_n_external_connection_export  (~HDMI_TX_INT)   // hdmi_tx_int_n_external_connection.export
-    );
 
 
 endmodule

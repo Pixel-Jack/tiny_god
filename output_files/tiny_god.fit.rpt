@@ -1,5 +1,5 @@
 Fitter report for tiny_god
-Mon Oct 29 13:25:00 2018
+Mon Nov 05 13:38:33 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -57,7 +57,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +-------------------------------------+---------------------------------------------+
-; Fitter Status                       ; Successful - Mon Oct 29 13:25:00 2018       ;
+; Fitter Status                       ; Successful - Mon Nov 05 13:38:33 2018       ;
 ; Quartus II 64-Bit Version           ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                       ; tiny_god                                    ;
 ; Top-level Entity Name               ; tiny_god                                    ;
@@ -149,12 +149,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.37        ;
+; Average used               ; 1.44        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;  12.2%      ;
+;     Processors 2-4         ;  14.6%      ;
 +----------------------------+-------------+
 
 
@@ -1086,11 +1086,11 @@ Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y23 to location X10_Y34
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 5CGXFC7C7F23C8 are preliminary
 Info (334004): Delay annotation completed successfully
@@ -1100,10 +1100,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file D:/tiny_god/output_files/tiny_god.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 2318 megabytes
-    Info: Processing ended: Mon Oct 29 13:25:00 2018
-    Info: Elapsed time: 00:00:42
-    Info: Total CPU time (on all processors): 00:00:55
+    Info: Peak virtual memory: 2331 megabytes
+    Info: Processing ended: Mon Nov 05 13:38:33 2018
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:00:54
 
 
 +----------------------------+

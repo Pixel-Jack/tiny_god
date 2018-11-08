@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tiny_god
-Mon Oct 29 13:24:17 2018
+Mon Nov 05 13:37:51 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +-------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status         ; Successful - Mon Oct 29 13:24:17 2018       ;
+; Analysis & Synthesis Status         ; Successful - Mon Nov 05 13:37:51 2018       ;
 ; Quartus II 64-Bit Version           ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                       ; tiny_god                                    ;
 ; Top-level Entity Name               ; tiny_god                                    ;
@@ -246,7 +246,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Mon Oct 29 13:24:16 2018
+    Info: Processing started: Mon Nov 05 13:37:49 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tiny_god -c tiny_god
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file parametrage_d_initialisation_ex.bdf
@@ -270,7 +270,6 @@ Warning (275009): Pin "resolution" not connected
 Warning (275009): Pin "taille_de_grille" not connected
 Warning (275009): Pin "position_curseur" not connected
 Warning (275009): Pin "select_affichage" not connected
-Warning (12158): Entity "affichage_jdv_ex" contains only dangling pins
 Info (12128): Elaborating entity "jeu_ex" for hierarchy "jeu_ex:inst2"
 Warning (275043): Pin "vecteur_de_bits" is missing source
 Warning (275043): Pin "fin_du_jeu" is missing source
@@ -302,7 +301,6 @@ Warning (275009): Pin "options_disponibles" not connected
 Warning (275009): Pin "nom_de_l_option_a_selectionner" not connected
 Warning (275009): Pin "select_affichage" not connected
 Warning (275009): Pin "option_actuellement_selectionnee" not connected
-Warning (12158): Entity "affichage_parametres_ex" contains only dangling pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
@@ -310,10 +308,10 @@ Warning (21074): Design contains 1 input pin(s) that do not drive logic
 Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 496 megabytes
-    Info: Processing ended: Mon Oct 29 13:24:17 2018
-    Info: Elapsed time: 00:00:01
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 487 megabytes
+    Info: Processing ended: Mon Nov 05 13:37:51 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
