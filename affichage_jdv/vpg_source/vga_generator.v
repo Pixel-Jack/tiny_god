@@ -70,8 +70,6 @@ reg               pre_vga_de;
 wire              h_max, hs_end, hr_start, hr_end;
 wire              v_max, vs_end, vr_start, vr_end;
 wire              v_act_14, v_act_24, v_act_34;
-reg               boarder;
-reg        [3:0]  color_mode;
 
 //=======================================================
 //  Structural coding
@@ -94,16 +92,16 @@ assign v_act_34 = v_count == v_active_34;
 //=======================================================
 //  Parameters
 //=======================================================
-parameter vecteur_map = 16'b0000000100100011;
+parameter vecteur_map = 100'b1101111110110011101100010011110110001100101010010011011100100000000100011000000110000010101110100001;
 parameter select_affichage = 1'b1;
-parameter largeur_grille = 4;
-parameter hauteur_grille = 4;
+parameter largeur_grille = 10;
+parameter hauteur_grille = 10;
 parameter h_position_du_curseur = 4'b1;
 parameter v_position_du_curseur = 4'b1;
-parameter border = 10;
 
-//parameter largeur_cell=200;
-//assign largeur_cell =  h_total / largeur_cell;
+parameter h_wait_count = 142;
+parameter v_wait_count = 35;
+
 integer largeur_cell;
 integer h_in_cell;
 integer x_map;
@@ -115,8 +113,10 @@ integer hauteur_cell;
 integer v_in_cell;
 integer y_map;
 integer color_mode_v;
-parameter v_tot = 640;
+parameter v_tot = 480;
 
+
+parameter border = 3;
 
 
 //horizontal control signals
@@ -140,9 +140,9 @@ always @ (posedge clk or negedge reset_n)
 		else
 		  h_count	<= h_count + 12'b1;
 
-		x_map = h_count / largeur_cell;
-		h_in_cell = h_count % largeur_cell;
-		if (x_map >= largeur_grille)
+		x_map = (h_count - h_wait_count) / largeur_cell;
+		h_in_cell = (h_count - h_wait_count) % largeur_cell;
+		if (x_map < 0 | x_map >= largeur_grille)
 			color_mode_h = 0;
 		else if(h_in_cell < border | h_in_cell >= largeur_cell - border)
 			color_mode_h = 2;
@@ -194,29 +194,9 @@ always@(posedge clk or negedge reset_n)
 	  	  v_act <=	1'b1;
 		  else if (vr_end)
 		    v_act <=	1'b0;
-//
-//  		if (vr_start)
-//	  	  color_mode[0] <=	1'b1;
-//		  else if (v_act_14)
-//		    color_mode[0] <=	1'b0;
-//
-//  		if (v_act_14)
-//	  	  color_mode[1] <=	1'b1;
-//		  else if (v_act_24)
-//		    color_mode[1] <=	1'b0;
-//		    
-//  		if (v_act_24)
-//	  	  color_mode[2] <=	1'b1;
-//		  else if (v_act_34)
-//		    color_mode[2] <=	1'b0;
-//		    
-//  		if (v_act_34)
-//	  	  color_mode[3] <=	1'b1;
-//		  else if (vr_end)
-//		    color_mode[3] <=	1'b0;
-//		end
-		y_map = v_count / hauteur_cell;
-		v_in_cell = v_count % hauteur_cell;
+			 
+		y_map = (v_count - v_wait_count) / hauteur_cell;
+		v_in_cell = (v_count - v_wait_count) % hauteur_cell;
 		
 		if (y_map >= hauteur_grille)
 			color_mode_v = 0;
@@ -234,35 +214,24 @@ begin
 	begin
     vga_de <= 1'b0;
     pre_vga_de <= 1'b0;
-    boarder <= 1'b0;		
   end
 	else
 	begin
-    vga_de <= pre_vga_de;
-    pre_vga_de <= v_act && h_act;
-    
-    if ((!h_act_d&&h_act) || hr_end || (!v_act_d&&v_act) || vr_end)
-      boarder <= 1'b1;
-    else
-      boarder <= 1'b0;   		
-		
-		if (boarder)
-			{vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'hFF};
-		else
-//		  case (color_mode)
-//      	4'b0001 : {vga_r, vga_g, vga_b} <= {pixel_x,8'h00,8'hFF};
-//      	4'b0010 : {vga_r, vga_g, vga_b} <= {8'h00,pixel_x,8'h00};
-//      	4'b0100 : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,pixel_x};
-//      	4'b1000 : {vga_r, vga_g, vga_b} <= {pixel_x,pixel_x,pixel_x};
-//      	default  : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'h00};
-//      endcase
-			case (color_mode_h * color_mode_v)
-			0 : {vga_r, vga_g, vga_b} <= {8'hFF,8'h00,8'h00}; // out
-			2 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'h00}; // border
-			4 : {vga_r, vga_g, vga_b} <= {8'h00,8'hFF,8'h00}; // border
-			1 : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'hFF}; // active / inactive
-			default : {vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'h00};
-			endcase
+		 vga_de <= pre_vga_de;
+		 pre_vga_de <= v_act && h_act;
+			
+		case (color_mode_h * color_mode_v)
+		0 : {vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'hFF}; // out
+		1 : if (vecteur_map[x_map + y_map * largeur_grille] == 1)
+				{vga_r, vga_g, vga_b} <= {8'hC7,8'h00,8'h39}; // active / inactive
+			 else 
+				{vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'h00}; // active / inactive
+		default : 
+			if (h_position_du_curseur == x_map & v_position_du_curseur == y_map)
+				{vga_r, vga_g, vga_b} <= {8'hFF,8'h57,8'h33};
+			else
+				{vga_r, vga_g, vga_b} <= {8'h58,8'h18,8'h45};
+		endcase
 	end
 
 end	

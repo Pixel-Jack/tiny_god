@@ -1,5 +1,5 @@
 Flow report for C5G_HDMI_VPG
-Thu Nov 08 15:23:24 2018
+Thu Nov 08 16:04:07 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +-------------------------------------+---------------------------------------------+
-; Flow Status                         ; Successful - Thu Nov 08 15:23:24 2018       ;
+; Flow Status                         ; Successful - Thu Nov 08 16:04:07 2018       ;
 ; Quartus II 64-Bit Version           ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                       ; C5G_HDMI_VPG                                ;
 ; Top-level Entity Name               ; C5G_HDMI_VPG                                ;
 ; Family                              ; Cyclone V                                   ;
 ; Device                              ; 5CGXFC5C6F27C7                              ;
 ; Timing Models                       ; Preliminary                                 ;
-; Logic utilization (in ALMs)         ; 1,389 / 29,080 ( 5 % )                      ;
-; Total registers                     ; 624                                         ;
+; Logic utilization (in ALMs)         ; 2,192 / 29,080 ( 8 % )                      ;
+; Total registers                     ; 654                                         ;
 ; Total pins                          ; 141 / 364 ( 39 % )                          ;
 ; Total virtual pins                  ; 0                                           ;
 ; Total block memory bits             ; 0 / 4,567,040 ( 0 % )                       ;
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/08/2018 15:21:26 ;
+; Start date & time ; 11/08/2018 16:01:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; C5G_HDMI_VPG        ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------+---------------+-------------------------+----------------+
 ; Assignment Name                     ; Value                                       ; Default Value ; Entity Name             ; Section Id     ;
 +-------------------------------------+---------------------------------------------+---------------+-------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 176831339393963.154168688505780             ; --            ; --                      ; --             ;
+; COMPILER_SIGNATURE_ID               ; 176831339393963.154168930801860             ; --            ; --                      ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                        ; --            ; --                      ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                      ; <None>        ; --                      ; --             ;
 ; IP_TOOL_ENV                         ; mwpim                                       ; --            ; altera_pll_reconfig_top ; --             ;
@@ -137,12 +137,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 565 MB              ; 00:00:23                           ;
-; Fitter                    ; 00:01:03     ; 1.5                     ; 2227 MB             ; 00:01:26                           ;
-; Assembler                 ; 00:00:08     ; 1.0                     ; 636 MB              ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:16     ; 1.4                     ; 1162 MB             ; 00:00:21                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 494 MB              ; 00:00:01                           ;
-; Total                     ; 00:01:51     ; --                      ; --                  ; 00:02:19                           ;
+; Analysis & Synthesis      ; 00:00:27     ; 1.0                     ; 570 MB              ; 00:00:26                           ;
+; Fitter                    ; 00:01:16     ; 1.8                     ; 2234 MB             ; 00:01:50                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 643 MB              ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:18     ; 1.7                     ; 1191 MB             ; 00:00:25                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 495 MB              ; 00:00:01                           ;
+; Total                     ; 00:02:12     ; --                      ; --                  ; 00:02:51                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for C5G_HDMI_VPG
-Thu Nov 08 15:23:22 2018
+Thu Nov 08 16:04:04 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -116,12 +116,13 @@ applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.40        ;
+; Average used               ; 1.69        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;  13.3%      ;
+;     Processors 2-3         ;  25.0%      ;
+;     Processor 4            ;  18.8%      ;
 +----------------------------+-------------+
 
 
@@ -130,7 +131,7 @@ applicable agreement for further details.
 +------------------+--------+--------------------------+
 ; SDC File Path    ; Status ; Read at                  ;
 +------------------+--------+--------------------------+
-; C5G_HDMI_VPG.sdc ; OK     ; Thu Nov 08 15:23:08 2018 ;
+; C5G_HDMI_VPG.sdc ; OK     ; Thu Nov 08 16:03:49 2018 ;
 +------------------+--------+--------------------------+
 
 
@@ -170,9 +171,9 @@ applicable agreement for further details.
 +------------+-----------------+---------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                      ; Note ;
 +------------+-----------------+---------------------------------------------------------------------------------+------+
-; 43.14 MHz  ; 43.14 MHz       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;      ;
-; 61.49 MHz  ; 61.49 MHz       ; clock_50_3                                                                      ;      ;
-; 225.02 MHz ; 225.02 MHz      ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;      ;
+; 24.49 MHz  ; 24.49 MHz       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;      ;
+; 61.92 MHz  ; 61.92 MHz       ; clock_50_3                                                                      ;      ;
+; 132.91 MHz ; 132.91 MHz      ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;      ;
 +------------+-----------------+---------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -188,9 +189,9 @@ HTML report is unavailable in plain text report export.
 +---------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                           ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------+---------+---------------+
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -17.010 ; -267.092      ;
-; clock_50_3                                                                      ; 1.488   ; 0.000         ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 828.889 ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -34.667 ; -789.472      ;
+; clock_50_3                                                                      ; 1.142   ; 0.000         ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 825.809 ; 0.000         ;
 +---------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -199,9 +200,9 @@ HTML report is unavailable in plain text report export.
 +---------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
-; clock_50_3                                                                      ; -0.910 ; -0.910        ;
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -0.521 ; -1.349        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 0.315  ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -0.661 ; -0.846        ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 0.295  ; 0.000         ;
+; clock_50_3                                                                      ; 0.308  ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -210,7 +211,7 @@ HTML report is unavailable in plain text report export.
 +------------+--------+------------------+
 ; Clock      ; Slack  ; End Point TNS    ;
 +------------+--------+------------------+
-; clock_50_3 ; 17.363 ; 0.000            ;
+; clock_50_3 ; 16.601 ; 0.000            ;
 +------------+--------+------------------+
 
 
@@ -219,7 +220,7 @@ HTML report is unavailable in plain text report export.
 +------------+-------+------------------+
 ; Clock      ; Slack ; End Point TNS    ;
 +------------+-------+------------------+
-; clock_50_3 ; 1.761 ; 0.000            ;
+; clock_50_3 ; 1.489 ; 0.000            ;
 +------------+-------+------------------+
 
 
@@ -232,7 +233,7 @@ HTML report is unavailable in plain text report export.
 ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]     ; 1.666   ; 0.000         ;
 ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 2.382   ; 0.000         ;
 ; clock_50_3                                                                      ; 9.346   ; 0.000         ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 415.988 ; 0.000         ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 415.989 ; 0.000         ;
 +---------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -241,8 +242,8 @@ HTML report is unavailable in plain text report export.
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; 7.099 ; 7.119 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; 7.099 ; 7.119 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; 7.865 ; 8.829 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; 7.865 ; 8.829 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 
 
@@ -251,8 +252,8 @@ HTML report is unavailable in plain text report export.
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; -3.026 ; -3.270 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; -3.026 ; -3.270 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; -3.593 ; -4.114 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; -3.593 ; -4.114 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 
 
@@ -261,41 +262,41 @@ HTML report is unavailable in plain text report export.
 +----------------+------------+--------+--------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+--------+--------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 11.605 ; 12.947 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 11.518 ; 12.947 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 8.858  ; 8.407  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 11.605 ; 12.946 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 9.354  ; 8.673  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-; HDMI_TX_CLK    ; clock_50_3 ; 5.079  ;        ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 7.858  ; 8.687  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 7.070  ; 7.200  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 7.812  ; 8.302  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 7.547  ; 7.901  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 7.226  ; 7.747  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 7.833  ; 8.350  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 7.324  ; 7.260  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 7.643  ; 8.376  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 7.858  ; 8.687  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 6.596  ; 6.930  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 6.148  ; 6.292  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 6.657  ; 7.059  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 6.373  ; 6.604  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 5.826  ; 5.860  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 6.662  ; 7.058  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 5.540  ; 5.569  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 5.756  ; 5.691  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 5.835  ; 5.911  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 6.358  ; 6.627  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 6.077  ; 6.189  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 6.382  ; 6.562  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 6.496  ; 6.658  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 7.121  ; 7.418  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 6.749  ; 7.072  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 6.709  ; 7.025  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 8.263  ; 8.911  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 7.969  ; 7.752  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 8.501  ; 7.967  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_CLK    ; clock_50_3 ;        ; 4.906  ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; LEDR[*]        ; clock_50_3 ; 11.419 ; 12.919 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 8.808  ; 9.548  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 11.126 ; 10.174 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 11.419 ; 12.919 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 8.332  ; 7.915  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; HDMI_TX_CLK    ; clock_50_3 ; 5.080  ;        ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 8.595  ; 9.623  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 8.595  ; 9.623  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 8.042  ; 8.852  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 6.594  ; 6.672  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 7.486  ; 7.830  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 7.671  ; 7.991  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 7.426  ; 7.614  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 7.517  ; 8.117  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 8.324  ; 9.246  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 7.828  ; 8.331  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 7.384  ; 7.770  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 7.560  ; 7.785  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 7.525  ; 8.212  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 5.567  ; 5.567  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 8.155  ; 9.079  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 7.341  ; 7.912  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 7.356  ; 7.953  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 5.569  ; 5.580  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 6.308  ; 6.550  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 6.757  ; 6.672  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 7.535  ; 7.948  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 8.123  ; 8.968  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 8.364  ; 9.256  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 8.048  ; 8.576  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 7.319  ; 7.334  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 7.702  ; 8.156  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 7.422  ; 7.189  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 6.859  ; 6.924  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_CLK    ; clock_50_3 ;        ; 4.907  ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+--------+--------+------------+---------------------------------------------------------------------------------+
 
 
@@ -304,41 +305,41 @@ HTML report is unavailable in plain text report export.
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 6.480 ; 5.991 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 8.581 ; 9.930 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 6.480 ; 5.991 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 8.695 ; 9.938 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 6.893 ; 6.188 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-; HDMI_TX_CLK    ; clock_50_3 ; 3.777 ;       ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 4.165 ; 4.194 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 5.448 ; 5.617 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 6.098 ; 6.532 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 5.879 ; 6.215 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 5.638 ; 6.079 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 6.107 ; 6.554 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 5.640 ; 5.691 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 5.986 ; 6.590 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 6.151 ; 6.822 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 5.057 ; 5.312 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 4.692 ; 4.809 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 5.109 ; 5.421 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 4.875 ; 5.052 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 4.411 ; 4.443 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 5.113 ; 5.418 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 4.165 ; 4.194 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 4.356 ; 4.299 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 4.418 ; 4.489 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 4.861 ; 5.074 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 4.625 ; 4.720 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 4.898 ; 5.050 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 4.989 ; 5.150 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 5.520 ; 5.787 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 5.213 ; 5.469 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 5.178 ; 5.418 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 6.507 ; 7.065 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 6.285 ; 6.038 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 6.717 ; 6.239 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_CLK    ; clock_50_3 ;       ; 3.612 ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; LEDR[*]        ; clock_50_3 ; 6.019 ; 5.551 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 6.289 ; 7.037 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 8.378 ; 7.443 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 8.552 ; 9.907 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 6.019 ; 5.551 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; HDMI_TX_CLK    ; clock_50_3 ; 3.778 ;       ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 4.188 ; 4.190 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 6.798 ; 7.631 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 6.341 ; 7.007 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 5.067 ; 5.178 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 5.836 ; 6.163 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 5.938 ; 6.257 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 5.741 ; 5.967 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 5.878 ; 6.364 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 6.554 ; 7.291 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 6.099 ; 6.532 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 5.731 ; 6.095 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 5.836 ; 6.076 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 5.869 ; 6.424 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 4.188 ; 4.190 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 6.412 ; 7.163 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 5.731 ; 6.214 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 5.743 ; 6.246 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 4.189 ; 4.203 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 4.819 ; 5.010 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 5.162 ; 5.166 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 5.865 ; 6.242 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 6.397 ; 7.080 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 6.606 ; 7.324 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 6.305 ; 6.768 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 5.648 ; 5.768 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 6.032 ; 6.445 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 5.834 ; 5.590 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 5.345 ; 5.321 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_CLK    ; clock_50_3 ;       ; 3.613 ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 
 
@@ -353,9 +354,9 @@ No synchronizer chains to report.
 +------------+-----------------+---------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                      ; Note ;
 +------------+-----------------+---------------------------------------------------------------------------------+------+
-; 41.34 MHz  ; 41.34 MHz       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;      ;
-; 61.29 MHz  ; 61.29 MHz       ; clock_50_3                                                                      ;      ;
-; 227.84 MHz ; 227.84 MHz      ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;      ;
+; 23.47 MHz  ; 23.47 MHz       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;      ;
+; 62.01 MHz  ; 62.01 MHz       ; clock_50_3                                                                      ;      ;
+; 136.05 MHz ; 136.05 MHz      ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;      ;
 +------------+-----------------+---------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -365,9 +366,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                           ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------+---------+---------------+
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -18.017 ; -272.043      ;
-; clock_50_3                                                                      ; 1.603   ; 0.000         ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 828.944 ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -36.435 ; -808.887      ;
+; clock_50_3                                                                      ; 1.210   ; 0.000         ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 825.983 ; 0.000         ;
 +---------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -376,9 +377,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
-; clock_50_3                                                                      ; -1.069 ; -1.069        ;
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -0.463 ; -1.226        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 0.288  ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -0.654 ; -0.804        ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 0.280  ; 0.000         ;
+; clock_50_3                                                                      ; 0.281  ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -387,7 +388,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------+--------+-----------------+
 ; Clock      ; Slack  ; End Point TNS   ;
 +------------+--------+-----------------+
-; clock_50_3 ; 17.443 ; 0.000           ;
+; clock_50_3 ; 16.705 ; 0.000           ;
 +------------+--------+-----------------+
 
 
@@ -396,7 +397,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------+-------+-----------------+
 ; Clock      ; Slack ; End Point TNS   ;
 +------------+-------+-----------------+
-; clock_50_3 ; 1.676 ; 0.000           ;
+; clock_50_3 ; 1.407 ; 0.000           ;
 +------------+-------+-----------------+
 
 
@@ -407,9 +408,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------+---------+---------------+
 ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0]             ; 0.617   ; 0.000         ;
 ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]     ; 1.666   ; 0.000         ;
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 2.278   ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 2.276   ; 0.000         ;
 ; clock_50_3                                                                      ; 9.200   ; 0.000         ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 415.885 ; 0.000         ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 415.890 ; 0.000         ;
 +---------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -418,8 +419,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; 6.894 ; 7.042 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; 6.894 ; 7.042 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; 7.367 ; 8.485 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; 7.367 ; 8.485 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 
 
@@ -428,8 +429,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; -2.856 ; -3.248 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; -2.856 ; -3.248 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; -3.390 ; -4.027 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; -3.390 ; -4.027 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 
 
@@ -438,40 +439,40 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------+------------+--------+--------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+--------+--------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 11.124 ; 12.712 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 11.095 ; 12.689 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 8.749  ; 8.207  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 11.124 ; 12.712 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 9.233  ; 8.437  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; LEDR[*]        ; clock_50_3 ; 11.074 ; 12.721 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 8.530  ; 9.409  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 10.969 ; 9.878  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 11.074 ; 12.721 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 8.235  ; 7.715  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
 ; HDMI_TX_CLK    ; clock_50_3 ; 4.987  ;        ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 7.610  ; 8.425  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 6.816  ; 6.993  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 7.546  ; 8.062  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 7.283  ; 7.663  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 7.001  ; 7.526  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 7.551  ; 8.108  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 7.042  ; 7.057  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 7.412  ; 8.135  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 7.610  ; 8.425  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 6.407  ; 6.738  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 5.979  ; 6.112  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 6.491  ; 6.869  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 6.190  ; 6.407  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 5.669  ; 5.692  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 6.495  ; 6.871  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 5.419  ; 5.416  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 5.590  ; 5.531  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 5.689  ; 5.740  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 6.188  ; 6.437  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 5.908  ; 6.015  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 6.203  ; 6.383  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 6.301  ; 6.483  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 6.865  ; 7.211  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 6.550  ; 6.874  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 6.515  ; 6.831  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 7.965  ; 8.649  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 7.722  ; 7.451  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 8.247  ; 7.685  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 8.299  ; 9.349  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 8.299  ; 9.349  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 7.767  ; 8.593  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 6.406  ; 6.484  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 7.217  ; 7.602  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 7.408  ; 7.768  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 7.153  ; 7.388  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 7.291  ; 7.885  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 8.018  ; 8.969  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 7.527  ; 8.074  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 7.143  ; 7.533  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 7.272  ; 7.566  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 7.305  ; 7.969  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 5.434  ; 5.414  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 7.887  ; 8.814  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 7.110  ; 7.677  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 7.134  ; 7.718  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 5.438  ; 5.424  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 6.140  ; 6.364  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 6.525  ; 6.484  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 7.284  ; 7.724  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 7.853  ; 8.707  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 8.064  ; 8.979  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 7.772  ; 8.333  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 7.047  ; 7.126  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 7.423  ; 7.917  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 7.192  ; 6.933  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 6.670  ; 6.692  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 ; HDMI_TX_CLK    ; clock_50_3 ;        ; 4.758  ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+--------+--------+------------+---------------------------------------------------------------------------------+
 
@@ -481,41 +482,41 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 6.445 ; 5.889 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 8.286 ; 9.762 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 6.445 ; 5.889 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 8.351 ; 9.794 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 6.846 ; 6.054 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-; HDMI_TX_CLK    ; clock_50_3 ; 3.707 ;       ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 4.070 ; 4.070 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 5.243 ; 5.443 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 5.879 ; 6.333 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 5.662 ; 6.018 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 5.452 ; 5.895 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 5.874 ; 6.352 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 5.411 ; 5.522 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 5.795 ; 6.389 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 5.944 ; 6.602 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 4.904 ; 5.156 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 4.556 ; 4.663 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 4.976 ; 5.266 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 4.727 ; 4.890 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 4.286 ; 4.306 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 4.978 ; 5.266 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 4.070 ; 4.070 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 4.221 ; 4.169 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 4.303 ; 4.350 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 4.725 ; 4.919 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 4.489 ; 4.578 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 4.754 ; 4.903 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 4.834 ; 5.006 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 5.309 ; 5.614 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 5.052 ; 5.308 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 5.019 ; 5.260 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 6.257 ; 6.843 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 6.074 ; 5.787 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 6.502 ; 6.004 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_CLK    ; clock_50_3 ;       ; 3.490 ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; LEDR[*]        ; clock_50_3 ; 5.995 ; 5.448 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 6.123 ; 6.978 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 8.302 ; 7.261 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 8.320 ; 9.791 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 5.995 ; 5.448 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; HDMI_TX_CLK    ; clock_50_3 ; 3.708 ;       ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 4.084 ; 4.067 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 6.552 ; 7.402 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 6.111 ; 6.789 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 4.919 ; 5.024 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 5.614 ; 5.973 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 5.729 ; 6.074 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 5.522 ; 5.780 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 5.693 ; 6.171 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 6.297 ; 7.059 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 5.849 ; 6.318 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 5.533 ; 5.898 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 5.601 ; 5.893 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 5.688 ; 6.223 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 4.084 ; 4.067 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 6.189 ; 6.941 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 5.540 ; 6.017 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 5.560 ; 6.049 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 4.087 ; 4.076 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 4.685 ; 4.859 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 4.979 ; 5.010 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 5.662 ; 6.057 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 6.174 ; 6.863 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 6.356 ; 7.092 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 6.077 ; 6.565 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 5.429 ; 5.594 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 5.800 ; 6.243 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 5.639 ; 5.376 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 5.188 ; 5.138 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_CLK    ; clock_50_3 ;       ; 3.491 ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 
 
@@ -530,9 +531,9 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                           ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------+---------+---------------+
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -5.540  ; -49.399       ;
-; clock_50_3                                                                      ; 3.510   ; 0.000         ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 830.530 ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -14.663 ; -250.623      ;
+; clock_50_3                                                                      ; 3.385   ; 0.000         ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 828.596 ; 0.000         ;
 +---------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -541,9 +542,9 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
-; clock_50_3                                                                      ; -0.636 ; -0.636        ;
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -0.245 ; -0.559        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 0.174  ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -0.304 ; -0.399        ;
+; clock_50_3                                                                      ; 0.050  ; 0.000         ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 0.164  ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -552,7 +553,7 @@ No synchronizer chains to report.
 +------------+--------+------------------+
 ; Clock      ; Slack  ; End Point TNS    ;
 +------------+--------+------------------+
-; clock_50_3 ; 18.516 ; 0.000            ;
+; clock_50_3 ; 18.003 ; 0.000            ;
 +------------+--------+------------------+
 
 
@@ -561,7 +562,7 @@ No synchronizer chains to report.
 +------------+-------+------------------+
 ; Clock      ; Slack ; End Point TNS    ;
 +------------+-------+------------------+
-; clock_50_3 ; 0.920 ; 0.000            ;
+; clock_50_3 ; 0.745 ; 0.000            ;
 +------------+-------+------------------+
 
 
@@ -572,8 +573,8 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------+---------+---------------+
 ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0]             ; 0.617   ; 0.000         ;
 ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]     ; 1.666   ; 0.000         ;
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 2.634   ; 0.000         ;
-; clock_50_3                                                                      ; 9.409   ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 2.636   ; 0.000         ;
+; clock_50_3                                                                      ; 9.407   ; 0.000         ;
 ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 416.234 ; 0.000         ;
 +---------------------------------------------------------------------------------+---------+---------------+
 
@@ -583,8 +584,8 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; 3.661 ; 3.876 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; 3.661 ; 3.876 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; 4.385 ; 5.373 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; 4.385 ; 5.373 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 
 
@@ -593,8 +594,8 @@ No synchronizer chains to report.
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; -1.693 ; -1.949 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; -1.693 ; -1.949 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; -2.144 ; -2.650 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; -2.144 ; -2.650 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 
 
@@ -603,40 +604,40 @@ No synchronizer chains to report.
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 6.576 ; 8.019 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 6.576 ; 8.019 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 5.056 ; 4.568 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 6.404 ; 7.769 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 5.468 ; 4.757 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; LEDR[*]        ; clock_50_3 ; 6.573 ; 7.798 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 4.885 ; 5.644 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 6.573 ; 5.665 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 6.436 ; 7.798 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 4.804 ; 4.356 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
 ; HDMI_TX_CLK    ; clock_50_3 ; 3.090 ;       ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 4.745 ; 5.473 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 4.055 ; 4.277 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 4.652 ; 5.139 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 4.483 ; 4.869 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 4.327 ; 4.810 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 4.616 ; 5.150 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 4.215 ; 4.325 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 4.604 ; 5.249 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 4.745 ; 5.473 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 3.909 ; 4.222 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 3.614 ; 3.766 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 3.963 ; 4.320 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 3.760 ; 3.978 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 3.399 ; 3.461 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 3.964 ; 4.317 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 3.267 ; 3.289 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 3.363 ; 3.352 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 3.419 ; 3.504 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 3.785 ; 4.035 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 3.566 ; 3.695 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 3.750 ; 3.946 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 3.763 ; 3.934 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 4.143 ; 4.457 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 4.002 ; 4.312 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 3.962 ; 4.264 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 4.958 ; 5.593 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 4.865 ; 4.537 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 5.302 ; 4.767 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 5.163 ; 6.084 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 5.163 ; 6.084 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 4.832 ; 5.563 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 3.814 ; 3.964 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 4.429 ; 4.814 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 4.486 ; 4.897 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 4.331 ; 4.626 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 4.483 ; 5.032 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 4.957 ; 5.787 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 4.635 ; 5.159 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 4.406 ; 4.806 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 4.375 ; 4.714 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 4.503 ; 5.115 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 3.256 ; 3.265 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 4.932 ; 5.743 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 4.422 ; 4.940 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 4.448 ; 4.982 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 3.260 ; 3.276 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 3.740 ; 3.968 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 3.880 ; 3.958 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 4.453 ; 4.889 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 4.888 ; 5.646 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 5.036 ; 5.845 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 4.811 ; 5.340 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 4.221 ; 4.388 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 4.535 ; 5.018 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 4.529 ; 4.248 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 4.080 ; 3.982 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 ; HDMI_TX_CLK    ; clock_50_3 ;       ; 3.011 ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 
@@ -646,40 +647,40 @@ No synchronizer chains to report.
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 3.921 ; 3.446 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 5.144 ; 6.448 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 3.921 ; 3.446 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 5.013 ; 6.234 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 4.261 ; 3.584 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; LEDR[*]        ; clock_50_3 ; 3.688 ; 3.243 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 3.694 ; 4.409 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 5.197 ; 4.355 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 5.050 ; 6.255 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 3.688 ; 3.243 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
 ; HDMI_TX_CLK    ; clock_50_3 ; 2.479 ;       ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 2.630 ; 2.652 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 3.293 ; 3.519 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 3.823 ; 4.247 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 3.680 ; 4.031 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 3.564 ; 3.980 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 3.782 ; 4.242 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 3.423 ; 3.576 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 3.795 ; 4.337 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 3.904 ; 4.507 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 3.174 ; 3.422 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 2.931 ; 3.059 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 3.220 ; 3.506 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 3.053 ; 3.226 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 2.741 ; 2.797 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 3.221 ; 3.502 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 2.630 ; 2.652 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 2.714 ; 2.705 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 2.759 ; 2.836 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 3.071 ; 3.274 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 2.886 ; 2.998 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 3.053 ; 3.221 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 3.062 ; 3.224 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 3.390 ; 3.668 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 3.270 ; 3.524 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 3.237 ; 3.477 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 4.094 ; 4.640 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 4.027 ; 3.712 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 4.394 ; 3.924 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 2.618 ; 2.627 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 4.276 ; 5.041 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 4.004 ; 4.618 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 3.101 ; 3.257 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 3.639 ; 3.990 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 3.650 ; 4.026 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 3.529 ; 3.818 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 3.688 ; 4.145 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 4.092 ; 4.774 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 3.796 ; 4.246 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 3.609 ; 3.973 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 3.555 ; 3.870 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 3.697 ; 4.203 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 2.618 ; 2.627 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 4.072 ; 4.747 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 3.641 ; 4.086 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 3.664 ; 4.121 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 2.621 ; 2.638 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 3.033 ; 3.219 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 3.138 ; 3.248 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 3.653 ; 4.041 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 4.043 ; 4.671 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 4.173 ; 4.841 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 3.963 ; 4.422 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 3.437 ; 3.641 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 3.729 ; 4.160 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 3.747 ; 3.479 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 3.362 ; 3.231 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 ; HDMI_TX_CLK    ; clock_50_3 ;       ; 2.402 ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 
@@ -695,9 +696,9 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                           ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------+---------+---------------+
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -4.969  ; -33.112       ;
-; clock_50_3                                                                      ; 4.077   ; 0.000         ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 830.816 ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -13.609 ; -215.094      ;
+; clock_50_3                                                                      ; 3.952   ; 0.000         ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 829.135 ; 0.000         ;
 +---------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -706,9 +707,9 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
-; clock_50_3                                                                      ; -0.839 ; -2.232        ;
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -0.247 ; -0.659        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 0.161  ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -0.318 ; -0.508        ;
+; clock_50_3                                                                      ; -0.189 ; -0.838        ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 0.151  ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -717,7 +718,7 @@ No synchronizer chains to report.
 +------------+--------+-----------------+
 ; Clock      ; Slack  ; End Point TNS   ;
 +------------+--------+-----------------+
-; clock_50_3 ; 18.671 ; 0.000           ;
+; clock_50_3 ; 18.217 ; 0.000           ;
 +------------+--------+-----------------+
 
 
@@ -726,7 +727,7 @@ No synchronizer chains to report.
 +------------+-------+-----------------+
 ; Clock      ; Slack ; End Point TNS   ;
 +------------+-------+-----------------+
-; clock_50_3 ; 0.836 ; 0.000           ;
+; clock_50_3 ; 0.678 ; 0.000           ;
 +------------+-------+-----------------+
 
 
@@ -737,9 +738,9 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------+---------+---------------+
 ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0]             ; 0.617   ; 0.000         ;
 ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]     ; 1.666   ; 0.000         ;
-; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 2.632   ; 0.000         ;
-; clock_50_3                                                                      ; 9.409   ; 0.000         ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 416.230 ; 0.000         ;
+; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 2.631   ; 0.000         ;
+; clock_50_3                                                                      ; 9.407   ; 0.000         ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 416.231 ; 0.000         ;
 +---------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -748,8 +749,8 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; 3.452 ; 3.678 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; 3.452 ; 3.678 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; 4.053 ; 4.907 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; 4.053 ; 4.907 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 
 
@@ -758,8 +759,8 @@ No synchronizer chains to report.
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; -1.610 ; -1.877 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; -1.610 ; -1.877 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; -2.017 ; -2.475 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; -2.017 ; -2.475 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 
 
@@ -768,40 +769,40 @@ No synchronizer chains to report.
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 5.922 ; 7.146 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 5.922 ; 7.146 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 4.599 ; 4.156 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 5.785 ; 6.967 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 4.930 ; 4.302 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; LEDR[*]        ; clock_50_3 ; 5.925 ; 7.010 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 4.409 ; 5.081 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 5.925 ; 5.116 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 5.833 ; 7.010 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 4.353 ; 3.940 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
 ; HDMI_TX_CLK    ; clock_50_3 ; 2.824 ;       ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 4.292 ; 4.878 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 3.653 ; 3.854 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 4.200 ; 4.606 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 4.050 ; 4.368 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 3.924 ; 4.310 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 4.168 ; 4.610 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 3.779 ; 3.900 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 4.174 ; 4.690 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 4.292 ; 4.878 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 3.546 ; 3.794 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 3.276 ; 3.398 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 3.597 ; 3.884 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 3.409 ; 3.586 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 3.081 ; 3.127 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 3.599 ; 3.881 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 2.969 ; 2.982 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 3.046 ; 3.036 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 3.103 ; 3.165 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 3.433 ; 3.632 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 3.234 ; 3.335 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 3.409 ; 3.564 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 3.413 ; 3.567 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 3.740 ; 4.017 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 3.634 ; 3.885 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 3.601 ; 3.847 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 4.477 ; 4.997 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 4.364 ; 4.079 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 4.741 ; 4.302 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 4.682 ; 5.423 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 4.682 ; 5.423 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 4.378 ; 4.965 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 3.457 ; 3.583 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 3.995 ; 4.320 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 4.047 ; 4.398 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 3.899 ; 4.157 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 4.069 ; 4.506 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 4.479 ; 5.157 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 4.171 ; 4.608 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 3.975 ; 4.300 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 3.933 ; 4.235 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 4.081 ; 4.571 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 2.956 ; 2.957 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 4.464 ; 5.116 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 3.999 ; 4.414 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 4.028 ; 4.451 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 2.959 ; 2.967 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 3.394 ; 3.574 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 3.501 ; 3.577 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 4.030 ; 4.388 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 4.434 ; 5.042 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 4.563 ; 5.219 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 4.347 ; 4.784 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 3.794 ; 3.959 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 4.096 ; 4.497 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 4.065 ; 3.828 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 3.686 ; 3.593 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 ; HDMI_TX_CLK    ; clock_50_3 ;       ; 2.735 ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 
@@ -811,40 +812,40 @@ No synchronizer chains to report.
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 3.524 ; 3.099 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 4.591 ; 5.695 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 3.524 ; 3.099 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 4.488 ; 5.544 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 3.795 ; 3.201 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; LEDR[*]        ; clock_50_3 ; 3.295 ; 2.893 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 3.295 ; 3.923 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 4.641 ; 3.896 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 4.539 ; 5.579 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 3.297 ; 2.893 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
 ; HDMI_TX_CLK    ; clock_50_3 ; 2.229 ;       ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 2.352 ; 2.365 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 2.931 ; 3.132 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 3.414 ; 3.767 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 3.288 ; 3.576 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 3.195 ; 3.526 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 3.378 ; 3.757 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 3.030 ; 3.184 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 3.403 ; 3.834 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 3.494 ; 3.976 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 2.841 ; 3.034 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 2.619 ; 2.722 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 2.886 ; 3.111 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 2.729 ; 2.868 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 2.447 ; 2.488 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 2.887 ; 3.108 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 2.352 ; 2.365 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 2.420 ; 2.412 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 2.466 ; 2.523 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 2.748 ; 2.907 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 2.581 ; 2.667 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 2.740 ; 2.872 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 2.741 ; 2.885 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 3.022 ; 3.266 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 2.933 ; 3.136 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 2.905 ; 3.099 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 3.659 ; 4.104 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 3.570 ; 3.299 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 3.889 ; 3.504 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 2.339 ; 2.340 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 3.841 ; 4.452 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 3.589 ; 4.080 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 2.776 ; 2.907 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 3.245 ; 3.541 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 3.258 ; 3.576 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 3.140 ; 3.390 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 3.312 ; 3.673 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 3.658 ; 4.213 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 3.377 ; 3.751 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 3.216 ; 3.511 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 3.157 ; 3.435 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 3.313 ; 3.715 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 2.339 ; 2.340 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 3.646 ; 4.185 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 3.254 ; 3.609 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 3.280 ; 3.640 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 2.341 ; 2.349 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 2.715 ; 2.859 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 2.793 ; 2.895 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 3.269 ; 3.586 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 3.630 ; 4.131 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 3.743 ; 4.281 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 3.543 ; 3.919 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 3.052 ; 3.244 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 3.332 ; 3.688 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 3.324 ; 3.098 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 2.999 ; 2.881 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 ; HDMI_TX_CLK    ; clock_50_3 ;       ; 2.143 ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 
@@ -860,17 +861,17 @@ No synchronizer chains to report.
 +----------------------------------------------------------------------------------+----------+--------+----------+---------+---------------------+
 ; Clock                                                                            ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +----------------------------------------------------------------------------------+----------+--------+----------+---------+---------------------+
-; Worst-case Slack                                                                 ; -18.017  ; -1.069 ; 17.363   ; 0.836   ; 0.617               ;
-;  clock_50_3                                                                      ; 1.488    ; -1.069 ; 17.363   ; 0.836   ; 9.200               ;
+; Worst-case Slack                                                                 ; -36.435  ; -0.661 ; 16.601   ; 0.678   ; 0.617               ;
+;  clock_50_3                                                                      ; 1.142    ; -0.189 ; 16.601   ; 0.678   ; 9.200               ;
 ;  u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]     ; N/A      ; N/A    ; N/A      ; N/A     ; 1.666               ;
-;  u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 828.889  ; 0.161  ; N/A      ; N/A     ; 415.885             ;
-;  u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -18.017  ; -0.521 ; N/A      ; N/A     ; 2.278               ;
+;  u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 825.809  ; 0.151  ; N/A      ; N/A     ; 415.890             ;
+;  u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -36.435  ; -0.661 ; N/A      ; N/A     ; 2.276               ;
 ;  u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0]             ; N/A      ; N/A    ; N/A      ; N/A     ; 0.617               ;
-; Design-wide TNS                                                                  ; -272.043 ; -2.891 ; 0.0      ; 0.0     ; 0.0                 ;
-;  clock_50_3                                                                      ; 0.000    ; -2.232 ; 0.000    ; 0.000   ; 0.000               ;
+; Design-wide TNS                                                                  ; -808.887 ; -1.346 ; 0.0      ; 0.0     ; 0.0                 ;
+;  clock_50_3                                                                      ; 0.000    ; -0.838 ; 0.000    ; 0.000   ; 0.000               ;
 ;  u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]     ; N/A      ; N/A    ; N/A      ; N/A     ; 0.000               ;
 ;  u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 0.000    ; 0.000  ; N/A      ; N/A     ; 0.000               ;
-;  u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -272.043 ; -1.349 ; N/A      ; N/A     ; 0.000               ;
+;  u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; -808.887 ; -0.846 ; N/A      ; N/A     ; 0.000               ;
 ;  u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0]             ; N/A      ; N/A    ; N/A      ; N/A     ; 0.000               ;
 +----------------------------------------------------------------------------------+----------+--------+----------+---------+---------------------+
 
@@ -880,8 +881,8 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; 7.099 ; 7.119 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; 7.099 ; 7.119 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; 7.865 ; 8.829 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; 7.865 ; 8.829 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+-------+-------+------------+-------------------------------------------------------------------------------+
 
 
@@ -890,8 +891,8 @@ No synchronizer chains to report.
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                               ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
-; KEY[*]    ; clock_50_3 ; -1.610 ; -1.877 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
-;  KEY[1]   ; clock_50_3 ; -1.610 ; -1.877 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+; KEY[*]    ; clock_50_3 ; -2.017 ; -2.475 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
+;  KEY[1]   ; clock_50_3 ; -2.017 ; -2.475 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;
 +-----------+------------+--------+--------+------------+-------------------------------------------------------------------------------+
 
 
@@ -900,41 +901,41 @@ No synchronizer chains to report.
 +----------------+------------+--------+--------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+--------+--------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 11.605 ; 12.947 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 11.518 ; 12.947 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 8.858  ; 8.407  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 11.605 ; 12.946 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 9.354  ; 8.673  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-; HDMI_TX_CLK    ; clock_50_3 ; 5.079  ;        ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 7.858  ; 8.687  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 7.070  ; 7.200  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 7.812  ; 8.302  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 7.547  ; 7.901  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 7.226  ; 7.747  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 7.833  ; 8.350  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 7.324  ; 7.260  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 7.643  ; 8.376  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 7.858  ; 8.687  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 6.596  ; 6.930  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 6.148  ; 6.292  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 6.657  ; 7.059  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 6.373  ; 6.604  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 5.826  ; 5.860  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 6.662  ; 7.058  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 5.540  ; 5.569  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 5.756  ; 5.691  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 5.835  ; 5.911  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 6.358  ; 6.627  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 6.077  ; 6.189  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 6.382  ; 6.562  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 6.496  ; 6.658  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 7.121  ; 7.418  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 6.749  ; 7.072  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 6.709  ; 7.025  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 8.263  ; 8.911  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 7.969  ; 7.752  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 8.501  ; 7.967  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_CLK    ; clock_50_3 ;        ; 4.906  ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; LEDR[*]        ; clock_50_3 ; 11.419 ; 12.919 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 8.808  ; 9.548  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 11.126 ; 10.174 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 11.419 ; 12.919 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 8.332  ; 7.915  ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; HDMI_TX_CLK    ; clock_50_3 ; 5.080  ;        ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 8.595  ; 9.623  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 8.595  ; 9.623  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 8.042  ; 8.852  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 6.594  ; 6.672  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 7.486  ; 7.830  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 7.671  ; 7.991  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 7.426  ; 7.614  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 7.517  ; 8.117  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 8.324  ; 9.246  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 7.828  ; 8.331  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 7.384  ; 7.770  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 7.560  ; 7.785  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 7.525  ; 8.212  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 5.567  ; 5.567  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 8.155  ; 9.079  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 7.341  ; 7.912  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 7.356  ; 7.953  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 5.569  ; 5.580  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 6.308  ; 6.550  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 6.757  ; 6.672  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 7.535  ; 7.948  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 8.123  ; 8.968  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 8.364  ; 9.256  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 8.048  ; 8.576  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 7.319  ; 7.334  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 7.702  ; 8.156  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 7.422  ; 7.189  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 6.859  ; 6.924  ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_CLK    ; clock_50_3 ;        ; 4.907  ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+--------+--------+------------+---------------------------------------------------------------------------------+
 
 
@@ -943,40 +944,40 @@ No synchronizer chains to report.
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 ; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                                                                 ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
-; LEDR[*]        ; clock_50_3 ; 3.524 ; 3.099 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[0]       ; clock_50_3 ; 4.591 ; 5.695 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[1]       ; clock_50_3 ; 3.524 ; 3.099 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[2]       ; clock_50_3 ; 4.488 ; 5.544 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
-;  LEDR[3]       ; clock_50_3 ; 3.795 ; 3.201 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+; LEDR[*]        ; clock_50_3 ; 3.295 ; 2.893 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[0]       ; clock_50_3 ; 3.295 ; 3.923 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[1]       ; clock_50_3 ; 4.641 ; 3.896 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[2]       ; clock_50_3 ; 4.539 ; 5.579 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
+;  LEDR[3]       ; clock_50_3 ; 3.297 ; 2.893 ; Rise       ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ;
 ; HDMI_TX_CLK    ; clock_50_3 ; 2.229 ;       ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_D[*]   ; clock_50_3 ; 2.352 ; 2.365 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[0]  ; clock_50_3 ; 2.931 ; 3.132 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[1]  ; clock_50_3 ; 3.414 ; 3.767 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[2]  ; clock_50_3 ; 3.288 ; 3.576 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[3]  ; clock_50_3 ; 3.195 ; 3.526 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[4]  ; clock_50_3 ; 3.378 ; 3.757 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[5]  ; clock_50_3 ; 3.030 ; 3.184 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[6]  ; clock_50_3 ; 3.403 ; 3.834 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[7]  ; clock_50_3 ; 3.494 ; 3.976 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[8]  ; clock_50_3 ; 2.841 ; 3.034 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[9]  ; clock_50_3 ; 2.619 ; 2.722 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[10] ; clock_50_3 ; 2.886 ; 3.111 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[11] ; clock_50_3 ; 2.729 ; 2.868 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[12] ; clock_50_3 ; 2.447 ; 2.488 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[13] ; clock_50_3 ; 2.887 ; 3.108 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[14] ; clock_50_3 ; 2.352 ; 2.365 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[15] ; clock_50_3 ; 2.420 ; 2.412 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[16] ; clock_50_3 ; 2.466 ; 2.523 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[17] ; clock_50_3 ; 2.748 ; 2.907 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[18] ; clock_50_3 ; 2.581 ; 2.667 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[19] ; clock_50_3 ; 2.740 ; 2.872 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[20] ; clock_50_3 ; 2.741 ; 2.885 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[21] ; clock_50_3 ; 3.022 ; 3.266 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[22] ; clock_50_3 ; 2.933 ; 3.136 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-;  HDMI_TX_D[23] ; clock_50_3 ; 2.905 ; 3.099 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_DE     ; clock_50_3 ; 3.659 ; 4.104 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_HS     ; clock_50_3 ; 3.570 ; 3.299 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
-; HDMI_TX_VS     ; clock_50_3 ; 3.889 ; 3.504 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_D[*]   ; clock_50_3 ; 2.339 ; 2.340 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[0]  ; clock_50_3 ; 3.841 ; 4.452 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[1]  ; clock_50_3 ; 3.589 ; 4.080 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[2]  ; clock_50_3 ; 2.776 ; 2.907 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[3]  ; clock_50_3 ; 3.245 ; 3.541 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[4]  ; clock_50_3 ; 3.258 ; 3.576 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[5]  ; clock_50_3 ; 3.140 ; 3.390 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[6]  ; clock_50_3 ; 3.312 ; 3.673 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[7]  ; clock_50_3 ; 3.658 ; 4.213 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[8]  ; clock_50_3 ; 3.377 ; 3.751 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[9]  ; clock_50_3 ; 3.216 ; 3.511 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[10] ; clock_50_3 ; 3.157 ; 3.435 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[11] ; clock_50_3 ; 3.313 ; 3.715 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[12] ; clock_50_3 ; 2.339 ; 2.340 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[13] ; clock_50_3 ; 3.646 ; 4.185 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[14] ; clock_50_3 ; 3.254 ; 3.609 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[15] ; clock_50_3 ; 3.280 ; 3.640 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[16] ; clock_50_3 ; 2.341 ; 2.349 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[17] ; clock_50_3 ; 2.715 ; 2.859 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[18] ; clock_50_3 ; 2.793 ; 2.895 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[19] ; clock_50_3 ; 3.269 ; 3.586 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[20] ; clock_50_3 ; 3.630 ; 4.131 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[21] ; clock_50_3 ; 3.743 ; 4.281 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[22] ; clock_50_3 ; 3.543 ; 3.919 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+;  HDMI_TX_D[23] ; clock_50_3 ; 3.052 ; 3.244 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_DE     ; clock_50_3 ; 3.332 ; 3.688 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_HS     ; clock_50_3 ; 3.324 ; 3.098 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
+; HDMI_TX_VS     ; clock_50_3 ; 2.999 ; 2.881 ; Rise       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 ; HDMI_TX_CLK    ; clock_50_3 ;       ; 2.143 ; Fall       ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ;
 +----------------+------------+-------+-------+------------+---------------------------------------------------------------------------------+
 
@@ -1664,10 +1665,10 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+----------+----------+----------+
 ; From Clock                                                                      ; To Clock                                                                        ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+----------+----------+----------+
-; clock_50_3                                                                      ; clock_50_3                                                                      ; 1976836      ; 0        ; 0        ; 0        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; clock_50_3                                                                      ; 76           ; 0        ; 0        ; 0        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 159          ; 0        ; 0        ; 0        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 1905         ; 0        ; 0        ; 0        ;
+; clock_50_3                                                                      ; clock_50_3                                                                      ; 1792088      ; 0        ; 0        ; 0        ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; clock_50_3                                                                      ; 72           ; 0        ; 0        ; 0        ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 157          ; 0        ; 0        ; 0        ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 2194         ; 0        ; 0        ; 0        ;
 ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; > 2147483647 ; 0        ; 0        ; 0        ;
 +---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -1678,10 +1679,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+----------+----------+----------+
 ; From Clock                                                                      ; To Clock                                                                        ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+----------+----------+----------+
-; clock_50_3                                                                      ; clock_50_3                                                                      ; 1976836      ; 0        ; 0        ; 0        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; clock_50_3                                                                      ; 76           ; 0        ; 0        ; 0        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 159          ; 0        ; 0        ; 0        ;
-; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 1905         ; 0        ; 0        ; 0        ;
+; clock_50_3                                                                      ; clock_50_3                                                                      ; 1792088      ; 0        ; 0        ; 0        ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; clock_50_3                                                                      ; 72           ; 0        ; 0        ; 0        ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; 157          ; 0        ; 0        ; 0        ;
+; u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk   ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; 2194         ; 0        ; 0        ; 0        ;
 ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk ; > 2147483647 ; 0        ; 0        ; 0        ;
 +---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+--------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -1692,7 +1693,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+------------+----------+----------+----------+----------+
 ; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+------------+----------+----------+----------+----------+
-; clock_50_3 ; clock_50_3 ; 10       ; 0        ; 0        ; 0        ;
+; clock_50_3 ; clock_50_3 ; 9        ; 0        ; 0        ; 0        ;
 +------------+------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1702,7 +1703,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+------------+----------+----------+----------+----------+
 ; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+------------+----------+----------+----------+----------+
-; clock_50_3 ; clock_50_3 ; 10       ; 0        ; 0        ; 0        ;
+; clock_50_3 ; clock_50_3 ; 9        ; 0        ; 0        ; 0        ;
 +------------+------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1739,7 +1740,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Thu Nov 08 15:23:05 2018
+    Info: Processing started: Thu Nov 08 16:03:46 2018
 Info: Command: quartus_sta C5G_HDMI_VPG -c C5G_HDMI_VPG
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1778,26 +1779,26 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -17.010
+Info (332146): Worst-case setup slack is -34.667
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):   -17.010      -267.092 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     1.488         0.000 clock_50_3 
-    Info (332119):   828.889         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -0.910
+    Info (332119):   -34.667      -789.472 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     1.142         0.000 clock_50_3 
+    Info (332119):   825.809         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -0.661
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -0.910        -0.910 clock_50_3 
-    Info (332119):    -0.521        -1.349 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     0.315         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is 17.363
+    Info (332119):    -0.661        -0.846 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     0.295         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.308         0.000 clock_50_3 
+Info (332146): Worst-case recovery slack is 16.601
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    17.363         0.000 clock_50_3 
-Info (332146): Worst-case removal slack is 1.761
+    Info (332119):    16.601         0.000 clock_50_3 
+Info (332146): Worst-case removal slack is 1.489
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     1.761         0.000 clock_50_3 
+    Info (332119):     1.489         0.000 clock_50_3 
 Info (332146): Worst-case minimum pulse width slack is 0.617
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1805,7 +1806,7 @@ Info (332146): Worst-case minimum pulse width slack is 0.617
     Info (332119):     1.666         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     2.382         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
     Info (332119):     9.346         0.000 clock_50_3 
-    Info (332119):   415.988         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   415.989         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 5CGXFC5C6F27C7 are preliminary
@@ -1820,34 +1821,34 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -18.017
+Info (332146): Worst-case setup slack is -36.435
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):   -18.017      -272.043 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     1.603         0.000 clock_50_3 
-    Info (332119):   828.944         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -1.069
+    Info (332119):   -36.435      -808.887 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     1.210         0.000 clock_50_3 
+    Info (332119):   825.983         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -0.654
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.069        -1.069 clock_50_3 
-    Info (332119):    -0.463        -1.226 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     0.288         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is 17.443
+    Info (332119):    -0.654        -0.804 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     0.280         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.281         0.000 clock_50_3 
+Info (332146): Worst-case recovery slack is 16.705
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    17.443         0.000 clock_50_3 
-Info (332146): Worst-case removal slack is 1.676
+    Info (332119):    16.705         0.000 clock_50_3 
+Info (332146): Worst-case removal slack is 1.407
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     1.676         0.000 clock_50_3 
+    Info (332119):     1.407         0.000 clock_50_3 
 Info (332146): Worst-case minimum pulse width slack is 0.617
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):     0.617         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0] 
     Info (332119):     1.666         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     2.278         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     2.276         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
     Info (332119):     9.200         0.000 clock_50_3 
-    Info (332119):   415.885         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   415.890         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 5CGXFC5C6F27C7 are preliminary
@@ -1862,33 +1863,33 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.540
+Info (332146): Worst-case setup slack is -14.663
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -5.540       -49.399 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     3.510         0.000 clock_50_3 
-    Info (332119):   830.530         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -0.636
+    Info (332119):   -14.663      -250.623 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     3.385         0.000 clock_50_3 
+    Info (332119):   828.596         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -0.304
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -0.636        -0.636 clock_50_3 
-    Info (332119):    -0.245        -0.559 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     0.174         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is 18.516
+    Info (332119):    -0.304        -0.399 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     0.050         0.000 clock_50_3 
+    Info (332119):     0.164         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case recovery slack is 18.003
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    18.516         0.000 clock_50_3 
-Info (332146): Worst-case removal slack is 0.920
+    Info (332119):    18.003         0.000 clock_50_3 
+Info (332146): Worst-case removal slack is 0.745
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.920         0.000 clock_50_3 
+    Info (332119):     0.745         0.000 clock_50_3 
 Info (332146): Worst-case minimum pulse width slack is 0.617
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):     0.617         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0] 
     Info (332119):     1.666         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     2.634         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     9.409         0.000 clock_50_3 
+    Info (332119):     2.636         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     9.407         0.000 clock_50_3 
     Info (332119):   416.234         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
@@ -1901,40 +1902,40 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.969
+Info (332146): Worst-case setup slack is -13.609
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -4.969       -33.112 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     4.077         0.000 clock_50_3 
-    Info (332119):   830.816         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -0.839
+    Info (332119):   -13.609      -215.094 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     3.952         0.000 clock_50_3 
+    Info (332119):   829.135         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -0.318
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -0.839        -2.232 clock_50_3 
-    Info (332119):    -0.247        -0.659 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     0.161         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case recovery slack is 18.671
+    Info (332119):    -0.318        -0.508 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):    -0.189        -0.838 clock_50_3 
+    Info (332119):     0.151         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case recovery slack is 18.217
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    18.671         0.000 clock_50_3 
-Info (332146): Worst-case removal slack is 0.836
+    Info (332119):    18.217         0.000 clock_50_3 
+Info (332146): Worst-case removal slack is 0.678
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.836         0.000 clock_50_3 
+    Info (332119):     0.678         0.000 clock_50_3 
 Info (332146): Worst-case minimum pulse width slack is 0.617
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
     Info (332119):     0.617         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0] 
     Info (332119):     1.666         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     2.632         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
-    Info (332119):     9.409         0.000 clock_50_3 
-    Info (332119):   416.230         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     2.631         0.000 u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk 
+    Info (332119):     9.407         0.000 clock_50_3 
+    Info (332119):   416.231         0.000 u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1162 megabytes
-    Info: Processing ended: Thu Nov 08 15:23:22 2018
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 1191 megabytes
+    Info: Processing ended: Thu Nov 08 16:04:04 2018
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:25
 
 

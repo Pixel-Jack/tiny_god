@@ -3,35 +3,35 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : -17.010
-TNS   : -267.092
+Slack : -34.667
+TNS   : -789.472
 
 Type  : Slow 1100mV 85C Model Setup 'clock_50_3'
-Slack : 1.488
+Slack : 1.142
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Setup 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 828.889
+Slack : 825.809
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
+Slack : -0.661
+TNS   : -0.846
+
+Type  : Slow 1100mV 85C Model Hold 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.295
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'clock_50_3'
-Slack : -0.910
-TNS   : -0.910
-
-Type  : Slow 1100mV 85C Model Hold 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : -0.521
-TNS   : -1.349
-
-Type  : Slow 1100mV 85C Model Hold 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.315
+Slack : 0.308
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'clock_50_3'
-Slack : 17.363
+Slack : 16.601
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'clock_50_3'
-Slack : 1.761
+Slack : 1.489
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0]'
@@ -51,39 +51,39 @@ Slack : 9.346
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 415.988
+Slack : 415.989
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : -18.017
-TNS   : -272.043
+Slack : -36.435
+TNS   : -808.887
 
 Type  : Slow 1100mV 0C Model Setup 'clock_50_3'
-Slack : 1.603
+Slack : 1.210
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 828.944
+Slack : 825.983
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
+Slack : -0.654
+TNS   : -0.804
+
+Type  : Slow 1100mV 0C Model Hold 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.280
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'clock_50_3'
-Slack : -1.069
-TNS   : -1.069
-
-Type  : Slow 1100mV 0C Model Hold 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : -0.463
-TNS   : -1.226
-
-Type  : Slow 1100mV 0C Model Hold 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.288
+Slack : 0.281
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'clock_50_3'
-Slack : 17.443
+Slack : 16.705
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'clock_50_3'
-Slack : 1.676
+Slack : 1.407
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0]'
@@ -95,7 +95,7 @@ Slack : 1.666
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : 2.278
+Slack : 2.276
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_50_3'
@@ -103,39 +103,39 @@ Slack : 9.200
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 415.885
+Slack : 415.890
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : -5.540
-TNS   : -49.399
+Slack : -14.663
+TNS   : -250.623
 
 Type  : Fast 1100mV 85C Model Setup 'clock_50_3'
-Slack : 3.510
+Slack : 3.385
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 830.530
+Slack : 828.596
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'clock_50_3'
-Slack : -0.636
-TNS   : -0.636
-
 Type  : Fast 1100mV 85C Model Hold 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : -0.245
-TNS   : -0.559
+Slack : -0.304
+TNS   : -0.399
+
+Type  : Fast 1100mV 85C Model Hold 'clock_50_3'
+Slack : 0.050
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.174
+Slack : 0.164
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'clock_50_3'
-Slack : 18.516
+Slack : 18.003
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'clock_50_3'
-Slack : 0.920
+Slack : 0.745
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0]'
@@ -147,11 +147,11 @@ Slack : 1.666
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : 2.634
+Slack : 2.636
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_50_3'
-Slack : 9.409
+Slack : 9.407
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
@@ -159,35 +159,35 @@ Slack : 416.234
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : -4.969
-TNS   : -33.112
+Slack : -13.609
+TNS   : -215.094
 
 Type  : Fast 1100mV 0C Model Setup 'clock_50_3'
-Slack : 4.077
+Slack : 3.952
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 830.816
+Slack : 829.135
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'clock_50_3'
-Slack : -0.839
-TNS   : -2.232
-
 Type  : Fast 1100mV 0C Model Hold 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : -0.247
-TNS   : -0.659
+Slack : -0.318
+TNS   : -0.508
+
+Type  : Fast 1100mV 0C Model Hold 'clock_50_3'
+Slack : -0.189
+TNS   : -0.838
 
 Type  : Fast 1100mV 0C Model Hold 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.161
+Slack : 0.151
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'clock_50_3'
-Slack : 18.671
+Slack : 18.217
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'clock_50_3'
-Slack : 0.836
+Slack : 0.678
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0]'
@@ -199,15 +199,15 @@ Slack : 1.666
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|counter[0].output_counter|divclk'
-Slack : 2.632
+Slack : 2.631
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_50_3'
-Slack : 9.409
+Slack : 9.407
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 416.230
+Slack : 416.231
 TNS   : 0.000
 
 ------------------------------------------------------------
