@@ -12,20 +12,11 @@ module C5G_HDMI_VPG(
 	CLOCK_50_B7A,
 	CLOCK_50_B8A,
 
-	//////////// LED //////////
-	LEDG,
-	LEDR,
-
 	//////////// KEY //////////
 	CPU_RESET_n,
-	KEY,
 
 	//////////// SW //////////
 	SW,
-
-	//////////// SEG7 //////////
-	HEX0,
-	HEX1,
 
 	//////////// HDMI-TX //////////
 	HDMI_TX_CLK,
@@ -33,55 +24,7 @@ module C5G_HDMI_VPG(
 	HDMI_TX_DE,
 	HDMI_TX_HS,
 	HDMI_TX_INT,
-	HDMI_TX_VS,
-
-	//////////// ADC SPI //////////
-	ADC_CONVST,
-	ADC_SCK,
-	ADC_SDI,
-	ADC_SDO,
-
-	//////////// Audio //////////
-	AUD_ADCDAT,
-	AUD_ADCLRCK,
-	AUD_BCLK,
-	AUD_DACDAT,
-	AUD_DACLRCK,
-	AUD_XCK,
-
-	//////////// I2C for Audio/HDMI-TX/Si5338/HSMC //////////
-	I2C_SCL,
-	I2C_SDA,
-
-	//////////// SDCARD //////////
-	SD_CLK,
-	SD_CMD,
-	SD_DAT,
-
-	//////////// Uart to USB //////////
-	UART_RX,
-	UART_TX,
-
-	//////////// SRAM //////////
-	SRAM_A,
-	SRAM_CE_n,
-	SRAM_D,
-	SRAM_LB_n,
-	SRAM_OE_n,
-	SRAM_UB_n,
-	SRAM_WE_n,
-
-//	//////////// LPDDR2 //////////
-//	DDR2LP_CA,
-//	DDR2LP_CK_n,
-//	DDR2LP_CK_p,
-//	DDR2LP_CKE,
-//	DDR2LP_CS_n,
-//	DDR2LP_DM,
-//	DDR2LP_DQ,
-//	DDR2LP_DQS_n,
-//	DDR2LP_DQS_p,
-//	DDR2LP_OCT_RZQ 
+	HDMI_TX_VS
 );
 
 //=======================================================
@@ -100,20 +43,13 @@ input 		          		CLOCK_50_B6A;
 input 		          		CLOCK_50_B7A;
 input 		          		CLOCK_50_B8A;
 
-//////////// LED //////////
-output		     [7:0]		LEDG;
-output		     [9:0]		LEDR;
 
 //////////// KEY //////////
 input 		          		CPU_RESET_n;
-input 		     [3:0]		KEY;
 
 //////////// SW //////////
 input 		     [9:0]		SW;
 
-//////////// SEG7 //////////
-output		     [6:0]		HEX0;
-output		     [6:0]		HEX1;
 
 //////////// HDMI-TX //////////
 output		          		HDMI_TX_CLK;
@@ -123,53 +59,7 @@ output		          		HDMI_TX_HS;
 input 		          		HDMI_TX_INT;
 output		          		HDMI_TX_VS;
 
-//////////// ADC SPI //////////
-output		          		ADC_CONVST;
-output		          		ADC_SCK;
-output		          		ADC_SDI;
-input 		          		ADC_SDO;
 
-//////////// Audio //////////
-input 		          		AUD_ADCDAT;
-inout 		          		AUD_ADCLRCK;
-inout 		          		AUD_BCLK;
-output		          		AUD_DACDAT;
-inout 		          		AUD_DACLRCK;
-output		          		AUD_XCK;
-
-//////////// I2C for Audio/HDMI-TX/Si5338/HSMC //////////
-output		          		I2C_SCL;
-inout 		          		I2C_SDA;
-
-//////////// SDCARD //////////
-output		          		SD_CLK;
-inout 		          		SD_CMD;
-inout 		     [3:0]		SD_DAT;
-
-//////////// Uart to USB //////////
-input 		          		UART_RX;
-output		          		UART_TX;
-
-//////////// SRAM //////////
-output		    [17:0]		SRAM_A;
-output		          		SRAM_CE_n;
-inout 		    [15:0]		SRAM_D;
-output		          		SRAM_LB_n;
-output		          		SRAM_OE_n;
-output		          		SRAM_UB_n;
-output		          		SRAM_WE_n;
-
-//////////// LPDDR2 //////////
-//output		     [9:0]		DDR2LP_CA;
-//output		          		DDR2LP_CK_n;
-//output		          		DDR2LP_CK_p;
-//output		     [1:0]		DDR2LP_CKE;
-//output		     [1:0]		DDR2LP_CS_n;
-//output		     [3:0]		DDR2LP_DM;
-//inout 		    [31:0]		DDR2LP_DQ;
-//inout 		     [3:0]		DDR2LP_DQS_n;
-//inout 		     [3:0]		DDR2LP_DQS_p;
-//input 		          		DDR2LP_OCT_RZQ;
 
 
 //=======================================================
@@ -194,15 +84,12 @@ wire [23:0]	vpg_data;
 //system clock
 sys_pll u_sys_pll (
   .refclk(CLOCK_50_B7A),
-	.rst(!KEY[2]),
+	.rst(!CPU_RESET_n),
 	.outclk_0(pll_1200k), // 1200K
 	.locked(reset_n) );
 
 
 //video pattern resolution select
-//`include "vpg_source/vpg.h"
-//parameter vpg_mode_change = 1'b0;
-//parameter vpg_mode = 0;
 wire        vpg_mode_change;
 wire [3:0]	vpg_mode;
 //
@@ -210,7 +97,7 @@ vpg_mode u_vpg_mode (
 	.reset_n(reset_n),
 	.clk(pll_1200k),
 	.clk_en(en_150),
-	.mode_button(KEY[1]),
+	.mode_button(SW[1]),
 	.vpg_mode_change(vpg_mode_change),
 	.vpg_mode(vpg_mode) );
 
@@ -244,10 +131,6 @@ assign HDMI_TX_VS  = vpg_vs;
 //=======================================================
 //  Structural coding
 //=======================================================
-
-////LED indication
-assign LEDR = ~vpg_mode; // leds are turn on for loopback mode		
-
 
 
 always@(posedge pll_1200k or negedge reset_n)

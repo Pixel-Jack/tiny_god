@@ -1,5 +1,5 @@
 Analysis & Synthesis report for C5G_HDMI_VPG
-Thu Nov 08 16:02:15 2018
+Thu Nov 08 17:56:12 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -23,37 +23,41 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
  15. State Machine - |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_cur_state
  16. State Machine - |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|dps_current_state
  17. Registers Protected by Synthesis
- 18. Registers Removed During Synthesis
- 19. Removed Registers Triggering Further Register Optimizations
- 20. General Register Statistics
- 21. Inverted Register Statistics
- 22. Multiplexer Restructuring Statistics (Restructuring Performed)
- 23. Source assignments for vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0
- 24. Source assignments for vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst
- 25. Source assignments for vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|fpll_dprio_init:fpll_dprio_init_inst
- 26. Parameter Settings for User Entity Instance: sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i
- 27. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst
- 28. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0
- 29. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst
- 30. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_0
- 31. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_1
- 32. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_2
- 33. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_3
- 34. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_4
- 35. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_fpll_0_1
- 36. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_dprio_read
- 37. Parameter Settings for User Entity Instance: vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i
- 38. Parameter Settings for User Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator
- 39. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0
- 40. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1
- 41. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1
- 42. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0
- 43. Port Connectivity Checks: "vpg:u_vpg|vga_generator:u_vga_generator"
- 44. Port Connectivity Checks: "vpg:u_vpg|pll_reconfig:u_pll_reconfig"
- 45. Port Connectivity Checks: "vpg:u_vpg"
- 46. Elapsed Time Per Partition
- 47. Analysis & Synthesis Messages
- 48. Analysis & Synthesis Suppressed Messages
+ 18. User-Specified and Inferred Latches
+ 19. Registers Removed During Synthesis
+ 20. Removed Registers Triggering Further Register Optimizations
+ 21. General Register Statistics
+ 22. Inverted Register Statistics
+ 23. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 24. Source assignments for vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0
+ 25. Source assignments for vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst
+ 26. Source assignments for vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|fpll_dprio_init:fpll_dprio_init_inst
+ 27. Parameter Settings for User Entity Instance: sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i
+ 28. Parameter Settings for User Entity Instance: vpg:u_vpg
+ 29. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst
+ 30. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0
+ 31. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst
+ 32. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_0
+ 33. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_1
+ 34. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_2
+ 35. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_3
+ 36. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_4
+ 37. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_fpll_0_1
+ 38. Parameter Settings for User Entity Instance: vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_dprio_read
+ 39. Parameter Settings for User Entity Instance: vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i
+ 40. Parameter Settings for User Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator
+ 41. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1
+ 42. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div3
+ 43. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1
+ 44. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0
+ 45. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0
+ 46. Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div2
+ 47. Port Connectivity Checks: "vpg:u_vpg|vga_generator:u_vga_generator"
+ 48. Port Connectivity Checks: "vpg:u_vpg|pll_reconfig:u_pll_reconfig"
+ 49. Port Connectivity Checks: "vpg:u_vpg"
+ 50. Elapsed Time Per Partition
+ 51. Analysis & Synthesis Messages
+ 52. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -79,17 +83,17 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +-------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status         ; Successful - Thu Nov 08 16:02:15 2018       ;
+; Analysis & Synthesis Status         ; Successful - Thu Nov 08 17:56:11 2018       ;
 ; Quartus II 64-Bit Version           ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                       ; C5G_HDMI_VPG                                ;
 ; Top-level Entity Name               ; C5G_HDMI_VPG                                ;
 ; Family                              ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)         ; N/A                                         ;
-; Total registers                     ; 590                                         ;
-; Total pins                          ; 140                                         ;
+; Total registers                     ; 625                                         ;
+; Total pins                          ; 45                                          ;
 ; Total virtual pins                  ; 0                                           ;
 ; Total block memory bits             ; 0                                           ;
-; Total DSP Blocks                    ; 2                                           ;
+; Total DSP Blocks                    ; 3                                           ;
 ; Total HSSI RX PCSs                  ; 0                                           ;
 ; Total HSSI PMA RX Deserializers     ; 0                                           ;
 ; Total HSSI PMA RX ATT Deserializers ; 0                                           ;
@@ -233,36 +237,39 @@ applicable agreement for further details.
 ; db/sign_div_unsign_9nh.tdf                         ; yes             ; Auto-Generated Megafunction  ; D:/tiny_god/affichage_jdv/db/sign_div_unsign_9nh.tdf                         ;              ;
 ; db/alt_u_div_o2f.tdf                               ; yes             ; Auto-Generated Megafunction  ; D:/tiny_god/affichage_jdv/db/alt_u_div_o2f.tdf                               ;              ;
 ; db/lpm_divide_65m.tdf                              ; yes             ; Auto-Generated Megafunction  ; D:/tiny_god/affichage_jdv/db/lpm_divide_65m.tdf                              ;              ;
+; db/lpm_divide_ibm.tdf                              ; yes             ; Auto-Generated Megafunction  ; D:/tiny_god/affichage_jdv/db/lpm_divide_ibm.tdf                              ;              ;
+; db/sign_div_unsign_olh.tdf                         ; yes             ; Auto-Generated Megafunction  ; D:/tiny_god/affichage_jdv/db/sign_div_unsign_olh.tdf                         ;              ;
+; db/alt_u_div_mve.tdf                               ; yes             ; Auto-Generated Megafunction  ; D:/tiny_god/affichage_jdv/db/alt_u_div_mve.tdf                               ;              ;
 +----------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+--------------+
 
 
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Estimate of Logic utilization (ALMs needed) ; 2151               ;
-;                                             ;                    ;
-; Combinational ALUT usage for logic          ; 3852               ;
-;     -- 7 input functions                    ; 51                 ;
-;     -- 6 input functions                    ; 364                ;
-;     -- 5 input functions                    ; 381                ;
-;     -- 4 input functions                    ; 992                ;
-;     -- <=3 input functions                  ; 2064               ;
-;                                             ;                    ;
-; Dedicated logic registers                   ; 590                ;
-;                                             ;                    ;
-; I/O pins                                    ; 140                ;
-; Total DSP Blocks                            ; 2                  ;
-; Total PLLs                                  ; 2                  ;
-;     -- PLLs                                 ; 1                  ;
-;     -- Fractional PLLs                      ; 1                  ;
-;                                             ;                    ;
-; Maximum fan-out node                        ; CLOCK_50_B7A~input ;
-; Maximum fan-out                             ; 473                ;
-; Total fan-out                               ; 16327              ;
-; Average fan-out                             ; 3.43               ;
-+---------------------------------------------+--------------------+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                            ;
++---------------------------------------------+----------------------------------------------------------+
+; Resource                                    ; Usage                                                    ;
++---------------------------------------------+----------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 3540                                                     ;
+;                                             ;                                                          ;
+; Combinational ALUT usage for logic          ; 6581                                                     ;
+;     -- 7 input functions                    ; 72                                                       ;
+;     -- 6 input functions                    ; 391                                                      ;
+;     -- 5 input functions                    ; 1573                                                     ;
+;     -- 4 input functions                    ; 2715                                                     ;
+;     -- <=3 input functions                  ; 1830                                                     ;
+;                                             ;                                                          ;
+; Dedicated logic registers                   ; 625                                                      ;
+;                                             ;                                                          ;
+; I/O pins                                    ; 45                                                       ;
+; Total DSP Blocks                            ; 3                                                        ;
+; Total PLLs                                  ; 2                                                        ;
+;     -- PLLs                                 ; 1                                                        ;
+;     -- Fractional PLLs                      ; 1                                                        ;
+;                                             ;                                                          ;
+; Maximum fan-out node                        ; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12] ;
+; Maximum fan-out                             ; 1490                                                     ;
+; Total fan-out                               ; 29890                                                    ;
+; Average fan-out                             ; 4.09                                                     ;
++---------------------------------------------+----------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -270,23 +277,23 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                          ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                         ; Library Name ;
 +-------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |C5G_HDMI_VPG                                                                       ; 3852 (16)         ; 590 (14)     ; 0                 ; 2          ; 140  ; 0            ; |C5G_HDMI_VPG                                                                                                                                                                                                                               ;              ;
+; |C5G_HDMI_VPG                                                                       ; 6581 (16)         ; 625 (14)     ; 0                 ; 3          ; 45   ; 0            ; |C5G_HDMI_VPG                                                                                                                                                                                                                               ;              ;
 ;    |sys_pll:u_sys_pll|                                                              ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|sys_pll:u_sys_pll                                                                                                                                                                                                             ;              ;
 ;       |sys_pll_0002:sys_pll_inst|                                                   ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst                                                                                                                                                                                   ;              ;
 ;          |altera_pll:altera_pll_i|                                                  ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i                                                                                                                                                           ;              ;
-;    |vpg:u_vpg|                                                                      ; 3829 (17)         ; 560 (0)      ; 0                 ; 2          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg                                                                                                                                                                                                                     ;              ;
+;    |vpg:u_vpg|                                                                      ; 6558 (23)         ; 595 (0)      ; 0                 ; 3          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg                                                                                                                                                                                                                     ;              ;
 ;       |pll:u_pll|                                                                   ; 7 (0)             ; 6 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll                                                                                                                                                                                                           ;              ;
 ;          |pll_0002:pll_inst|                                                        ; 7 (0)             ; 6 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst                                                                                                                                                                                         ;              ;
 ;             |altera_pll:altera_pll_i|                                               ; 7 (0)             ; 6 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i                                                                                                                                                                 ;              ;
 ;                |altera_cyclonev_pll:cyclonev_pll|                                   ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll                                                                                                                                ;              ;
 ;                   |altera_cyclonev_pll_base:fpll_0|                                 ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0                                                                                                ;              ;
 ;                |dps_extra_kick:dps_extra_inst|                                      ; 7 (7)             ; 6 (6)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst                                                                                                                                   ;              ;
-;       |pll_controller:u_pll_controller|                                             ; 49 (49)           ; 30 (30)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller                                                                                                                                                                                     ;              ;
-;       |pll_reconfig:u_pll_reconfig|                                                 ; 1149 (0)          ; 434 (0)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig                                                                                                                                                                                         ;              ;
-;          |altera_pll_reconfig_top:pll_reconfig_inst|                                ; 1149 (0)          ; 434 (0)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst                                                                                                                                               ;              ;
-;             |altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0| ; 1149 (980)        ; 434 (370)    ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0                                                                         ;              ;
-;                |dprio_mux:dprio_mux_inst|                                           ; 71 (71)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_mux:dprio_mux_inst                                                ;              ;
-;                |dyn_phase_shift:dyn_phase_shift_inst|                               ; 64 (59)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst                                    ;              ;
+;       |pll_controller:u_pll_controller|                                             ; 53 (53)           ; 30 (30)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller                                                                                                                                                                                     ;              ;
+;       |pll_reconfig:u_pll_reconfig|                                                 ; 1162 (0)          ; 434 (0)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig                                                                                                                                                                                         ;              ;
+;          |altera_pll_reconfig_top:pll_reconfig_inst|                                ; 1162 (0)          ; 434 (0)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst                                                                                                                                               ;              ;
+;             |altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0| ; 1162 (984)        ; 434 (370)    ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0                                                                         ;              ;
+;                |dprio_mux:dprio_mux_inst|                                           ; 79 (79)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_mux:dprio_mux_inst                                                ;              ;
+;                |dyn_phase_shift:dyn_phase_shift_inst|                               ; 65 (60)           ; 39 (39)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst                                    ;              ;
 ;                   |generic_lcell_comb:lcell_cnt_sel_0|                              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_0 ;              ;
 ;                   |generic_lcell_comb:lcell_cnt_sel_1|                              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_1 ;              ;
 ;                   |generic_lcell_comb:lcell_cnt_sel_2|                              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_2 ;              ;
@@ -296,23 +303,31 @@ applicable agreement for further details.
 ;                |generic_lcell_comb:lcell_dprio_read|                                ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_dprio_read                                     ;              ;
 ;                |generic_lcell_comb:lcell_fpll_0_1|                                  ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_fpll_0_1                                       ;              ;
 ;                |self_reset:self_reset_inst|                                         ; 19 (19)           ; 12 (12)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|self_reset:self_reset_inst                                              ;              ;
-;       |vga_generator:u_vga_generator|                                               ; 2607 (229)        ; 90 (90)      ; 0                 ; 2          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator                                                                                                                                                                                       ;              ;
-;          |lpm_divide:Div0|                                                          ; 611 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0                                                                                                                                                                       ;              ;
-;             |lpm_divide_3dm:auto_generated|                                         ; 611 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0|lpm_divide_3dm:auto_generated                                                                                                                                         ;              ;
-;                |sign_div_unsign_9nh:divider|                                        ; 611 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider                                                                                                             ;              ;
-;                   |alt_u_div_o2f:divider|                                           ; 611 (611)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider                                                                                       ;              ;
-;          |lpm_divide:Div1|                                                          ; 570 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1                                                                                                                                                                       ;              ;
-;             |lpm_divide_3dm:auto_generated|                                         ; 570 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1|lpm_divide_3dm:auto_generated                                                                                                                                         ;              ;
-;                |sign_div_unsign_9nh:divider|                                        ; 570 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider                                                                                                             ;              ;
-;                   |alt_u_div_o2f:divider|                                           ; 570 (570)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider                                                                                       ;              ;
-;          |lpm_divide:Mod0|                                                          ; 621 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0                                                                                                                                                                       ;              ;
-;             |lpm_divide_65m:auto_generated|                                         ; 621 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0|lpm_divide_65m:auto_generated                                                                                                                                         ;              ;
-;                |sign_div_unsign_9nh:divider|                                        ; 621 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider                                                                                                             ;              ;
-;                   |alt_u_div_o2f:divider|                                           ; 621 (621)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider                                                                                       ;              ;
-;          |lpm_divide:Mod1|                                                          ; 576 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1                                                                                                                                                                       ;              ;
-;             |lpm_divide_65m:auto_generated|                                         ; 576 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1|lpm_divide_65m:auto_generated                                                                                                                                         ;              ;
-;                |sign_div_unsign_9nh:divider|                                        ; 576 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider                                                                                                             ;              ;
-;                   |alt_u_div_o2f:divider|                                           ; 576 (576)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider                                                                                       ;              ;
+;       |vga_generator:u_vga_generator|                                               ; 5313 (435)        ; 125 (125)    ; 0                 ; 3          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator                                                                                                                                                                                       ;              ;
+;          |lpm_divide:Div0|                                                          ; 122 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0                                                                                                                                                                       ;              ;
+;             |lpm_divide_ibm:auto_generated|                                         ; 122 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0|lpm_divide_ibm:auto_generated                                                                                                                                         ;              ;
+;                |sign_div_unsign_olh:divider|                                        ; 122 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider                                                                                                             ;              ;
+;                   |alt_u_div_mve:divider|                                           ; 122 (122)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_mve:divider                                                                                       ;              ;
+;          |lpm_divide:Div1|                                                          ; 1148 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1                                                                                                                                                                       ;              ;
+;             |lpm_divide_3dm:auto_generated|                                         ; 1148 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1|lpm_divide_3dm:auto_generated                                                                                                                                         ;              ;
+;                |sign_div_unsign_9nh:divider|                                        ; 1148 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider                                                                                                             ;              ;
+;                   |alt_u_div_o2f:divider|                                           ; 1148 (1148)       ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider                                                                                       ;              ;
+;          |lpm_divide:Div2|                                                          ; 122 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div2                                                                                                                                                                       ;              ;
+;             |lpm_divide_ibm:auto_generated|                                         ; 122 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div2|lpm_divide_ibm:auto_generated                                                                                                                                         ;              ;
+;                |sign_div_unsign_olh:divider|                                        ; 122 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div2|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider                                                                                                             ;              ;
+;                   |alt_u_div_mve:divider|                                           ; 122 (122)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div2|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_mve:divider                                                                                       ;              ;
+;          |lpm_divide:Div3|                                                          ; 1148 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div3                                                                                                                                                                       ;              ;
+;             |lpm_divide_3dm:auto_generated|                                         ; 1148 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div3|lpm_divide_3dm:auto_generated                                                                                                                                         ;              ;
+;                |sign_div_unsign_9nh:divider|                                        ; 1148 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div3|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider                                                                                                             ;              ;
+;                   |alt_u_div_o2f:divider|                                           ; 1148 (1148)       ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div3|lpm_divide_3dm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider                                                                                       ;              ;
+;          |lpm_divide:Mod0|                                                          ; 1169 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0                                                                                                                                                                       ;              ;
+;             |lpm_divide_65m:auto_generated|                                         ; 1169 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0|lpm_divide_65m:auto_generated                                                                                                                                         ;              ;
+;                |sign_div_unsign_9nh:divider|                                        ; 1169 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider                                                                                                             ;              ;
+;                   |alt_u_div_o2f:divider|                                           ; 1169 (1169)       ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider                                                                                       ;              ;
+;          |lpm_divide:Mod1|                                                          ; 1169 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1                                                                                                                                                                       ;              ;
+;             |lpm_divide_65m:auto_generated|                                         ; 1169 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1|lpm_divide_65m:auto_generated                                                                                                                                         ;              ;
+;                |sign_div_unsign_9nh:divider|                                        ; 1169 (0)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider                                                                                                             ;              ;
+;                   |alt_u_div_o2f:divider|                                           ; 1169 (1169)       ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1|lpm_divide_65m:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_o2f:divider                                                                                       ;              ;
 ;    |vpg_mode:u_vpg_mode|                                                            ; 7 (7)             ; 16 (16)      ; 0                 ; 0          ; 0    ; 0            ; |C5G_HDMI_VPG|vpg_mode:u_vpg_mode                                                                                                                                                                                                           ;              ;
 +-------------------------------------------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -323,11 +338,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------+---------------------+-------------------+
 ; Statistic           ; Number Used ; Available per Block ; Maximum Available ;
 +---------------------+-------------+---------------------+-------------------+
-; Independent 18x18   ; 1           ; 2.00                ; --                ;
+; Independent 18x18   ; 2           ; 2.00                ; --                ;
 ; Sum of two 18x18    ; 1           ; 1.00                ; --                ;
-; DSP Block           ; 2           ; --                  ; --                ;
-; DSP 18-bit Element  ; 3           ; 2.00                ; --                ;
-; Unsigned Multiplier ; 3           ; --                  ; --                ;
+; DSP Block           ; 3           ; --                  ; --                ;
+; DSP 18-bit Element  ; 4           ; 2.00                ; --                ;
+; Unsigned Multiplier ; 4           ; --                  ; --                ;
 +---------------------+-------------+---------------------+-------------------+
 
 
@@ -469,6 +484,58 @@ Encoding Type:  One-Hot
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_cnt_sel[3] ; yes                                                              ; yes                                        ;
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_cnt_sel[4] ; yes                                                              ; yes                                        ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                                                                                     ;
++----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+; Latch Name                                               ; Latch Enable Signal                                                                                                                 ; Free of Timing Hazards ;
++----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[1]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[2]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[3]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[4]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[5]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[6]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[7]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[8]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[9]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[10] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[11] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[12] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[15] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[16] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[19] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[20] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[23] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[24] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[27] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[28] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[1]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[2]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[3]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[4]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[5]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[6]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[7]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[8]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[9]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[10] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[11] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[15] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[16] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[19] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[20] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[23] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[24] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[28] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[27] ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[0]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[0]  ; vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|lock ; yes                    ;
+; Number of user-specified and inferred latches = 42       ;                                                                                                                                     ;                        ;
++----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -665,9 +732,6 @@ Encoding Type:  One-Hot
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|operation_address.BWCTRL_REG                             ; Lost fanout                                                                                                                                                                                ;
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|operation_address.CP_CURRENT_REG                         ; Lost fanout                                                                                                                                                                                ;
 ; vpg:u_vpg|pll_controller:u_pll_controller|write_count[0]                                                                                                                                                       ; Merged with vpg:u_vpg|pll_controller:u_pll_controller|mgmt_write                                                                                                                           ;
-; vpg:u_vpg|vga_generator:u_vga_generator|x_map[26..31]                                                                                                                                                          ; Stuck at GND due to stuck port data_in                                                                                                                                                     ;
-; vpg:u_vpg|vga_generator:u_vga_generator|y_map[11,13,15,17,19,21,23,25,27..31]                                                                                                                                  ; Stuck at GND due to stuck port data_in                                                                                                                                                     ;
-; vpg:u_vpg|vga_generator:u_vga_generator|x_map[12..24]                                                                                                                                                          ; Merged with vpg:u_vpg|vga_generator:u_vga_generator|x_map[25]                                                                                                                              ;
 ; vpg:u_vpg|pll_controller:u_pll_controller|mgmt_address[4]                                                                                                                                                      ; Stuck at GND due to stuck port data_in                                                                                                                                                     ;
 ; vpg:u_vpg|pll_controller:u_pll_controller|mgmt_writedata[14]                                                                                                                                                   ; Stuck at GND due to stuck port data_in                                                                                                                                                     ;
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_c_cnt_hi[6]                                          ; Stuck at GND due to stuck port data_in                                                                                                                                                     ;
@@ -694,7 +758,7 @@ Encoding Type:  One-Hot
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[0][6]                                      ; Stuck at GND due to stuck port data_in                                                                                                                                                     ;
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_n_cnt_hi[6]                                          ; Stuck at GND due to stuck port data_in                                                                                                                                                     ;
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|slave_address_int_q[4]                                   ; Stuck at GND due to stuck port data_in                                                                                                                                                     ;
-; Total Number of Removed Registers = 355                                                                                                                                                                        ;                                                                                                                                                                                            ;
+; Total Number of Removed Registers = 323                                                                                                                                                                        ;                                                                                                                                                                                            ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -744,12 +808,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 590   ;
+; Total registers                              ; 625   ;
 ; Number of registers using Synchronous Clear  ; 405   ;
 ; Number of registers using Synchronous Load   ; 2     ;
-; Number of registers using Asynchronous Clear ; 88    ;
+; Number of registers using Asynchronous Clear ; 91    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 451   ;
+; Number of registers using Clock Enable       ; 484   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -759,12 +823,12 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                                                                         ; Fan out ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; vpg_mode:u_vpg_mode|vpg_mode[0]                                                                                                                                                                           ; 34      ;
-; vpg_mode:u_vpg_mode|vpg_mode[2]                                                                                                                                                                           ; 38      ;
 ; vpg:u_vpg|vga_generator:u_vga_generator|vga_hs                                                                                                                                                            ; 1       ;
 ; vpg:u_vpg|vga_generator:u_vga_generator|vga_vs                                                                                                                                                            ; 1       ;
-; vpg_mode:u_vpg_mode|pre_mode_button                                                                                                                                                                       ; 2       ;
+; vpg_mode:u_vpg_mode|vpg_mode[0]                                                                                                                                                                           ; 49      ;
+; vpg_mode:u_vpg_mode|vpg_mode[2]                                                                                                                                                                           ; 55      ;
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|self_reset:self_reset_inst|local_reset              ; 5       ;
+; vpg_mode:u_vpg_mode|pre_mode_button                                                                                                                                                                       ; 2       ;
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|fpll_dprio_init:fpll_dprio_init_inst|mdio_dis       ; 1       ;
 ; vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|fpll_dprio_init:fpll_dprio_init_inst|ser_shift_load ; 1       ;
 ; Total number of inverted registers = 8                                                                                                                                                                    ;         ;
@@ -777,54 +841,54 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller|write_count[0]                                                                                                                                                          ;
-; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|c_cnt_done_q[2]                                             ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|phase_en_counter[0]    ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|c_cnt_done_q[16]                                            ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|phase_en_counter[9]    ;
 ; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_n_cnt_hi[2]                                             ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_m_cnt_hi[6]                                             ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_c_cnt_hi[3]                                             ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_num_shifts[11]                                          ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_k_value[2]                                              ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_m_cnt_hi[4]                                             ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_c_cnt_hi[6]                                             ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_num_shifts[12]                                          ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_k_value[10]                                             ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_bwctrl_value[2]                                         ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_cp_current_value[2]                                     ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[9][0]                                         ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_odd_duty_div_en[10]                              ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_lo[11][0]                                        ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_cp_current_value[0]                                     ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[9][1]                                         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_lo[10][1]                                        ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[11][0]                                        ;
 ; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[12][5]                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[13][1]                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_bypass_en[14]                                    ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[15][4]                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[16][4]                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[17][1]                                        ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_bypass_en[0]                                     ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[1][3]                                         ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_bypass_en[2]                                     ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[3][3]                                         ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[4][3]                                         ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[5][2]                                         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[13][0]                                        ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_lo[14][0]                                        ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[15][6]                                        ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[16][3]                                        ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_odd_duty_div_en[17]                              ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[0][4]                                         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[1][0]                                         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[2][4]                                         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[3][0]                                         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[4][5]                                         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_lo[5][1]                                         ;
 ; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_lo[6][1]                                         ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_lo[7][0]                                         ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[8][2]                                         ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|shifts_done_counter[9] ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[7][1]                                         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|temp_c_cnt_hi[8][4]                                         ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|shifts_done_counter[3] ;
 ; 5:1                ; 16 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_temp_m_n_c_readdata_1_q[1]                            ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_temp_m_n_c_readdata_2_q[10]                           ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|self_reset:self_reset_inst|counter[1]                       ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_cnt_sel[4]                                              ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_temp_m_n_c_readdata_2_q[11]                           ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|self_reset:self_reset_inst|counter[4]                       ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_cnt_sel[2]                                              ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_cnt_sel[1]                                              ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller|mgmt_writedata[13]                                                                                                                                                      ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller|mgmt_writedata[17]                                                                                                                                                      ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller|mgmt_writedata[12]                                                                                                                                                      ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; Yes        ; |C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller|mgmt_writedata[9]                                                                                                                                                       ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_cur_state                                             ;
-; 3:1                ; 23 bits   ; 46 LEs        ; 46 LEs               ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|c_cnt_done_d[12]                                            ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_mux:dprio_mux_inst|dprio_address[4]                   ;
+; 3:1                ; 23 bits   ; 46 LEs        ; 46 LEs               ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|all_c_cnt_done_d                                            ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_mux:dprio_mux_inst|dprio_address[3]                   ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dsm_k_ready_false_done_d                                    ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_next_state                                            ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_cnt_sel_1[4]                                            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|avmm_dprio_address                                          ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|usr_cnt_sel_1[3]                                            ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_byteen_1[0]                                           ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|bwctrl_done_d                                               ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_address_1[3]                                          ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_address_1[2]                                          ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_address_1[1]                                          ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_write_done                                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_next_state                                            ;
 ; 34:1               ; 9 bits    ; 198 LEs       ; 54 LEs               ; 144 LEs                ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|operation_address                                           ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_mux:dprio_mux_inst|dprio_writedata[15]                ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_mux:dprio_mux_inst|dprio_writedata[14]                ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller|Selector1                                                                                                                                                               ;
 ; 20:1               ; 15 bits   ; 195 LEs       ; 195 LEs              ; 0 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|c_cnt_done_d                                                ;
 ; 23:1               ; 4 bits    ; 60 LEs        ; 56 LEs               ; 4 LEs                  ; No         ; |C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|avmm_dprio_writedata                                        ;
@@ -1153,6 +1217,21 @@ Encoding Type:  One-Hot
 ; pll_manu_clk_sw_en                   ; false      ; String                                                       ;
 ; pll_clk_sw_dly                       ; 0          ; Signed Integer                                               ;
 +--------------------------------------+------------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vpg:u_vpg                                                                                         ;
++-----------------------+------------------------------------------------------------------------------------------------------+-----------------+
+; Parameter Name        ; Value                                                                                                ; Type            ;
++-----------------------+------------------------------------------------------------------------------------------------------+-----------------+
+; vecteur_map           ; 1101111110110011101100010011110110001100101010010011011100100000000100011000000110000010101110100001 ; Unsigned Binary ;
+; select_affichage      ; 1                                                                                                    ; Unsigned Binary ;
+; largeur_grille        ; 10                                                                                                   ; Signed Integer  ;
+; hauteur_grille        ; 10                                                                                                   ; Signed Integer  ;
+; h_position_du_curseur ; 1000                                                                                                 ; Unsigned Binary ;
+; v_position_du_curseur ; 0001                                                                                                 ; Unsigned Binary ;
++-----------------------+------------------------------------------------------------------------------------------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1508,28 +1587,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator                                                           ;
-+-----------------------+------------------------------------------------------------------------------------------------------+-----------------+
-; Parameter Name        ; Value                                                                                                ; Type            ;
-+-----------------------+------------------------------------------------------------------------------------------------------+-----------------+
-; vecteur_map           ; 1101111110110011101100010011110110001100101010010011011100100000000100011000000110000010101110100001 ; Unsigned Binary ;
-; select_affichage      ; 1                                                                                                    ; Unsigned Binary ;
-; largeur_grille        ; 10                                                                                                   ; Signed Integer  ;
-; hauteur_grille        ; 10                                                                                                   ; Signed Integer  ;
-; h_position_du_curseur ; 0001                                                                                                 ; Unsigned Binary ;
-; v_position_du_curseur ; 0001                                                                                                 ; Unsigned Binary ;
-; h_wait_count          ; 142                                                                                                  ; Signed Integer  ;
-; v_wait_count          ; 35                                                                                                   ; Signed Integer  ;
-; h_tot                 ; 640                                                                                                  ; Signed Integer  ;
-; v_tot                 ; 480                                                                                                  ; Signed Integer  ;
-; border                ; 3                                                                                                    ; Signed Integer  ;
-+-----------------------+------------------------------------------------------------------------------------------------------+-----------------+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; border         ; 1     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0 ;
+; Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1 ;
 +------------------------+----------------+----------------------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                                           ;
 +------------------------+----------------+----------------------------------------------------------------+
@@ -1552,7 +1621,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1 ;
+; Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div3 ;
 +------------------------+----------------+----------------------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                                           ;
 +------------------------+----------------+----------------------------------------------------------------+
@@ -1620,34 +1689,100 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "vpg:u_vpg|vga_generator:u_vga_generator" ;
-+---------------------+-------+----------+----------------------------+
-; Port                ; Type  ; Severity ; Details                    ;
-+---------------------+-------+----------+----------------------------+
-; h_total[0]          ; Input ; Info     ; Stuck at VCC               ;
-; h_sync[11..8]       ; Input ; Info     ; Stuck at GND               ;
-; h_sync[0]           ; Input ; Info     ; Stuck at VCC               ;
-; h_start[11..9]      ; Input ; Info     ; Stuck at GND               ;
-; h_start[2]          ; Input ; Info     ; Stuck at VCC               ;
-; h_start[0]          ; Input ; Info     ; Stuck at VCC               ;
-; h_end[7]            ; Input ; Info     ; Stuck at GND               ;
-; h_end[2]            ; Input ; Info     ; Stuck at VCC               ;
-; h_end[0]            ; Input ; Info     ; Stuck at VCC               ;
-; v_total[11]         ; Input ; Info     ; Stuck at GND               ;
-; v_total[4]          ; Input ; Info     ; Stuck at GND               ;
-; v_total[1]          ; Input ; Info     ; Stuck at GND               ;
-; v_sync[11..3]       ; Input ; Info     ; Stuck at GND               ;
-; v_start[11..6]      ; Input ; Info     ; Stuck at GND               ;
-; v_start[5]          ; Input ; Info     ; Stuck at VCC               ;
-; v_start[2]          ; Input ; Info     ; Stuck at GND               ;
-; v_end[11]           ; Input ; Info     ; Stuck at GND               ;
-; v_end[4]            ; Input ; Info     ; Stuck at GND               ;
-; v_end[2]            ; Input ; Info     ; Stuck at GND               ;
-; v_active_14[11..9]  ; Input ; Info     ; Stuck at GND               ;
-; v_active_24[11..10] ; Input ; Info     ; Stuck at GND               ;
-; v_active_34[11..10] ; Input ; Info     ; Stuck at GND               ;
-+---------------------+-------+----------+----------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                           ;
++------------------------+----------------+----------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                        ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                        ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                        ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                        ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                        ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                        ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                        ;
+; CBXI_PARAMETER         ; lpm_divide_ibm ; Untyped                                                        ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                        ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                        ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                 ;
++------------------------+----------------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div2 ;
++------------------------+----------------+----------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                           ;
++------------------------+----------------+----------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                        ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                        ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                        ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                        ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                        ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                        ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                        ;
+; CBXI_PARAMETER         ; lpm_divide_ibm ; Untyped                                                        ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                        ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                        ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                 ;
++------------------------+----------------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vpg:u_vpg|vga_generator:u_vga_generator"                                                                                                                                                                   ;
++-----------------------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                        ; Type  ; Severity ; Details                                                                                                                                                                              ;
++-----------------------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; h_total[0]                  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; h_sync[11..8]               ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; h_sync[0]                   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; h_start[11..9]              ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; h_start[2]                  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; h_start[0]                  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; h_end[7]                    ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; h_end[2]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; h_end[0]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; v_total[11]                 ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_total[4]                  ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_total[1]                  ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_sync[11..3]               ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_start[11..6]              ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_start[5]                  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; v_start[2]                  ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_end[11]                   ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_end[4]                    ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_end[2]                    ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_active_14[11..9]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_active_24[11..10]         ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_active_34[11..10]         ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; vecteur_map                 ; Input ; Warning  ; Input port expression (100 bits) is wider than the input port (10 bits) it drives.  The 90 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; vecteur_map[9..7]           ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; vecteur_map[4..1]           ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; vecteur_map[6]              ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; vecteur_map[5]              ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; vecteur_map[0]              ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; largeur_grille              ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts.   ;
+; largeur_grille[3]           ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; largeur_grille[2]           ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; largeur_grille[1]           ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; largeur_grille[0]           ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; hauteur_grille              ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts.   ;
+; hauteur_grille[3]           ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; hauteur_grille[2]           ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; hauteur_grille[1]           ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; hauteur_grille[0]           ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; h_position_du_curseur[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; h_position_du_curseur[3]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
+; v_position_du_curseur[3..1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                         ;
+; v_position_du_curseur[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                         ;
++-----------------------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------+
@@ -1673,7 +1808,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:24     ;
+; Top            ; 00:00:32     ;
 +----------------+--------------+
 
 
@@ -1683,20 +1818,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Thu Nov 08 16:01:47 2018
+    Info: Processing started: Thu Nov 08 17:55:35 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off C5G_HDMI_VPG -c C5G_HDMI_VPG
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Critical Warning (10191): Verilog HDL Compiler Directive warning at C5G_HDMI_VPG.v(223): text macro "COLOR_RGB444" is undefined
-Warning (10238): Verilog Module Declaration warning at C5G_HDMI_VPG.v(85): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "C5G_HDMI_VPG"
+Critical Warning (10191): Verilog HDL Compiler Directive warning at C5G_HDMI_VPG.v(110): text macro "COLOR_RGB444" is undefined
 Info (12021): Found 1 design units, including 1 entities, in source file c5g_hdmi_vpg.v
     Info (12023): Found entity 1: C5G_HDMI_VPG
-Warning (10274): Verilog HDL macro warning at vpg.h(42): overriding existing definition for macro "COLOR_RGB444", which was defined in "C5G_HDMI_VPG.v", line 223
+Warning (10274): Verilog HDL macro warning at vpg.h(42): overriding existing definition for macro "COLOR_RGB444", which was defined in "C5G_HDMI_VPG.v", line 110
 Info (12021): Found 1 design units, including 1 entities, in source file vpg_source/pll_controller.v
     Info (12023): Found entity 1: pll_controller
-Warning (10274): Verilog HDL macro warning at vpg.h(42): overriding existing definition for macro "COLOR_RGB444", which was defined in "C5G_HDMI_VPG.v", line 223
+Warning (10274): Verilog HDL macro warning at vpg.h(42): overriding existing definition for macro "COLOR_RGB444", which was defined in "C5G_HDMI_VPG.v", line 110
 Info (12021): Found 1 design units, including 1 entities, in source file vpg_source/vpg.v
     Info (12023): Found entity 1: vpg
-Warning (10274): Verilog HDL macro warning at vpg.h(42): overriding existing definition for macro "COLOR_RGB444", which was defined in "C5G_HDMI_VPG.v", line 223
+Warning (10274): Verilog HDL macro warning at vpg.h(42): overriding existing definition for macro "COLOR_RGB444", which was defined in "C5G_HDMI_VPG.v", line 110
 Warning (10463): Verilog HDL Declaration warning at vpg_mode.v(24): "virtual" is SystemVerilog-2005 keyword
 Info (12021): Found 1 design units, including 1 entities, in source file vpg_source/vpg_mode.v
     Info (12023): Found entity 1: vpg_mode
@@ -1724,23 +1858,6 @@ Info (12021): Found 6 design units, including 6 entities, in source file vpg_sou
 Info (12021): Found 1 design units, including 1 entities, in source file vpg_source/pll_reconfig/altera_pll_reconfig_top.v
     Info (12023): Found entity 1: altera_pll_reconfig_top
 Info (12127): Elaborating entity "C5G_HDMI_VPG" for the top level hierarchy
-Warning (10034): Output port "LEDG" at C5G_HDMI_VPG.v(104) has no driver
-Warning (10034): Output port "HEX0" at C5G_HDMI_VPG.v(115) has no driver
-Warning (10034): Output port "HEX1" at C5G_HDMI_VPG.v(116) has no driver
-Warning (10034): Output port "SRAM_A" at C5G_HDMI_VPG.v(154) has no driver
-Warning (10034): Output port "ADC_CONVST" at C5G_HDMI_VPG.v(127) has no driver
-Warning (10034): Output port "ADC_SCK" at C5G_HDMI_VPG.v(128) has no driver
-Warning (10034): Output port "ADC_SDI" at C5G_HDMI_VPG.v(129) has no driver
-Warning (10034): Output port "AUD_DACDAT" at C5G_HDMI_VPG.v(136) has no driver
-Warning (10034): Output port "AUD_XCK" at C5G_HDMI_VPG.v(138) has no driver
-Warning (10034): Output port "I2C_SCL" at C5G_HDMI_VPG.v(141) has no driver
-Warning (10034): Output port "SD_CLK" at C5G_HDMI_VPG.v(145) has no driver
-Warning (10034): Output port "UART_TX" at C5G_HDMI_VPG.v(151) has no driver
-Warning (10034): Output port "SRAM_CE_n" at C5G_HDMI_VPG.v(155) has no driver
-Warning (10034): Output port "SRAM_LB_n" at C5G_HDMI_VPG.v(157) has no driver
-Warning (10034): Output port "SRAM_OE_n" at C5G_HDMI_VPG.v(158) has no driver
-Warning (10034): Output port "SRAM_UB_n" at C5G_HDMI_VPG.v(159) has no driver
-Warning (10034): Output port "SRAM_WE_n" at C5G_HDMI_VPG.v(160) has no driver
 Info (12128): Elaborating entity "sys_pll" for hierarchy "sys_pll:u_sys_pll"
 Info (12128): Elaborating entity "sys_pll_0002" for hierarchy "sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst"
 Info (12128): Elaborating entity "altera_pll" for hierarchy "sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i"
@@ -2047,87 +2164,86 @@ Info (12128): Elaborating entity "altera_cyclonev_pll_base" for hierarchy "vpg:u
 Info (12131): Elaborated megafunction instantiation "vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0", which is child of megafunction instantiation "vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i"
 Info (12128): Elaborating entity "pll_controller" for hierarchy "vpg:u_vpg|pll_controller:u_pll_controller"
 Info (12128): Elaborating entity "vga_generator" for hierarchy "vpg:u_vpg|vga_generator:u_vga_generator"
-Warning (10036): Verilog HDL or VHDL warning at vga_generator.v(63): object "pixel_x" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at vga_generator.v(66): object "h_act_d" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at vga_generator.v(68): object "v_act_d" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at vga_generator.v(72): object "v_act_14" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at vga_generator.v(72): object "v_act_24" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at vga_generator.v(72): object "v_act_34" assigned a value but never read
-Warning (10240): Verilog HDL Always Construct warning at vga_generator.v(123): inferring latch(es) for variable "largeur_cell", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at vga_generator.v(167): inferring latch(es) for variable "hauteur_cell", which holds its previous value in one or more paths through the always construct
+Warning (10036): Verilog HDL or VHDL warning at vga_generator.v(77): object "v_act_14" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at vga_generator.v(77): object "v_act_24" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at vga_generator.v(77): object "v_act_34" assigned a value but never read
+Warning (10240): Verilog HDL Always Construct warning at vga_generator.v(116): inferring latch(es) for variable "largeur_cell", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at vga_generator.v(157): inferring latch(es) for variable "hauteur_cell", which holds its previous value in one or more paths through the always construct
 Warning (10762): Verilog HDL Case Statement warning at vga_generator.v(223): can't check case statement for completeness because the case expression has too many possible states
-Info (10041): Inferred latch for "hauteur_cell[0]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[1]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[2]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[3]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[4]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[5]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[6]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[7]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[8]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[9]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[10]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[11]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[12]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[13]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[14]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[15]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[16]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[17]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[18]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[19]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[20]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[21]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[22]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[23]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[24]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[25]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[26]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[27]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[28]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[29]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[30]" at vga_generator.v(167)
-Info (10041): Inferred latch for "hauteur_cell[31]" at vga_generator.v(167)
-Info (10041): Inferred latch for "largeur_cell[0]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[1]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[2]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[3]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[4]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[5]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[6]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[7]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[8]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[9]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[10]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[11]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[12]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[13]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[14]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[15]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[16]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[17]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[18]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[19]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[20]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[21]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[22]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[23]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[24]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[25]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[26]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[27]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[28]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[29]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[30]" at vga_generator.v(123)
-Info (10041): Inferred latch for "largeur_cell[31]" at vga_generator.v(123)
+Info (10041): Inferred latch for "hauteur_cell[0]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[1]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[2]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[3]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[4]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[5]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[6]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[7]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[8]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[9]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[10]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[11]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[12]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[13]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[14]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[15]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[16]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[17]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[18]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[19]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[20]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[21]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[22]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[23]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[24]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[25]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[26]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[27]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[28]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[29]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[30]" at vga_generator.v(157)
+Info (10041): Inferred latch for "hauteur_cell[31]" at vga_generator.v(157)
+Info (10041): Inferred latch for "largeur_cell[0]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[1]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[2]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[3]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[4]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[5]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[6]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[7]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[8]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[9]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[10]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[11]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[12]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[13]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[14]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[15]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[16]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[17]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[18]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[19]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[20]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[21]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[22]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[23]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[24]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[25]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[26]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[27]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[28]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[29]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[30]" at vga_generator.v(116)
+Info (10041): Inferred latch for "largeur_cell[31]" at vga_generator.v(116)
 Warning (12030): Port "extclk" on the entity instantiation of "cyclonev_pll" is connected to a signal of width 1. The formal width of the signal in the module is 2.  The extra bits will be left dangling without any fan-out logic.
-Info (278001): Inferred 4 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vpg:u_vpg|vga_generator:u_vga_generator|Div0"
+Info (278001): Inferred 6 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vpg:u_vpg|vga_generator:u_vga_generator|Div1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vpg:u_vpg|vga_generator:u_vga_generator|Div3"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vpg:u_vpg|vga_generator:u_vga_generator|Mod1"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vpg:u_vpg|vga_generator:u_vga_generator|Mod0"
-Info (12130): Elaborated megafunction instantiation "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0"
-Info (12133): Instantiated megafunction "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0" with the following parameter:
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vpg:u_vpg|vga_generator:u_vga_generator|Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vpg:u_vpg|vga_generator:u_vga_generator|Div2"
+Info (12130): Elaborated megafunction instantiation "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1"
+Info (12133): Instantiated megafunction "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2138,12 +2254,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_9nh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_o2f.tdf
     Info (12023): Found entity 1: alt_u_div_o2f
-Info (12130): Elaborated megafunction instantiation "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1"
-Info (12133): Instantiated megafunction "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "32"
-    Info (12134): Parameter "LPM_WIDTHD" = "32"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12130): Elaborated megafunction instantiation "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1"
 Info (12133): Instantiated megafunction "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "32"
@@ -2152,98 +2262,36 @@ Info (12133): Instantiated megafunction "vpg:u_vpg|vga_generator:u_vga_generator
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_65m.tdf
     Info (12023): Found entity 1: lpm_divide_65m
-Info (12130): Elaborated megafunction instantiation "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0"
-Info (12133): Instantiated megafunction "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "32"
-    Info (12134): Parameter "LPM_WIDTHD" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Warning (13039): The following bidir pins have no drivers
-    Warning (13040): Bidir "AUD_ADCLRCK" has no driver
-    Warning (13040): Bidir "AUD_BCLK" has no driver
-    Warning (13040): Bidir "AUD_DACLRCK" has no driver
-    Warning (13040): Bidir "I2C_SDA" has no driver
-    Warning (13040): Bidir "SD_CMD" has no driver
-    Warning (13040): Bidir "SD_DAT[0]" has no driver
-    Warning (13040): Bidir "SD_DAT[1]" has no driver
-    Warning (13040): Bidir "SD_DAT[2]" has no driver
-    Warning (13040): Bidir "SD_DAT[3]" has no driver
-    Warning (13040): Bidir "SRAM_D[0]" has no driver
-    Warning (13040): Bidir "SRAM_D[1]" has no driver
-    Warning (13040): Bidir "SRAM_D[2]" has no driver
-    Warning (13040): Bidir "SRAM_D[3]" has no driver
-    Warning (13040): Bidir "SRAM_D[4]" has no driver
-    Warning (13040): Bidir "SRAM_D[5]" has no driver
-    Warning (13040): Bidir "SRAM_D[6]" has no driver
-    Warning (13040): Bidir "SRAM_D[7]" has no driver
-    Warning (13040): Bidir "SRAM_D[8]" has no driver
-    Warning (13040): Bidir "SRAM_D[9]" has no driver
-    Warning (13040): Bidir "SRAM_D[10]" has no driver
-    Warning (13040): Bidir "SRAM_D[11]" has no driver
-    Warning (13040): Bidir "SRAM_D[12]" has no driver
-    Warning (13040): Bidir "SRAM_D[13]" has no driver
-    Warning (13040): Bidir "SRAM_D[14]" has no driver
-    Warning (13040): Bidir "SRAM_D[15]" has no driver
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDG[0]" is stuck at GND
-    Warning (13410): Pin "LEDG[1]" is stuck at GND
-    Warning (13410): Pin "LEDG[2]" is stuck at GND
-    Warning (13410): Pin "LEDG[3]" is stuck at GND
-    Warning (13410): Pin "LEDG[4]" is stuck at GND
-    Warning (13410): Pin "LEDG[5]" is stuck at GND
-    Warning (13410): Pin "LEDG[6]" is stuck at GND
-    Warning (13410): Pin "LEDG[7]" is stuck at GND
-    Warning (13410): Pin "LEDR[4]" is stuck at VCC
-    Warning (13410): Pin "LEDR[5]" is stuck at VCC
-    Warning (13410): Pin "LEDR[6]" is stuck at VCC
-    Warning (13410): Pin "LEDR[7]" is stuck at VCC
-    Warning (13410): Pin "LEDR[8]" is stuck at VCC
-    Warning (13410): Pin "LEDR[9]" is stuck at VCC
-    Warning (13410): Pin "HEX0[0]" is stuck at GND
-    Warning (13410): Pin "HEX0[1]" is stuck at GND
-    Warning (13410): Pin "HEX0[2]" is stuck at GND
-    Warning (13410): Pin "HEX0[3]" is stuck at GND
-    Warning (13410): Pin "HEX0[4]" is stuck at GND
-    Warning (13410): Pin "HEX0[5]" is stuck at GND
-    Warning (13410): Pin "HEX0[6]" is stuck at GND
-    Warning (13410): Pin "HEX1[0]" is stuck at GND
-    Warning (13410): Pin "HEX1[1]" is stuck at GND
-    Warning (13410): Pin "HEX1[2]" is stuck at GND
-    Warning (13410): Pin "HEX1[3]" is stuck at GND
-    Warning (13410): Pin "HEX1[4]" is stuck at GND
-    Warning (13410): Pin "HEX1[5]" is stuck at GND
-    Warning (13410): Pin "HEX1[6]" is stuck at GND
-    Warning (13410): Pin "ADC_CONVST" is stuck at GND
-    Warning (13410): Pin "ADC_SCK" is stuck at GND
-    Warning (13410): Pin "ADC_SDI" is stuck at GND
-    Warning (13410): Pin "AUD_DACDAT" is stuck at GND
-    Warning (13410): Pin "AUD_XCK" is stuck at GND
-    Warning (13410): Pin "I2C_SCL" is stuck at GND
-    Warning (13410): Pin "SD_CLK" is stuck at GND
-    Warning (13410): Pin "UART_TX" is stuck at GND
-    Warning (13410): Pin "SRAM_A[0]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[1]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[2]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[3]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[4]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[5]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[6]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[7]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[8]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[9]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[10]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[11]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[12]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[13]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[14]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[15]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[16]" is stuck at GND
-    Warning (13410): Pin "SRAM_A[17]" is stuck at GND
-    Warning (13410): Pin "SRAM_CE_n" is stuck at GND
-    Warning (13410): Pin "SRAM_LB_n" is stuck at GND
-    Warning (13410): Pin "SRAM_OE_n" is stuck at GND
-    Warning (13410): Pin "SRAM_UB_n" is stuck at GND
-    Warning (13410): Pin "SRAM_WE_n" is stuck at GND
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ibm.tdf
+    Info (12023): Found entity 1: lpm_divide_ibm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_olh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_mve.tdf
+    Info (12023): Found entity 1: alt_u_div_mve
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[28]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[27]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[24]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[23]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[20]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[19]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[16]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[15]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|largeur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[28]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[27]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[24]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[23]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[20]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[19]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[16]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12]"
+    Info (13026): Duplicate LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[15]" merged with LATCH primitive "vpg:u_vpg|vga_generator:u_vga_generator|hauteur_cell[12]"
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 32 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
@@ -2261,16 +2309,12 @@ Info (17016): Found the following redundant logic cells in design
 Info (144001): Generated suppressed messages file D:/tiny_god/affichage_jdv/C5G_HDMI_VPG.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 11 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 21 input pin(s) that do not drive logic
+Warning (21074): Design contains 14 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLOCK_125_p"
     Warning (15610): No output dependent on input pin "CLOCK_50_B5B"
     Warning (15610): No output dependent on input pin "CLOCK_50_B6A"
     Warning (15610): No output dependent on input pin "CLOCK_50_B8A"
-    Warning (15610): No output dependent on input pin "CPU_RESET_n"
-    Warning (15610): No output dependent on input pin "KEY[0]"
-    Warning (15610): No output dependent on input pin "KEY[3]"
     Warning (15610): No output dependent on input pin "SW[0]"
-    Warning (15610): No output dependent on input pin "SW[1]"
     Warning (15610): No output dependent on input pin "SW[2]"
     Warning (15610): No output dependent on input pin "SW[3]"
     Warning (15610): No output dependent on input pin "SW[4]"
@@ -2280,21 +2324,17 @@ Warning (21074): Design contains 21 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[8]"
     Warning (15610): No output dependent on input pin "SW[9]"
     Warning (15610): No output dependent on input pin "HDMI_TX_INT"
-    Warning (15610): No output dependent on input pin "ADC_SDO"
-    Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-    Warning (15610): No output dependent on input pin "UART_RX"
-Info (21057): Implemented 4334 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 24 input pins
-    Info (21059): Implemented 91 output pins
-    Info (21060): Implemented 25 bidirectional pins
-    Info (21061): Implemented 4187 logic cells
+Info (21057): Implemented 6992 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 6939 logic cells
     Info (21065): Implemented 1 PLLs
-    Info (21062): Implemented 2 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 148 warnings
-    Info: Peak virtual memory: 570 megabytes
-    Info: Processing ended: Thu Nov 08 16:02:15 2018
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:27
+    Info (21062): Implemented 3 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 613 megabytes
+    Info: Processing ended: Thu Nov 08 17:56:12 2018
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+

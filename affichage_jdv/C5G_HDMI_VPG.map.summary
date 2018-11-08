@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Nov 08 16:02:15 2018
+Analysis & Synthesis Status : Successful - Thu Nov 08 17:56:11 2018
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : C5G_HDMI_VPG
 Top-level Entity Name : C5G_HDMI_VPG
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 590
-Total pins : 140
+Total registers : 625
+Total pins : 45
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 2
+Total DSP Blocks : 3
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI PMA RX ATT Deserializers : 0

@@ -113,6 +113,13 @@ pll_controller u_pll_controller (
 	.mgmt_writedata(mgmt_writedata) );
 
 //=============== pattern generator according to vga timing
+parameter vecteur_map = 100'b1101111110110011101100010011110110001100101010010011011100100000000100011000000110000010101110100001;
+parameter select_affichage = 1'b1;
+parameter largeur_grille = 10;
+parameter hauteur_grille = 10;
+parameter h_position_du_curseur = 4'b1000;
+parameter v_position_du_curseur = 4'b1;
+
 vga_generator u_vga_generator (                                    
   .clk(vpg_pclk),                
   .reset_n(gen_clk_locked),                                                
@@ -127,6 +134,11 @@ vga_generator u_vga_generator (
   .v_active_14(v_active_14), 
   .v_active_24(v_active_24), 
   .v_active_34(v_active_34), 
+  .vecteur_map(vecteur_map),
+  .largeur_grille(largeur_grille),
+  .hauteur_grille(hauteur_grille),
+  .h_position_du_curseur(h_position_du_curseur),
+  .v_position_du_curseur(v_position_du_curseur),
   .vga_hs(vpg_hs),
   .vga_vs(vpg_vs),           
   .vga_de(vpg_de),

@@ -15,7 +15,7 @@
    <frequency preferredWidth="444" />
   </columns>
  </clocktable>
- <library expandedCategories="Project,Library" />
+ <library expandedCategories="Library,Project" />
  <window width="1680" height="1010" x="0" y="0" />
  <hdlexample language="VHDL" />
  <generation synthesis="VHDL" path="_PROJECT_NAME_" />
