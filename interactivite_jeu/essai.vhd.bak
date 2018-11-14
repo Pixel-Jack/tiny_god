@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity essai is
+	port (
+		clk                             : in  std_logic                     := '0';             --                          clk.clk
+		pause_external_connection_export    : in std_logic;                                        --    pause_external_connection.export
+		action_external_connection_export   : in std_logic;                                        --   action_external_connection.export
+		position_external_connection_export : in std_logic_vector(11 downto 0)                     -- position_external_connection.export
+	);
+end entity essai;
+
+architecture a of essai is
+
+end architecture a;

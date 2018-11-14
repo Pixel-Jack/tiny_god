@@ -1,0 +1,136 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include "io.h"
+#include "system.h"
+#include <stdio.h>
+#include "sys/alt_irq.h"
+
+void set_led(unsigned char pattern) {
+	IOWR(PAUSE_BASE, 0, pattern);
+}
+
+void set_action(unsigned char pattern) {
+	IOWR(ACTION_BASE, 0, pattern);
+}
+
+void set_up(unsigned char pattern) {
+	IOWR(UP_BASE, 0, pattern);
+}
+
+void set_down(unsigned char pattern) {
+	IOWR(DOWN_BASE, 0, pattern);
+}
+
+void set_left(unsigned char pattern) {
+	IOWR(LEFT_BASE, 0, pattern);
+}
+
+void set_right(unsigned char pattern) {
+	IOWR(RIGHT_BASE, 0, pattern);
+}
+
+static void handle_buttons_interrupt(void* context, alt_u32 id){
+	int code;
+	code = IORD(BUTTONS_BASE,0);
+	//printf("%x\n",code);
+	switch(code) {
+	case 7 :
+		set_up('1');
+		set_down('0');
+		set_left('0');
+		set_right('0');
+		//set_led('0');
+		break;
+	case 11 :
+		set_up('0');
+		set_down('1');
+		set_left('0');
+		set_right('0');
+		//set_led('0');
+		break;
+	case 13 :
+		set_up('0');
+		set_down('0');
+		set_left('1');
+		set_right('0');
+		//set_led('0');
+		break;
+	case 14 :
+		set_up('0');
+		set_down('0');
+		set_left('0');
+		set_right('1');
+		//set_led('0');
+		break;
+	default :
+		set_up('0');
+		set_down('0');
+		set_left('0');
+		set_right('0');
+		//set_led('1');
+		break;
+	}
+	IOWR(BUTTONS_BASE,3,15);
+}
+
+static void handle_switch_interrupt(void* context, alt_u32 id){
+	unsigned char pause;
+	pause = IORD(SWITCH_BASE, 0);
+	switch(pause) {
+		case 0 :
+			set_led('0');
+			break;
+		case 1 :
+			set_led('1');
+			break;
+		default :
+			//set_led('0');
+			break;
+	}
+	//IOWR(SWITCH_BASE,3,0);
+}
+
+int main()
+{
+
+	unsigned char action = 0;
+
+	// init bouttons
+	// Reset the edge capture register
+	IOWR(BUTTONS_BASE,3,15);
+
+	//Enable interrupt
+	IOWR(BUTTONS_BASE,2,15);
+	alt_irq_register(BUTTONS_IRQ,NULL,handle_buttons_interrupt);
+
+
+	// init switch
+	//IOWR(SWITCH_BASE,3,15);
+	//Enable interrupt
+	//IOWR(SWITCH_BASE,2,15);
+	alt_irq_register(SWITCH_IRQ,NULL,handle_switch_interrupt);
+
+	while (1) {
+
+
+		//buttons = IORD(BUTTONS_BASE,3);
+		//IOWR(BUTTONS_BASE,3,15);
+
+	}
+
+
+}

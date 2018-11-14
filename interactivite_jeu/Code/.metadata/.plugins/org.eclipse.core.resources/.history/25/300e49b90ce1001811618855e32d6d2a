@@ -1,0 +1,63 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include "io.h"
+#include "system.h"
+#include <stdio.h>
+
+void set_led(unsigned char pattern) {
+	IOWR(PAUSE_BASE, 0, pattern);
+}
+
+void set_action(unsigned char pattern) {
+	IOWR(ACTION_BASE, 0, pattern);
+}
+
+void set_up(unsigned char pattern) {
+	IOWR(UP_BASE, 0, pattern);
+}
+
+void set_down(unsigned char pattern) {
+	IOWR(DOWN_BASE, 0, pattern);
+}
+
+void set_left(unsigned char pattern) {
+	IOWR(LEFT_BASE, 0, pattern);
+}
+
+void set_right(unsigned char pattern) {
+	IOWR(RIGHT_BASE, 0, pattern);
+}
+
+
+int main()
+{
+	unsigned char pause = 0;
+	unsigned char action = 0;
+	unsigned char up = 0;
+	unsigned char down = 0;
+	unsigned char left = 0;
+	unsigned char right = 0;
+
+	while (1) {
+		pause = IORD(SWITCH_BASE, 0);
+		set_led(pause);
+
+
+	}
+
+
+}

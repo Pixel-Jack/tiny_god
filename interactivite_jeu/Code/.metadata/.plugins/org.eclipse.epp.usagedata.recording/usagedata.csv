@@ -1,0 +1,76 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x81080, /cygdrive/d/Bricolage3/software/chip1/chip1.elf] return code: 134",1541518753540
+error,log,,,"Downloading ELF Process failed",1541518753556
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541518753571
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541518754788
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1541518756364
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541518758673
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541518760139
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1541518760467
+error,log,,,"No Byte Stream Services found for Nios II Console View",1541518762838
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1541518875919
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1541518877292
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541518880115
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541518881488
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1541518881816
+error,log,,,"No Byte Stream Services found for Nios II Console View",1541518883673
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541518902053
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541518903363
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1541518903675
+error,log,,,"No Byte Stream Services found for Nios II Console View",1541518905657
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1541518950732
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1541519016024
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519018177
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519019581
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1541519019893
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519019908
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519023216
+error,log,,,"No Byte Stream Services found for Nios II Console View",1541519025977
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1541519113176
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1541519118761
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519124674
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519126141
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1541519126453
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519126468
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519133146
+error,log,,,"No Byte Stream Services found for Nios II Console View",1541519135907
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519209938
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519211296
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1541519211608
+error,log,,,"No Byte Stream Services found for Nios II Console View",1541519213495
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1541519246244
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519253764
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519254014
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519270897
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519294098
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1541519339357
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519341495
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519342993
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1541519343289
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519343305
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519347408
+error,log,,,"No Byte Stream Services found for Nios II Console View",1541519350029
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1541519441253
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1541519447836
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1541519454607
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519456698
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519458118
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1541519458445
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519458461
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519460785
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519485482
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519510366
+activated,editor,org.eclipse.cdt.ui,5.3.2.201202111925,"org.eclipse.cdt.ui.editor.CEditor",1541519514766
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1541519556578
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519566672
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519581962
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519583866
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519617114
+opened,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProgressView",1541519682329
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProgressView",1541519682329
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1541519694061
+closed,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProgressView",1541519694061
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1541519695746
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519697946
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1541519704342
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1541519704342
