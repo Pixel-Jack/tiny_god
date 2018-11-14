@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="C5G_HDMI_VPG">
+		<CBX_INST_ENTRY INSTANCE_NAME="|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_3dm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_3dm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_65m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_ibm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_ibm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_65m.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

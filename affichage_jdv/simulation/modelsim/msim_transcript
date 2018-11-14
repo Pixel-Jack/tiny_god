@@ -1,0 +1,141 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do C5G_HDMI_VPG_run_msim_rtl_vhdl.do 
+# if ![file isdirectory C5G_HDMI_VPG_iputf_libs] {
+# 	file mkdir C5G_HDMI_VPG_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/tiny_god/affichage_jdv/sys_pll_sim/sys_pll.vo"                     
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sys_pll
+# 
+# Top level modules:
+# 	sys_pll
+# vlog "D:/tiny_god/affichage_jdv/vpg_source/pll_sim/pll.vo"                  
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# vlog "D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig_sim/pll_reconfig.vo"
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_reconfig
+# 
+# Top level modules:
+# 	pll_reconfig
+# 
+# vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga_generator
+# 
+# Top level modules:
+# 	vga_generator
+# 
+# vcom -93 -work work {D:/tiny_god/affichage_jdv/simulation/modelsim/test_bencheval.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity test_bencheval
+# -- Compiling architecture test_bencheval_arch of test_bencheval
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test_bencheval
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_bencheval 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.test_bencheval(test_bencheval_arch)
+# ALTERA version supports only a single HDL
+# ** Error: (vsim-3039) D:/tiny_god/affichage_jdv/simulation/modelsim/test_bencheval.vhd(101): Instantiation of 'vga_generator' failed.
+# 
+#         Region: /test_bencheval
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./C5G_HDMI_VPG_run_msim_rtl_vhdl.do PAUSED at line 25
+wave create -pattern none -portmode input -language vlog /vga_generator/clk
+# vga_generator
+wave create -pattern none -portmode input -language vlog /vga_generator/reset_n
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/h_total
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/h_sync
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/h_start
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/h_end
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_total
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_sync
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_start
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_end
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_active_14
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_active_24
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 11 0 /vga_generator/v_active_34
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 9 0 /vga_generator/vecteur_map
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 3 0 /vga_generator/largeur_grille
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 3 0 /vga_generator/hauteur_grille
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 3 0 /vga_generator/h_position_du_curseur
+# vga_generator
+wave create -pattern none -portmode input -language vlog -range 3 0 /vga_generator/v_position_du_curseur
+# vga_generator
+wave create -pattern none -portmode output -language vlog /vga_generator/vga_hs
+# vga_generator
+wave create -pattern none -portmode output -language vlog /vga_generator/vga_vs
+# vga_generator
+wave create -pattern none -portmode output -language vlog /vga_generator/vga_de
+# vga_generator
+wave create -pattern none -portmode output -language vlog -range 7 0 /vga_generator/vga_r
+# vga_generator
+wave create -pattern none -portmode output -language vlog -range 7 0 /vga_generator/vga_g
+# vga_generator
+wave create -pattern none -portmode output -language vlog -range 7 0 /vga_generator/vga_b
+# vga_generator
+# Load canceled
+vsim work.vga_generator
+# vsim work.vga_generator 
+# Loading work.vga_generator
+add wave -position insertpoint  \
+sim:/vga_generator/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: ponthieu_cle  Hostname: CI53214  ProcessID: 5488
+# 
+#           Attempting to use alternate WLF file "./wlft673fwh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft673fwh
+# 
+run

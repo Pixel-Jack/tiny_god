@@ -1,0 +1,51 @@
+|tiny_god
+pin_name1 => parametrage_d_initialisation_ex:inst5.clicks_selection
+
+
+|tiny_god|affichage_jdv_ex:inst
+vecteur_de_bits => ~NO_FANOUT~
+resolution => ~NO_FANOUT~
+taille_de_grille => ~NO_FANOUT~
+position_curseur => ~NO_FANOUT~
+select_affichage => ~NO_FANOUT~
+
+
+|tiny_god|jeu_ex:inst2
+vecteur_de_bits <= <GND>
+fin_du_jeu <= <GND>
+taille_de_grille => ~NO_FANOUT~
+type_de_grille => ~NO_FANOUT~
+mode_de_jeu => ~NO_FANOUT~
+cellules_selectionnees_a_init => ~NO_FANOUT~
+position_curseur => ~NO_FANOUT~
+selection_de_l_action => ~NO_FANOUT~
+interruption_pause => ~NO_FANOUT~
+
+
+|tiny_god|parametrage_d_initialisation_ex:inst5
+nom_de_l_option_a_selectionner <= <GND>
+resolution <= <GND>
+mode_de_jeu <= <GND>
+select_affichage <= <GND>
+taille_de_grille <= <GND>
+type_de_grille <= <GND>
+cellules_selectionnees_a_init <= <GND>
+option_actuellement_selectionnee <= <GND>
+options_disponibles <= <GND>
+clicks_selection => ~NO_FANOUT~
+
+
+|tiny_god|interactivites_du_jeu_ex:inst4
+position_curseur <= <GND>
+selection_de_l_action <= <GND>
+interruption_pause <= <GND>
+clics => ~NO_FANOUT~
+
+
+|tiny_god|affichage_parametres_ex:inst3
+options_disponibles => ~NO_FANOUT~
+nom_de_l_option_a_selectionner => ~NO_FANOUT~
+select_affichage => ~NO_FANOUT~
+option_actuellement_selectionnee => ~NO_FANOUT~
+
+

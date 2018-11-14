@@ -1,0 +1,46 @@
+transcript on
+if ![file isdirectory C5G_HDMI_VPG_iputf_libs] {
+	file mkdir C5G_HDMI_VPG_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vlog "D:/tiny_god/affichage_jdv/sys_pll_sim/sys_pll.vo"                     
+vlog "D:/tiny_god/affichage_jdv/vpg_source/pll_sim/pll.vo"                  
+vlog "D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig_sim/pll_reconfig.vo"
+
+vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/pll.vo}
+vlib pll
+vmap pll pll
+vlog -vlog01compat -work pll +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/pll.v}
+vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig.vo}
+vlib pll_reconfig
+vmap pll_reconfig pll_reconfig
+vlog -vlog01compat -work pll_reconfig +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig.v}
+vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv {D:/tiny_god/affichage_jdv/C5G_HDMI_VPG.v}
+vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/vga_generator.v}
+vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/pll_controller.v}
+vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/vpg.v}
+vlog -vlog01compat -work work +incdir+D:/tiny_god/affichage_jdv/vpg_source {D:/tiny_god/affichage_jdv/vpg_source/vpg_mode.v}
+vlog -vlog01compat -work pll +incdir+D:/tiny_god/affichage_jdv/vpg_source/pll {D:/tiny_god/affichage_jdv/vpg_source/pll/pll_0002.v}
+vlog -vlog01compat -work pll_reconfig +incdir+D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig {D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig/altera_pll_reconfig_core.v}
+vlog -vlog01compat -work pll_reconfig +incdir+D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig {D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig/altera_pll_reconfig_top.v}
+vcom -93 -work work {D:/tiny_god/affichage_jdv/simulate.vhd}
+
+vcom -93 -work work {D:/tiny_god/affichage_jdv/simulation/modelsim/test_bencheval.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L pll -L pll_reconfig -voptargs="+acc"  test_bencheval
+
+add wave *
+view structure
+view signals
+run -all

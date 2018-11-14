@@ -1,0 +1,165 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/ --output-directory=D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS/ --report-file=bsf:D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CGXFC5C6F27C7 --system-info=DEVICE_SPEEDGRADE=7_H6 --component-file=D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS.qsys
+Progress: Loading C5G_HDMI_VPG/HDMI_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 13.0]
+Progress: Parameterizing module clk_50
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.0.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding timer [altera_avalon_timer 13.0.1]
+Progress: Parameterizing module timer
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding i2c_scl [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module i2c_scl
+Progress: Adding i2c_sda [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module i2c_sda
+Progress: Adding led [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module led
+Progress: Adding pll_sys [altera_pll 13.0]
+Progress: Parameterizing module pll_sys
+Progress: Adding hdmi_tx_int_n [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module hdmi_tx_int_n
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: HDMI_QSYS.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: HDMI_QSYS.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: HDMI_QSYS.i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: HDMI_QSYS.pll_sys: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: HDMI_QSYS.pll_sys: Able to implement PLL with user settings
+Info: HDMI_QSYS.hdmi_tx_int_n: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: HDMI_QSYS.pll_sys: pll_sys.locked must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/ --output-directory=D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS.sopcinfo --report-file=html:D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS.html --report-file=qip:D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS/synthesis/HDMI_QSYS.qip --report-file=cmp:D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS.cmp --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CGXFC5C6F27C7 --system-info=DEVICE_SPEEDGRADE=7_H6 --component-file=D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS.qsys --language=VHDL
+Progress: Loading C5G_HDMI_VPG/HDMI_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 13.0]
+Progress: Parameterizing module clk_50
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.0.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding timer [altera_avalon_timer 13.0.1]
+Progress: Parameterizing module timer
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding i2c_scl [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module i2c_scl
+Progress: Adding i2c_sda [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module i2c_sda
+Progress: Adding led [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module led
+Progress: Adding pll_sys [altera_pll 13.0]
+Progress: Parameterizing module pll_sys
+Progress: Adding hdmi_tx_int_n [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module hdmi_tx_int_n
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: HDMI_QSYS.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: HDMI_QSYS.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: HDMI_QSYS.i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: HDMI_QSYS.pll_sys: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: HDMI_QSYS.pll_sys: Able to implement PLL with user settings
+Info: HDMI_QSYS.hdmi_tx_int_n: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: HDMI_QSYS.pll_sys: pll_sys.locked must be exported, or connected to a matching conduit.
+Info: HDMI_QSYS: Generating HDMI_QSYS "HDMI_QSYS" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 11 modules, 34 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 22 modules, 67 connections
+Info: merlin_domain_transform: After transform: 43 modules, 178 connections
+Info: merlin_router_transform: After transform: 54 modules, 211 connections
+Info: merlin_traffic_limiter_transform: After transform: 56 modules, 219 connections
+Info: reset_adaptation_transform: After transform: 58 modules, 223 connections
+Info: merlin_network_to_switch_transform: After transform: 79 modules, 267 connections
+Info: limiter_update_transform: After transform: 79 modules, 269 connections
+Info: merlin_mm_transform: After transform: 79 modules, 269 connections
+Info: merlin_interrupt_mapper_transform: After transform: 80 modules, 272 connections
+Info: nios2_qsys: Starting RTL generation for module 'HDMI_QSYS_nios2_qsys'
+Info: nios2_qsys:   Generation command is [exec C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=HDMI_QSYS_nios2_qsys --dir=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0034_nios2_qsys_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0034_nios2_qsys_gen//HDMI_QSYS_nios2_qsys_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys: # 2018.10.10 16:27:21 (*) Starting Nios II generation
+Info: nios2_qsys: # 2018.10.10 16:27:21 (*)   Checking for plaintext license.
+Info: nios2_qsys: # 2018.10.10 16:27:21 (*)   Plaintext license not found.
+Info: nios2_qsys: # 2018.10.10 16:27:21 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys: # 2018.10.10 16:27:22 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: nios2_qsys: # 2018.10.10 16:27:22 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys: # 2018.10.10 16:27:22 (*)   Creating all objects for CPU
+Info: nios2_qsys: # 2018.10.10 16:27:22 (*)     Testbench
+Info: nios2_qsys: # 2018.10.10 16:27:22 (*)     Instruction decoding
+Info: nios2_qsys: # 2018.10.10 16:27:22 (*)       Instruction fields
+Info: nios2_qsys: # 2018.10.10 16:27:22 (*)       Instruction decodes
+Info: nios2_qsys: # 2018.10.10 16:27:22 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys: # 2018.10.10 16:27:23 (*)       Instruction controls
+Info: nios2_qsys: # 2018.10.10 16:27:23 (*)     Pipeline frontend
+Info: nios2_qsys: # 2018.10.10 16:27:23 (*)     Pipeline backend
+Info: nios2_qsys: # 2018.10.10 16:27:24 (*)   Generating RTL from CPU objects
+Info: nios2_qsys: # 2018.10.10 16:27:27 (*)   Creating encrypted RTL
+Info: nios2_qsys: # 2018.10.10 16:27:28 (*) Done Nios II generation
+Info: nios2_qsys: Done RTL generation for module 'HDMI_QSYS_nios2_qsys'
+Info: nios2_qsys: "HDMI_QSYS" instantiated altera_nios2_qsys "nios2_qsys"
+Info: onchip_memory2: Starting RTL generation for module 'HDMI_QSYS_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=HDMI_QSYS_onchip_memory2 --dir=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0035_onchip_memory2_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0035_onchip_memory2_gen//HDMI_QSYS_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2: Done RTL generation for module 'HDMI_QSYS_onchip_memory2'
+Info: onchip_memory2: "HDMI_QSYS" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: sysid_qsys: "HDMI_QSYS" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: timer: Starting RTL generation for module 'HDMI_QSYS_timer'
+Info: timer:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=HDMI_QSYS_timer --dir=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0037_timer_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0037_timer_gen//HDMI_QSYS_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timer: Done RTL generation for module 'HDMI_QSYS_timer'
+Info: timer: "HDMI_QSYS" instantiated altera_avalon_timer "timer"
+Info: jtag_uart: Starting RTL generation for module 'HDMI_QSYS_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=HDMI_QSYS_jtag_uart --dir=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0038_jtag_uart_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0038_jtag_uart_gen//HDMI_QSYS_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'HDMI_QSYS_jtag_uart'
+Info: jtag_uart: "HDMI_QSYS" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: i2c_scl: Starting RTL generation for module 'HDMI_QSYS_i2c_scl'
+Info: i2c_scl:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=HDMI_QSYS_i2c_scl --dir=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0039_i2c_scl_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0039_i2c_scl_gen//HDMI_QSYS_i2c_scl_component_configuration.pl  --do_build_sim=0  ]
+Info: i2c_scl: Done RTL generation for module 'HDMI_QSYS_i2c_scl'
+Info: i2c_scl: "HDMI_QSYS" instantiated altera_avalon_pio "i2c_scl"
+Info: i2c_sda: Starting RTL generation for module 'HDMI_QSYS_i2c_sda'
+Info: i2c_sda:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=HDMI_QSYS_i2c_sda --dir=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0040_i2c_sda_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0040_i2c_sda_gen//HDMI_QSYS_i2c_sda_component_configuration.pl  --do_build_sim=0  ]
+Info: i2c_sda: Done RTL generation for module 'HDMI_QSYS_i2c_sda'
+Info: i2c_sda: "HDMI_QSYS" instantiated altera_avalon_pio "i2c_sda"
+Info: led: Starting RTL generation for module 'HDMI_QSYS_led'
+Info: led:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=HDMI_QSYS_led --dir=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0041_led_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0041_led_gen//HDMI_QSYS_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'HDMI_QSYS_led'
+Info: led: "HDMI_QSYS" instantiated altera_avalon_pio "led"
+Info: pll_sys: "HDMI_QSYS" instantiated altera_pll "pll_sys"
+Info: hdmi_tx_int_n: Starting RTL generation for module 'HDMI_QSYS_hdmi_tx_int_n'
+Info: hdmi_tx_int_n:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=HDMI_QSYS_hdmi_tx_int_n --dir=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0043_hdmi_tx_int_n_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/ponthieu_cle/AppData/Local/Temp/alt7814_1556850729467138118.dir/0043_hdmi_tx_int_n_gen//HDMI_QSYS_hdmi_tx_int_n_component_configuration.pl  --do_build_sim=0  ]
+Info: hdmi_tx_int_n: Done RTL generation for module 'HDMI_QSYS_hdmi_tx_int_n'
+Info: hdmi_tx_int_n: "HDMI_QSYS" instantiated altera_avalon_pio "hdmi_tx_int_n"
+Info: nios2_qsys_instruction_master_translator: "HDMI_QSYS" instantiated altera_merlin_master_translator "nios2_qsys_instruction_master_translator"
+Info: nios2_qsys_jtag_debug_module_translator: "HDMI_QSYS" instantiated altera_merlin_slave_translator "nios2_qsys_jtag_debug_module_translator"
+Info: nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent: "HDMI_QSYS" instantiated altera_merlin_master_agent "nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent: "HDMI_QSYS" instantiated altera_merlin_slave_agent "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "HDMI_QSYS" instantiated altera_avalon_sc_fifo "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "HDMI_QSYS" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "HDMI_QSYS" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "HDMI_QSYS" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "HDMI_QSYS" instantiated altera_merlin_router "id_router_002"
+Info: limiter: "HDMI_QSYS" instantiated altera_merlin_traffic_limiter "limiter"
+Info: rst_controller: "HDMI_QSYS" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "HDMI_QSYS" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "HDMI_QSYS" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "HDMI_QSYS" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "HDMI_QSYS" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: "HDMI_QSYS" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "HDMI_QSYS" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "HDMI_QSYS" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/C5G_v.1.2.2_SystemCD/Demonstrations/C5G_HDMI_VPG/HDMI_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "HDMI_QSYS" instantiated altera_irq_mapper "irq_mapper"
+Info: HDMI_QSYS: Done HDMI_QSYS" with 30 modules, 122 files, 4095431 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
