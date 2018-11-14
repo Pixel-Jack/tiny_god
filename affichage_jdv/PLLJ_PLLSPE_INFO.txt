@@ -1,19 +1,19 @@
-PLL_Name	sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL
+PLL_Name	C5G_HDMI_VPG:inst|sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL
 PLLJITTER	22
 PLLSPEmax	50
 PLLSPEmin	-50
 
-PLL_Name	sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER
+PLL_Name	C5G_HDMI_VPG:inst|sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER
 PLLJITTER	NA
 PLLSPEmax	NA
 PLLSPEmin	NA
 
-PLL_Name	vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|fpll
+PLL_Name	C5G_HDMI_VPG:inst|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0|fpll
 PLLJITTER	64
 PLLSPEmax	50
 PLLSPEmin	-50
 
-PLL_Name	vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|counter[0].output_counter
+PLL_Name	C5G_HDMI_VPG:inst|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|counter[0].output_counter
 PLLJITTER	NA
 PLLSPEmax	NA
 PLLSPEmin	NA

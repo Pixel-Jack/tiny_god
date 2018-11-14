@@ -1,5 +1,5 @@
 Info: Start Nativelink Simulation process
-executing command line: ip-make-simscript --nativelink-mode --output-directory=C5G_HDMI_VPG_iputf_input --spd=C:/Users/ponthieu_cle/Documents/C5G_HDMI_VPG/sys_pll.spd --spd=C:/Users/ponthieu_cle/Documents/C5G_HDMI_VPG/vpg_source/pll.spd --spd=C:/Users/ponthieu_cle/Documents/C5G_HDMI_VPG/vpg_source/pll_reconfig.spd 
+executing command line: ip-make-simscript --nativelink-mode --output-directory=C5G_HDMI_VPG_iputf_input --spd=D:/tiny_god/affichage_jdv/sys_pll.spd --spd=D:/tiny_god/affichage_jdv/vpg_source/pll.spd --spd=D:/tiny_god/affichage_jdv/vpg_source/pll_reconfig.spd 
 
 ========= EDA Simulation Settings =====================
 
@@ -19,5 +19,5 @@ Sim dir               :  simulation\modelsim
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
 Sourced NativeLink script c:/altera/13.0/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File C5G_HDMI_VPG_run_msim_rtl_vhdl.do already exists - backing up current file as C5G_HDMI_VPG_run_msim_rtl_vhdl.do.bak
+Warning: File C5G_HDMI_VPG_run_msim_rtl_vhdl.do already exists - backing up current file as C5G_HDMI_VPG_run_msim_rtl_vhdl.do.bak5
 Info: Spawning ModelSim-Altera Simulation software 

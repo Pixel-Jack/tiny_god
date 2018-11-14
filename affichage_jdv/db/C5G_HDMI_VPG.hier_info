@@ -1,4 +1,52 @@
-|C5G_HDMI_VPG
+|test_simul
+HDMI_TX_CLK <= C5G_HDMI_VPG:inst.HDMI_TX_CLK
+CLOCK_125_p => C5G_HDMI_VPG:inst.CLOCK_125_p
+CLOCK_50_B5B => C5G_HDMI_VPG:inst.CLOCK_50_B5B
+CLOCK_50_B6A => C5G_HDMI_VPG:inst.CLOCK_50_B6A
+CLOCK_50_B7A => C5G_HDMI_VPG:inst.CLOCK_50_B7A
+CLOCK_50_B8A => C5G_HDMI_VPG:inst.CLOCK_50_B8A
+CPU_RESET_n => C5G_HDMI_VPG:inst.CPU_RESET_n
+HDMI_TX_INT => C5G_HDMI_VPG:inst.HDMI_TX_INT
+SW[0] => C5G_HDMI_VPG:inst.SW[0]
+SW[1] => C5G_HDMI_VPG:inst.SW[1]
+SW[2] => C5G_HDMI_VPG:inst.SW[2]
+SW[3] => C5G_HDMI_VPG:inst.SW[3]
+SW[4] => C5G_HDMI_VPG:inst.SW[4]
+SW[5] => C5G_HDMI_VPG:inst.SW[5]
+SW[6] => C5G_HDMI_VPG:inst.SW[6]
+SW[7] => C5G_HDMI_VPG:inst.SW[7]
+SW[8] => C5G_HDMI_VPG:inst.SW[8]
+SW[9] => C5G_HDMI_VPG:inst.SW[9]
+HDMI_TX_DE <= C5G_HDMI_VPG:inst.HDMI_TX_DE
+HDMI_TX_HS <= C5G_HDMI_VPG:inst.HDMI_TX_HS
+HDMI_TX_VS <= C5G_HDMI_VPG:inst.HDMI_TX_VS
+HDMI_TX_D[0] <= C5G_HDMI_VPG:inst.HDMI_TX_D[0]
+HDMI_TX_D[1] <= C5G_HDMI_VPG:inst.HDMI_TX_D[1]
+HDMI_TX_D[2] <= C5G_HDMI_VPG:inst.HDMI_TX_D[2]
+HDMI_TX_D[3] <= C5G_HDMI_VPG:inst.HDMI_TX_D[3]
+HDMI_TX_D[4] <= C5G_HDMI_VPG:inst.HDMI_TX_D[4]
+HDMI_TX_D[5] <= C5G_HDMI_VPG:inst.HDMI_TX_D[5]
+HDMI_TX_D[6] <= C5G_HDMI_VPG:inst.HDMI_TX_D[6]
+HDMI_TX_D[7] <= C5G_HDMI_VPG:inst.HDMI_TX_D[7]
+HDMI_TX_D[8] <= C5G_HDMI_VPG:inst.HDMI_TX_D[8]
+HDMI_TX_D[9] <= C5G_HDMI_VPG:inst.HDMI_TX_D[9]
+HDMI_TX_D[10] <= C5G_HDMI_VPG:inst.HDMI_TX_D[10]
+HDMI_TX_D[11] <= C5G_HDMI_VPG:inst.HDMI_TX_D[11]
+HDMI_TX_D[12] <= C5G_HDMI_VPG:inst.HDMI_TX_D[12]
+HDMI_TX_D[13] <= C5G_HDMI_VPG:inst.HDMI_TX_D[13]
+HDMI_TX_D[14] <= C5G_HDMI_VPG:inst.HDMI_TX_D[14]
+HDMI_TX_D[15] <= C5G_HDMI_VPG:inst.HDMI_TX_D[15]
+HDMI_TX_D[16] <= C5G_HDMI_VPG:inst.HDMI_TX_D[16]
+HDMI_TX_D[17] <= C5G_HDMI_VPG:inst.HDMI_TX_D[17]
+HDMI_TX_D[18] <= C5G_HDMI_VPG:inst.HDMI_TX_D[18]
+HDMI_TX_D[19] <= C5G_HDMI_VPG:inst.HDMI_TX_D[19]
+HDMI_TX_D[20] <= C5G_HDMI_VPG:inst.HDMI_TX_D[20]
+HDMI_TX_D[21] <= C5G_HDMI_VPG:inst.HDMI_TX_D[21]
+HDMI_TX_D[22] <= C5G_HDMI_VPG:inst.HDMI_TX_D[22]
+HDMI_TX_D[23] <= C5G_HDMI_VPG:inst.HDMI_TX_D[23]
+
+
+|test_simul|C5G_HDMI_VPG:inst
 CLOCK_125_p => ~NO_FANOUT~
 CLOCK_50_B5B => ~NO_FANOUT~
 CLOCK_50_B6A => ~NO_FANOUT~
@@ -6,7 +54,7 @@ CLOCK_50_B7A => CLOCK_50_B7A.IN2
 CLOCK_50_B8A => ~NO_FANOUT~
 CPU_RESET_n => _.IN1
 SW[0] => ~NO_FANOUT~
-SW[1] => SW[1].IN1
+SW[1] => ~NO_FANOUT~
 SW[2] => ~NO_FANOUT~
 SW[3] => ~NO_FANOUT~
 SW[4] => ~NO_FANOUT~
@@ -14,7 +62,7 @@ SW[5] => ~NO_FANOUT~
 SW[6] => ~NO_FANOUT~
 SW[7] => ~NO_FANOUT~
 SW[8] => ~NO_FANOUT~
-SW[9] => ~NO_FANOUT~
+SW[9] => SW[9].IN1
 HDMI_TX_CLK <= vpg:u_vpg.vpg_pclk
 HDMI_TX_D[0] <= vpg:u_vpg.vpg_b
 HDMI_TX_D[1] <= vpg:u_vpg.vpg_b
@@ -44,23 +92,196 @@ HDMI_TX_DE <= vpg:u_vpg.vpg_de
 HDMI_TX_HS <= vpg:u_vpg.vpg_hs
 HDMI_TX_INT => ~NO_FANOUT~
 HDMI_TX_VS <= vpg:u_vpg.vpg_vs
+vecteur_map[0] => vecteur_map[0].IN1
+vecteur_map[1] => vecteur_map[1].IN1
+vecteur_map[2] => vecteur_map[2].IN1
+vecteur_map[3] => vecteur_map[3].IN1
+vecteur_map[4] => vecteur_map[4].IN1
+vecteur_map[5] => vecteur_map[5].IN1
+vecteur_map[6] => vecteur_map[6].IN1
+vecteur_map[7] => vecteur_map[7].IN1
+vecteur_map[8] => vecteur_map[8].IN1
+vecteur_map[9] => vecteur_map[9].IN1
+vecteur_map[10] => vecteur_map[10].IN1
+vecteur_map[11] => vecteur_map[11].IN1
+vecteur_map[12] => vecteur_map[12].IN1
+vecteur_map[13] => vecteur_map[13].IN1
+vecteur_map[14] => vecteur_map[14].IN1
+vecteur_map[15] => vecteur_map[15].IN1
+vecteur_map[16] => vecteur_map[16].IN1
+vecteur_map[17] => vecteur_map[17].IN1
+vecteur_map[18] => vecteur_map[18].IN1
+vecteur_map[19] => vecteur_map[19].IN1
+vecteur_map[20] => vecteur_map[20].IN1
+vecteur_map[21] => vecteur_map[21].IN1
+vecteur_map[22] => vecteur_map[22].IN1
+vecteur_map[23] => vecteur_map[23].IN1
+vecteur_map[24] => vecteur_map[24].IN1
+vecteur_map[25] => vecteur_map[25].IN1
+vecteur_map[26] => vecteur_map[26].IN1
+vecteur_map[27] => vecteur_map[27].IN1
+vecteur_map[28] => vecteur_map[28].IN1
+vecteur_map[29] => vecteur_map[29].IN1
+vecteur_map[30] => vecteur_map[30].IN1
+vecteur_map[31] => vecteur_map[31].IN1
+vecteur_map[32] => vecteur_map[32].IN1
+vecteur_map[33] => vecteur_map[33].IN1
+vecteur_map[34] => vecteur_map[34].IN1
+vecteur_map[35] => vecteur_map[35].IN1
+vecteur_map[36] => vecteur_map[36].IN1
+vecteur_map[37] => vecteur_map[37].IN1
+vecteur_map[38] => vecteur_map[38].IN1
+vecteur_map[39] => vecteur_map[39].IN1
+vecteur_map[40] => vecteur_map[40].IN1
+vecteur_map[41] => vecteur_map[41].IN1
+vecteur_map[42] => vecteur_map[42].IN1
+vecteur_map[43] => vecteur_map[43].IN1
+vecteur_map[44] => vecteur_map[44].IN1
+vecteur_map[45] => vecteur_map[45].IN1
+vecteur_map[46] => vecteur_map[46].IN1
+vecteur_map[47] => vecteur_map[47].IN1
+vecteur_map[48] => vecteur_map[48].IN1
+vecteur_map[49] => vecteur_map[49].IN1
+vecteur_map[50] => vecteur_map[50].IN1
+vecteur_map[51] => vecteur_map[51].IN1
+vecteur_map[52] => vecteur_map[52].IN1
+vecteur_map[53] => vecteur_map[53].IN1
+vecteur_map[54] => vecteur_map[54].IN1
+vecteur_map[55] => vecteur_map[55].IN1
+vecteur_map[56] => vecteur_map[56].IN1
+vecteur_map[57] => vecteur_map[57].IN1
+vecteur_map[58] => vecteur_map[58].IN1
+vecteur_map[59] => vecteur_map[59].IN1
+vecteur_map[60] => vecteur_map[60].IN1
+vecteur_map[61] => vecteur_map[61].IN1
+vecteur_map[62] => vecteur_map[62].IN1
+vecteur_map[63] => vecteur_map[63].IN1
+vecteur_map[64] => vecteur_map[64].IN1
+vecteur_map[65] => vecteur_map[65].IN1
+vecteur_map[66] => vecteur_map[66].IN1
+vecteur_map[67] => vecteur_map[67].IN1
+vecteur_map[68] => vecteur_map[68].IN1
+vecteur_map[69] => vecteur_map[69].IN1
+vecteur_map[70] => vecteur_map[70].IN1
+vecteur_map[71] => vecteur_map[71].IN1
+vecteur_map[72] => vecteur_map[72].IN1
+vecteur_map[73] => vecteur_map[73].IN1
+vecteur_map[74] => vecteur_map[74].IN1
+vecteur_map[75] => vecteur_map[75].IN1
+vecteur_map[76] => vecteur_map[76].IN1
+vecteur_map[77] => vecteur_map[77].IN1
+vecteur_map[78] => vecteur_map[78].IN1
+vecteur_map[79] => vecteur_map[79].IN1
+vecteur_map[80] => vecteur_map[80].IN1
+vecteur_map[81] => vecteur_map[81].IN1
+vecteur_map[82] => vecteur_map[82].IN1
+vecteur_map[83] => vecteur_map[83].IN1
+vecteur_map[84] => vecteur_map[84].IN1
+vecteur_map[85] => vecteur_map[85].IN1
+vecteur_map[86] => vecteur_map[86].IN1
+vecteur_map[87] => vecteur_map[87].IN1
+vecteur_map[88] => vecteur_map[88].IN1
+vecteur_map[89] => vecteur_map[89].IN1
+vecteur_map[90] => vecteur_map[90].IN1
+vecteur_map[91] => vecteur_map[91].IN1
+vecteur_map[92] => vecteur_map[92].IN1
+vecteur_map[93] => vecteur_map[93].IN1
+vecteur_map[94] => vecteur_map[94].IN1
+vecteur_map[95] => vecteur_map[95].IN1
+vecteur_map[96] => vecteur_map[96].IN1
+vecteur_map[97] => vecteur_map[97].IN1
+vecteur_map[98] => vecteur_map[98].IN1
+vecteur_map[99] => vecteur_map[99].IN1
+select_affichage => ~NO_FANOUT~
+largeur_grille[0] => largeur_grille[0].IN1
+largeur_grille[1] => largeur_grille[1].IN1
+largeur_grille[2] => largeur_grille[2].IN1
+largeur_grille[3] => largeur_grille[3].IN1
+largeur_grille[4] => largeur_grille[4].IN1
+largeur_grille[5] => largeur_grille[5].IN1
+largeur_grille[6] => largeur_grille[6].IN1
+largeur_grille[7] => largeur_grille[7].IN1
+largeur_grille[8] => largeur_grille[8].IN1
+largeur_grille[9] => largeur_grille[9].IN1
+largeur_grille[10] => largeur_grille[10].IN1
+largeur_grille[11] => largeur_grille[11].IN1
+largeur_grille[12] => largeur_grille[12].IN1
+largeur_grille[13] => largeur_grille[13].IN1
+largeur_grille[14] => largeur_grille[14].IN1
+largeur_grille[15] => largeur_grille[15].IN1
+largeur_grille[16] => largeur_grille[16].IN1
+largeur_grille[17] => largeur_grille[17].IN1
+largeur_grille[18] => largeur_grille[18].IN1
+largeur_grille[19] => largeur_grille[19].IN1
+largeur_grille[20] => largeur_grille[20].IN1
+largeur_grille[21] => largeur_grille[21].IN1
+largeur_grille[22] => largeur_grille[22].IN1
+largeur_grille[23] => largeur_grille[23].IN1
+largeur_grille[24] => largeur_grille[24].IN1
+largeur_grille[25] => largeur_grille[25].IN1
+largeur_grille[26] => largeur_grille[26].IN1
+largeur_grille[27] => largeur_grille[27].IN1
+largeur_grille[28] => largeur_grille[28].IN1
+largeur_grille[29] => largeur_grille[29].IN1
+largeur_grille[30] => largeur_grille[30].IN1
+largeur_grille[31] => largeur_grille[31].IN1
+hauteur_grille[0] => hauteur_grille[0].IN1
+hauteur_grille[1] => hauteur_grille[1].IN1
+hauteur_grille[2] => hauteur_grille[2].IN1
+hauteur_grille[3] => hauteur_grille[3].IN1
+hauteur_grille[4] => hauteur_grille[4].IN1
+hauteur_grille[5] => hauteur_grille[5].IN1
+hauteur_grille[6] => hauteur_grille[6].IN1
+hauteur_grille[7] => hauteur_grille[7].IN1
+hauteur_grille[8] => hauteur_grille[8].IN1
+hauteur_grille[9] => hauteur_grille[9].IN1
+hauteur_grille[10] => hauteur_grille[10].IN1
+hauteur_grille[11] => hauteur_grille[11].IN1
+hauteur_grille[12] => hauteur_grille[12].IN1
+hauteur_grille[13] => hauteur_grille[13].IN1
+hauteur_grille[14] => hauteur_grille[14].IN1
+hauteur_grille[15] => hauteur_grille[15].IN1
+hauteur_grille[16] => hauteur_grille[16].IN1
+hauteur_grille[17] => hauteur_grille[17].IN1
+hauteur_grille[18] => hauteur_grille[18].IN1
+hauteur_grille[19] => hauteur_grille[19].IN1
+hauteur_grille[20] => hauteur_grille[20].IN1
+hauteur_grille[21] => hauteur_grille[21].IN1
+hauteur_grille[22] => hauteur_grille[22].IN1
+hauteur_grille[23] => hauteur_grille[23].IN1
+hauteur_grille[24] => hauteur_grille[24].IN1
+hauteur_grille[25] => hauteur_grille[25].IN1
+hauteur_grille[26] => hauteur_grille[26].IN1
+hauteur_grille[27] => hauteur_grille[27].IN1
+hauteur_grille[28] => hauteur_grille[28].IN1
+hauteur_grille[29] => hauteur_grille[29].IN1
+hauteur_grille[30] => hauteur_grille[30].IN1
+hauteur_grille[31] => hauteur_grille[31].IN1
+h_position_du_curseur[0] => h_position_du_curseur[0].IN1
+h_position_du_curseur[1] => h_position_du_curseur[1].IN1
+h_position_du_curseur[2] => h_position_du_curseur[2].IN1
+h_position_du_curseur[3] => h_position_du_curseur[3].IN1
+v_position_du_curseur[0] => v_position_du_curseur[0].IN1
+v_position_du_curseur[1] => v_position_du_curseur[1].IN1
+v_position_du_curseur[2] => v_position_du_curseur[2].IN1
+v_position_du_curseur[3] => v_position_du_curseur[3].IN1
 
 
-|C5G_HDMI_VPG|sys_pll:u_sys_pll
+|test_simul|C5G_HDMI_VPG:inst|sys_pll:u_sys_pll
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= sys_pll_0002:sys_pll_inst.outclk_0
 locked <= sys_pll_0002:sys_pll_inst.locked
 
 
-|C5G_HDMI_VPG|sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst
+|test_simul|C5G_HDMI_VPG:inst|sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= altera_pll:altera_pll_i.outclk
 locked <= altera_pll:altera_pll_i.locked
 
 
-|C5G_HDMI_VPG|sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i
+|test_simul|C5G_HDMI_VPG:inst|sys_pll:u_sys_pll|sys_pll_0002:sys_pll_inst|altera_pll:altera_pll_i
 refclk => general[0].gpll.I_REFCLK
 refclk1 => ~NO_FANOUT~
 fbclk => ~NO_FANOUT~
@@ -223,7 +444,7 @@ cascade_out[0] <= <GND>
 zdbfbclk <> <GND>
 
 
-|C5G_HDMI_VPG|vpg_mode:u_vpg_mode
+|test_simul|C5G_HDMI_VPG:inst|vpg_mode:u_vpg_mode
 reset_n => vpg_mode[0]~reg0.PRESET
 reset_n => vpg_mode[1]~reg0.ACLR
 reset_n => vpg_mode[2]~reg0.PRESET
@@ -281,7 +502,7 @@ vpg_mode[2] <= vpg_mode[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 vpg_mode[3] <= vpg_mode[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|C5G_HDMI_VPG|vpg:u_vpg
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg
 clk_50 => clk_50.IN3
 reset_n => reset_n.IN1
 mode[0] => mode[0].IN1
@@ -319,9 +540,182 @@ vpg_b[4] <= vga_generator:u_vga_generator.vga_b
 vpg_b[5] <= vga_generator:u_vga_generator.vga_b
 vpg_b[6] <= vga_generator:u_vga_generator.vga_b
 vpg_b[7] <= vga_generator:u_vga_generator.vga_b
+vecteur_map[0] => vecteur_map[0].IN1
+vecteur_map[1] => vecteur_map[1].IN1
+vecteur_map[2] => vecteur_map[2].IN1
+vecteur_map[3] => vecteur_map[3].IN1
+vecteur_map[4] => vecteur_map[4].IN1
+vecteur_map[5] => vecteur_map[5].IN1
+vecteur_map[6] => vecteur_map[6].IN1
+vecteur_map[7] => vecteur_map[7].IN1
+vecteur_map[8] => vecteur_map[8].IN1
+vecteur_map[9] => vecteur_map[9].IN1
+vecteur_map[10] => vecteur_map[10].IN1
+vecteur_map[11] => vecteur_map[11].IN1
+vecteur_map[12] => vecteur_map[12].IN1
+vecteur_map[13] => vecteur_map[13].IN1
+vecteur_map[14] => vecteur_map[14].IN1
+vecteur_map[15] => vecteur_map[15].IN1
+vecteur_map[16] => vecteur_map[16].IN1
+vecteur_map[17] => vecteur_map[17].IN1
+vecteur_map[18] => vecteur_map[18].IN1
+vecteur_map[19] => vecteur_map[19].IN1
+vecteur_map[20] => vecteur_map[20].IN1
+vecteur_map[21] => vecteur_map[21].IN1
+vecteur_map[22] => vecteur_map[22].IN1
+vecteur_map[23] => vecteur_map[23].IN1
+vecteur_map[24] => vecteur_map[24].IN1
+vecteur_map[25] => vecteur_map[25].IN1
+vecteur_map[26] => vecteur_map[26].IN1
+vecteur_map[27] => vecteur_map[27].IN1
+vecteur_map[28] => vecteur_map[28].IN1
+vecteur_map[29] => vecteur_map[29].IN1
+vecteur_map[30] => vecteur_map[30].IN1
+vecteur_map[31] => vecteur_map[31].IN1
+vecteur_map[32] => vecteur_map[32].IN1
+vecteur_map[33] => vecteur_map[33].IN1
+vecteur_map[34] => vecteur_map[34].IN1
+vecteur_map[35] => vecteur_map[35].IN1
+vecteur_map[36] => vecteur_map[36].IN1
+vecteur_map[37] => vecteur_map[37].IN1
+vecteur_map[38] => vecteur_map[38].IN1
+vecteur_map[39] => vecteur_map[39].IN1
+vecteur_map[40] => vecteur_map[40].IN1
+vecteur_map[41] => vecteur_map[41].IN1
+vecteur_map[42] => vecteur_map[42].IN1
+vecteur_map[43] => vecteur_map[43].IN1
+vecteur_map[44] => vecteur_map[44].IN1
+vecteur_map[45] => vecteur_map[45].IN1
+vecteur_map[46] => vecteur_map[46].IN1
+vecteur_map[47] => vecteur_map[47].IN1
+vecteur_map[48] => vecteur_map[48].IN1
+vecteur_map[49] => vecteur_map[49].IN1
+vecteur_map[50] => vecteur_map[50].IN1
+vecteur_map[51] => vecteur_map[51].IN1
+vecteur_map[52] => vecteur_map[52].IN1
+vecteur_map[53] => vecteur_map[53].IN1
+vecteur_map[54] => vecteur_map[54].IN1
+vecteur_map[55] => vecteur_map[55].IN1
+vecteur_map[56] => vecteur_map[56].IN1
+vecteur_map[57] => vecteur_map[57].IN1
+vecteur_map[58] => vecteur_map[58].IN1
+vecteur_map[59] => vecteur_map[59].IN1
+vecteur_map[60] => vecteur_map[60].IN1
+vecteur_map[61] => vecteur_map[61].IN1
+vecteur_map[62] => vecteur_map[62].IN1
+vecteur_map[63] => vecteur_map[63].IN1
+vecteur_map[64] => vecteur_map[64].IN1
+vecteur_map[65] => vecteur_map[65].IN1
+vecteur_map[66] => vecteur_map[66].IN1
+vecteur_map[67] => vecteur_map[67].IN1
+vecteur_map[68] => vecteur_map[68].IN1
+vecteur_map[69] => vecteur_map[69].IN1
+vecteur_map[70] => vecteur_map[70].IN1
+vecteur_map[71] => vecteur_map[71].IN1
+vecteur_map[72] => vecteur_map[72].IN1
+vecteur_map[73] => vecteur_map[73].IN1
+vecteur_map[74] => vecteur_map[74].IN1
+vecteur_map[75] => vecteur_map[75].IN1
+vecteur_map[76] => vecteur_map[76].IN1
+vecteur_map[77] => vecteur_map[77].IN1
+vecteur_map[78] => vecteur_map[78].IN1
+vecteur_map[79] => vecteur_map[79].IN1
+vecteur_map[80] => vecteur_map[80].IN1
+vecteur_map[81] => vecteur_map[81].IN1
+vecteur_map[82] => vecteur_map[82].IN1
+vecteur_map[83] => vecteur_map[83].IN1
+vecteur_map[84] => vecteur_map[84].IN1
+vecteur_map[85] => vecteur_map[85].IN1
+vecteur_map[86] => vecteur_map[86].IN1
+vecteur_map[87] => vecteur_map[87].IN1
+vecteur_map[88] => vecteur_map[88].IN1
+vecteur_map[89] => vecteur_map[89].IN1
+vecteur_map[90] => vecteur_map[90].IN1
+vecteur_map[91] => vecteur_map[91].IN1
+vecteur_map[92] => vecteur_map[92].IN1
+vecteur_map[93] => vecteur_map[93].IN1
+vecteur_map[94] => vecteur_map[94].IN1
+vecteur_map[95] => vecteur_map[95].IN1
+vecteur_map[96] => vecteur_map[96].IN1
+vecteur_map[97] => vecteur_map[97].IN1
+vecteur_map[98] => vecteur_map[98].IN1
+vecteur_map[99] => vecteur_map[99].IN1
+select_affichage => ~NO_FANOUT~
+largeur_grille[0] => largeur_grille[0].IN1
+largeur_grille[1] => largeur_grille[1].IN1
+largeur_grille[2] => largeur_grille[2].IN1
+largeur_grille[3] => largeur_grille[3].IN1
+largeur_grille[4] => largeur_grille[4].IN1
+largeur_grille[5] => largeur_grille[5].IN1
+largeur_grille[6] => largeur_grille[6].IN1
+largeur_grille[7] => largeur_grille[7].IN1
+largeur_grille[8] => largeur_grille[8].IN1
+largeur_grille[9] => largeur_grille[9].IN1
+largeur_grille[10] => largeur_grille[10].IN1
+largeur_grille[11] => largeur_grille[11].IN1
+largeur_grille[12] => largeur_grille[12].IN1
+largeur_grille[13] => largeur_grille[13].IN1
+largeur_grille[14] => largeur_grille[14].IN1
+largeur_grille[15] => largeur_grille[15].IN1
+largeur_grille[16] => largeur_grille[16].IN1
+largeur_grille[17] => largeur_grille[17].IN1
+largeur_grille[18] => largeur_grille[18].IN1
+largeur_grille[19] => largeur_grille[19].IN1
+largeur_grille[20] => largeur_grille[20].IN1
+largeur_grille[21] => largeur_grille[21].IN1
+largeur_grille[22] => largeur_grille[22].IN1
+largeur_grille[23] => largeur_grille[23].IN1
+largeur_grille[24] => largeur_grille[24].IN1
+largeur_grille[25] => largeur_grille[25].IN1
+largeur_grille[26] => largeur_grille[26].IN1
+largeur_grille[27] => largeur_grille[27].IN1
+largeur_grille[28] => largeur_grille[28].IN1
+largeur_grille[29] => largeur_grille[29].IN1
+largeur_grille[30] => largeur_grille[30].IN1
+largeur_grille[31] => largeur_grille[31].IN1
+hauteur_grille[0] => hauteur_grille[0].IN1
+hauteur_grille[1] => hauteur_grille[1].IN1
+hauteur_grille[2] => hauteur_grille[2].IN1
+hauteur_grille[3] => hauteur_grille[3].IN1
+hauteur_grille[4] => hauteur_grille[4].IN1
+hauteur_grille[5] => hauteur_grille[5].IN1
+hauteur_grille[6] => hauteur_grille[6].IN1
+hauteur_grille[7] => hauteur_grille[7].IN1
+hauteur_grille[8] => hauteur_grille[8].IN1
+hauteur_grille[9] => hauteur_grille[9].IN1
+hauteur_grille[10] => hauteur_grille[10].IN1
+hauteur_grille[11] => hauteur_grille[11].IN1
+hauteur_grille[12] => hauteur_grille[12].IN1
+hauteur_grille[13] => hauteur_grille[13].IN1
+hauteur_grille[14] => hauteur_grille[14].IN1
+hauteur_grille[15] => hauteur_grille[15].IN1
+hauteur_grille[16] => hauteur_grille[16].IN1
+hauteur_grille[17] => hauteur_grille[17].IN1
+hauteur_grille[18] => hauteur_grille[18].IN1
+hauteur_grille[19] => hauteur_grille[19].IN1
+hauteur_grille[20] => hauteur_grille[20].IN1
+hauteur_grille[21] => hauteur_grille[21].IN1
+hauteur_grille[22] => hauteur_grille[22].IN1
+hauteur_grille[23] => hauteur_grille[23].IN1
+hauteur_grille[24] => hauteur_grille[24].IN1
+hauteur_grille[25] => hauteur_grille[25].IN1
+hauteur_grille[26] => hauteur_grille[26].IN1
+hauteur_grille[27] => hauteur_grille[27].IN1
+hauteur_grille[28] => hauteur_grille[28].IN1
+hauteur_grille[29] => hauteur_grille[29].IN1
+hauteur_grille[30] => hauteur_grille[30].IN1
+hauteur_grille[31] => hauteur_grille[31].IN1
+h_position_du_curseur[0] => h_position_du_curseur[0].IN1
+h_position_du_curseur[1] => h_position_du_curseur[1].IN1
+h_position_du_curseur[2] => h_position_du_curseur[2].IN1
+h_position_du_curseur[3] => h_position_du_curseur[3].IN1
+v_position_du_curseur[0] => v_position_du_curseur[0].IN1
+v_position_du_curseur[1] => v_position_du_curseur[1].IN1
+v_position_du_curseur[2] => v_position_du_curseur[2].IN1
+v_position_du_curseur[3] => v_position_du_curseur[3].IN1
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig
 mgmt_clk => mgmt_clk.IN1
 mgmt_reset => mgmt_reset.IN1
 mgmt_readdata[0] <= altera_pll_reconfig_top:pll_reconfig_inst.mgmt_readdata
@@ -527,7 +921,7 @@ reconfig_from_pll[62] => reconfig_from_pll[62].IN1
 reconfig_from_pll[63] => reconfig_from_pll[63].IN1
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst
 mgmt_clk => mgmt_clk.IN1
 mgmt_reset => mgmt_reset.IN1
 reconfig_to_pll[0] <= altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0.reconfig_to_pll
@@ -733,7 +1127,7 @@ mgmt_writedata[30] => mgmt_writedata[30].IN1
 mgmt_writedata[31] => mgmt_writedata[31].IN1
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0
 mgmt_clk => clk.IN3
 mgmt_reset => mgmt_reset.IN1
 reconfig_to_pll[0] <= clk.DB_MAX_OUTPUT_PORT_TYPE
@@ -1143,7 +1537,7 @@ mif_base_addr[7] <= mif_base_addr[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 mif_base_addr[8] <= mif_base_addr[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst
 clk => first_phase_shift_q.CLK
 clk => shifts_done_counter[0].CLK
 clk => shifts_done_counter[1].CLK
@@ -1274,7 +1668,7 @@ cnt_sel[3] <= generic_lcell_comb:lcell_cnt_sel_3.combout
 cnt_sel[4] <= generic_lcell_comb:lcell_cnt_sel_4.combout
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_0
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_0
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1284,7 +1678,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_1
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_1
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1294,7 +1688,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_2
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_2
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1304,7 +1698,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_3
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_3
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1314,7 +1708,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_4
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_4
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1324,7 +1718,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|self_reset:self_reset_inst
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|self_reset:self_reset_inst
 mgmt_reset => counter.OUTPUTSELECT
 mgmt_reset => counter.OUTPUTSELECT
 mgmt_reset => counter.OUTPUTSELECT
@@ -1354,7 +1748,7 @@ reset <= reset.DB_MAX_OUTPUT_PORT_TYPE
 init_reset <= local_reset.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_mux:dprio_mux_inst
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|dprio_mux:dprio_mux_inst
 init_dprio_address[0] => dprio_address.DATAA
 init_dprio_address[1] => dprio_address.DATAA
 init_dprio_address[2] => dprio_address.DATAA
@@ -1473,7 +1867,7 @@ scanen <= init_scanen.DB_MAX_OUTPUT_PORT_TYPE
 ser_shift_load <= init_ser_shift_load.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|fpll_dprio_init:fpll_dprio_init_inst
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|fpll_dprio_init:fpll_dprio_init_inst
 clk => scanen~reg0.CLK
 clk => atpgmode~reg0.CLK
 clk => dprio_init_done~reg0.CLK
@@ -1526,7 +1920,7 @@ ser_shift_load <= ser_shift_load~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dprio_init_done <= dprio_init_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_fpll_0_1
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_fpll_0_1
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1536,7 +1930,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_dprio_read
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_reconfig:u_pll_reconfig|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:reconfig_core.altera_pll_reconfig_core_inst0|generic_lcell_comb:lcell_dprio_read
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1546,7 +1940,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll:u_pll
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= pll_0002:pll_inst.outclk_0
@@ -1681,7 +2075,7 @@ reconfig_from_pll[62] <= pll_0002:pll_inst.reconfig_from_pll
 reconfig_from_pll[63] <= pll_0002:pll_inst.reconfig_from_pll
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= altera_pll:altera_pll_i.outclk
@@ -1816,7 +2210,7 @@ reconfig_from_pll[62] <= altera_pll:altera_pll_i.reconfig_from_pll
 reconfig_from_pll[63] <= altera_pll:altera_pll_i.reconfig_from_pll
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i
 refclk => refclk.IN1
 refclk1 => refclk1.IN1
 fbclk => ~NO_FANOUT~
@@ -1979,7 +2373,7 @@ cascade_out[0] <= altera_cyclonev_pll:cyclonev_pll.cascade_out
 zdbfbclk <> <GND>
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst
 clk => dps_current_state~1.DATAIN
 reset => dps_current_state.OUTPUTSELECT
 reset => dps_current_state.OUTPUTSELECT
@@ -1998,7 +2392,7 @@ usr_phase_en => phase_en.IN1
 phase_en <= phase_en.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|dprio_init:dprio_init_inst
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|dprio_init:dprio_init_inst
 clk => scanen~reg0.CLK
 clk => atpgmode~reg0.CLK
 clk => dprio_init_done~reg0.CLK
@@ -2049,7 +2443,7 @@ ser_shift_load <= ser_shift_load~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dprio_init_done <= dprio_init_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll
 phout_0[0] <= altera_cyclonev_pll_base:fpll_0.phout
 phout_0[1] <= altera_cyclonev_pll_base:fpll_0.phout
 phout_0[2] <= altera_cyclonev_pll_base:fpll_0.phout
@@ -2980,7 +3374,7 @@ divclk[0] <= counter[0].output_counter.O_DIVCLK
 cascade_out[0] <= counter[0].output_counter.O_CASCADEOUT
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll:u_pll|pll_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0
 phout[0] <= DPA.O_PHOUT
 phout[1] <= DPA.O_PHOUT1
 phout[2] <= DPA.O_PHOUT2
@@ -3923,7 +4317,7 @@ vcoph[6] <= fpll.O_VCOPH6
 vcoph[7] <= fpll.O_VCOPH7
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|pll_controller:u_pll_controller
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|pll_controller:u_pll_controller
 clk => mgmt_writedata[0]~reg0.CLK
 clk => mgmt_writedata[1]~reg0.CLK
 clk => mgmt_writedata[2]~reg0.CLK
@@ -4100,7 +4494,7 @@ mgmt_writedata[30] <= mgmt_writedata[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 mgmt_writedata[31] <= mgmt_writedata[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|C5G_HDMI_VPG|vpg:u_vpg|vga_generator:u_vga_generator
+|test_simul|C5G_HDMI_VPG:inst|vpg:u_vpg|vga_generator:u_vga_generator
 clk => vga_b[0]~reg0.CLK
 clk => vga_b[1]~reg0.CLK
 clk => vga_b[2]~reg0.CLK
@@ -4333,26 +4727,26 @@ reset_n => color_mode_h[28].ACLR
 reset_n => color_mode_h[29].ACLR
 reset_n => color_mode_h[30].ACLR
 reset_n => color_mode_h[31].ACLR
-reset_n => largeur_cell[0].LATCH_ENABLE
-reset_n => largeur_cell[1].LATCH_ENABLE
-reset_n => largeur_cell[2].LATCH_ENABLE
-reset_n => largeur_cell[3].LATCH_ENABLE
-reset_n => largeur_cell[4].LATCH_ENABLE
-reset_n => largeur_cell[5].LATCH_ENABLE
-reset_n => largeur_cell[6].LATCH_ENABLE
-reset_n => largeur_cell[7].LATCH_ENABLE
-reset_n => largeur_cell[8].LATCH_ENABLE
-reset_n => largeur_cell[9].LATCH_ENABLE
-reset_n => largeur_cell[10].LATCH_ENABLE
-reset_n => largeur_cell[11].LATCH_ENABLE
-reset_n => largeur_cell[12].LATCH_ENABLE
-reset_n => largeur_cell[13].LATCH_ENABLE
-reset_n => largeur_cell[14].LATCH_ENABLE
-reset_n => largeur_cell[15].LATCH_ENABLE
-reset_n => largeur_cell[16].LATCH_ENABLE
-reset_n => largeur_cell[17].LATCH_ENABLE
-reset_n => largeur_cell[18].LATCH_ENABLE
 reset_n => largeur_cell[19].LATCH_ENABLE
+reset_n => largeur_cell[18].LATCH_ENABLE
+reset_n => largeur_cell[17].LATCH_ENABLE
+reset_n => largeur_cell[16].LATCH_ENABLE
+reset_n => largeur_cell[15].LATCH_ENABLE
+reset_n => largeur_cell[14].LATCH_ENABLE
+reset_n => largeur_cell[13].LATCH_ENABLE
+reset_n => largeur_cell[12].LATCH_ENABLE
+reset_n => largeur_cell[11].LATCH_ENABLE
+reset_n => largeur_cell[10].LATCH_ENABLE
+reset_n => largeur_cell[9].LATCH_ENABLE
+reset_n => largeur_cell[8].LATCH_ENABLE
+reset_n => largeur_cell[7].LATCH_ENABLE
+reset_n => largeur_cell[6].LATCH_ENABLE
+reset_n => largeur_cell[5].LATCH_ENABLE
+reset_n => largeur_cell[4].LATCH_ENABLE
+reset_n => largeur_cell[3].LATCH_ENABLE
+reset_n => largeur_cell[2].LATCH_ENABLE
+reset_n => largeur_cell[1].LATCH_ENABLE
+reset_n => largeur_cell[0].LATCH_ENABLE
 reset_n => largeur_cell[20].LATCH_ENABLE
 reset_n => largeur_cell[21].LATCH_ENABLE
 reset_n => largeur_cell[22].LATCH_ENABLE
@@ -4560,41 +4954,41 @@ h_sync[9] => LessThan0.IN3
 h_sync[10] => LessThan0.IN2
 h_sync[11] => LessThan0.IN1
 h_start[0] => Equal1.IN11
-h_start[0] => Add2.IN12
 h_start[0] => Add0.IN12
+h_start[0] => Add2.IN12
 h_start[1] => Equal1.IN10
-h_start[1] => Add2.IN11
 h_start[1] => Add0.IN11
+h_start[1] => Add2.IN11
 h_start[2] => Equal1.IN9
-h_start[2] => Add2.IN10
 h_start[2] => Add0.IN10
+h_start[2] => Add2.IN10
 h_start[3] => Equal1.IN8
-h_start[3] => Add2.IN9
 h_start[3] => Add0.IN9
+h_start[3] => Add2.IN9
 h_start[4] => Equal1.IN7
-h_start[4] => Add2.IN8
 h_start[4] => Add0.IN8
+h_start[4] => Add2.IN8
 h_start[5] => Equal1.IN6
-h_start[5] => Add2.IN7
 h_start[5] => Add0.IN7
+h_start[5] => Add2.IN7
 h_start[6] => Equal1.IN5
-h_start[6] => Add2.IN6
 h_start[6] => Add0.IN6
+h_start[6] => Add2.IN6
 h_start[7] => Equal1.IN4
-h_start[7] => Add2.IN5
 h_start[7] => Add0.IN5
+h_start[7] => Add2.IN5
 h_start[8] => Equal1.IN3
-h_start[8] => Add2.IN4
 h_start[8] => Add0.IN4
+h_start[8] => Add2.IN4
 h_start[9] => Equal1.IN2
-h_start[9] => Add2.IN3
 h_start[9] => Add0.IN3
+h_start[9] => Add2.IN3
 h_start[10] => Equal1.IN1
-h_start[10] => Add2.IN2
 h_start[10] => Add0.IN2
+h_start[10] => Add2.IN2
 h_start[11] => Equal1.IN0
-h_start[11] => Add2.IN1
 h_start[11] => Add0.IN1
+h_start[11] => Add2.IN1
 h_end[0] => Equal2.IN11
 h_end[0] => Add0.IN24
 h_end[1] => Equal2.IN10
@@ -4751,16 +5145,16 @@ vecteur_map[8] => Mux0.IN11
 vecteur_map[9] => Mux0.IN10
 largeur_grille[0] => Div0.IN35
 largeur_grille[0] => LessThan3.IN64
-largeur_grille[0] => Mult1.IN3
+largeur_grille[0] => Mult0.IN4
 largeur_grille[1] => Div0.IN34
 largeur_grille[1] => LessThan3.IN63
-largeur_grille[1] => Mult1.IN2
+largeur_grille[1] => Mult0.IN3
 largeur_grille[2] => Div0.IN33
 largeur_grille[2] => LessThan3.IN62
-largeur_grille[2] => Mult1.IN1
+largeur_grille[2] => Mult0.IN2
 largeur_grille[3] => Div0.IN32
 largeur_grille[3] => LessThan3.IN61
-largeur_grille[3] => Mult1.IN0
+largeur_grille[3] => Mult0.IN1
 hauteur_grille[0] => Div2.IN35
 hauteur_grille[0] => LessThan6.IN64
 hauteur_grille[1] => Div2.IN34
@@ -4804,5 +5198,181 @@ vga_b[4] <= vga_b[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 vga_b[5] <= vga_b[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 vga_b[6] <= vga_b[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 vga_b[7] <= vga_b[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test_simul|simulate:inst1
+vecteur_map[0] <= <GND>
+vecteur_map[1] <= <GND>
+vecteur_map[2] <= <GND>
+vecteur_map[3] <= <VCC>
+vecteur_map[4] <= <GND>
+vecteur_map[5] <= <VCC>
+vecteur_map[6] <= <GND>
+vecteur_map[7] <= <GND>
+vecteur_map[8] <= <VCC>
+vecteur_map[9] <= <VCC>
+vecteur_map[10] <= <GND>
+vecteur_map[11] <= <GND>
+vecteur_map[12] <= <VCC>
+vecteur_map[13] <= <VCC>
+vecteur_map[14] <= <GND>
+vecteur_map[15] <= <GND>
+vecteur_map[16] <= <GND>
+vecteur_map[17] <= <GND>
+vecteur_map[18] <= <VCC>
+vecteur_map[19] <= <GND>
+vecteur_map[20] <= <VCC>
+vecteur_map[21] <= <GND>
+vecteur_map[22] <= <VCC>
+vecteur_map[23] <= <GND>
+vecteur_map[24] <= <GND>
+vecteur_map[25] <= <VCC>
+vecteur_map[26] <= <VCC>
+vecteur_map[27] <= <GND>
+vecteur_map[28] <= <VCC>
+vecteur_map[29] <= <VCC>
+vecteur_map[30] <= <VCC>
+vecteur_map[31] <= <GND>
+vecteur_map[32] <= <GND>
+vecteur_map[33] <= <GND>
+vecteur_map[34] <= <GND>
+vecteur_map[35] <= <VCC>
+vecteur_map[36] <= <GND>
+vecteur_map[37] <= <GND>
+vecteur_map[38] <= <GND>
+vecteur_map[39] <= <GND>
+vecteur_map[40] <= <GND>
+vecteur_map[41] <= <GND>
+vecteur_map[42] <= <GND>
+vecteur_map[43] <= <GND>
+vecteur_map[44] <= <GND>
+vecteur_map[45] <= <GND>
+vecteur_map[46] <= <GND>
+vecteur_map[47] <= <GND>
+vecteur_map[48] <= <GND>
+vecteur_map[49] <= <GND>
+vecteur_map[50] <= <GND>
+vecteur_map[51] <= <GND>
+vecteur_map[52] <= <GND>
+vecteur_map[53] <= <GND>
+vecteur_map[54] <= <GND>
+vecteur_map[55] <= <GND>
+vecteur_map[56] <= <GND>
+vecteur_map[57] <= <GND>
+vecteur_map[58] <= <GND>
+vecteur_map[59] <= <GND>
+vecteur_map[60] <= <VCC>
+vecteur_map[61] <= <GND>
+vecteur_map[62] <= <GND>
+vecteur_map[63] <= <VCC>
+vecteur_map[64] <= <GND>
+vecteur_map[65] <= <GND>
+vecteur_map[66] <= <GND>
+vecteur_map[67] <= <VCC>
+vecteur_map[68] <= <VCC>
+vecteur_map[69] <= <VCC>
+vecteur_map[70] <= <VCC>
+vecteur_map[71] <= <GND>
+vecteur_map[72] <= <GND>
+vecteur_map[73] <= <VCC>
+vecteur_map[74] <= <VCC>
+vecteur_map[75] <= <GND>
+vecteur_map[76] <= <VCC>
+vecteur_map[77] <= <GND>
+vecteur_map[78] <= <VCC>
+vecteur_map[79] <= <GND>
+vecteur_map[80] <= <GND>
+vecteur_map[81] <= <GND>
+vecteur_map[82] <= <VCC>
+vecteur_map[83] <= <GND>
+vecteur_map[84] <= <VCC>
+vecteur_map[85] <= <VCC>
+vecteur_map[86] <= <GND>
+vecteur_map[87] <= <GND>
+vecteur_map[88] <= <GND>
+vecteur_map[89] <= <VCC>
+vecteur_map[90] <= <GND>
+vecteur_map[91] <= <GND>
+vecteur_map[92] <= <VCC>
+vecteur_map[93] <= <GND>
+vecteur_map[94] <= <GND>
+vecteur_map[95] <= <GND>
+vecteur_map[96] <= <GND>
+vecteur_map[97] <= <GND>
+vecteur_map[98] <= <GND>
+vecteur_map[99] <= <GND>
+select_affichage <= <VCC>
+largeur_grille[0] <= <GND>
+largeur_grille[1] <= <GND>
+largeur_grille[2] <= <VCC>
+largeur_grille[3] <= <GND>
+largeur_grille[4] <= <GND>
+largeur_grille[5] <= <GND>
+largeur_grille[6] <= <GND>
+largeur_grille[7] <= <GND>
+largeur_grille[8] <= <GND>
+largeur_grille[9] <= <GND>
+largeur_grille[10] <= <GND>
+largeur_grille[11] <= <GND>
+largeur_grille[12] <= <GND>
+largeur_grille[13] <= <GND>
+largeur_grille[14] <= <GND>
+largeur_grille[15] <= <GND>
+largeur_grille[16] <= <GND>
+largeur_grille[17] <= <GND>
+largeur_grille[18] <= <GND>
+largeur_grille[19] <= <GND>
+largeur_grille[20] <= <GND>
+largeur_grille[21] <= <GND>
+largeur_grille[22] <= <GND>
+largeur_grille[23] <= <GND>
+largeur_grille[24] <= <GND>
+largeur_grille[25] <= <GND>
+largeur_grille[26] <= <GND>
+largeur_grille[27] <= <GND>
+largeur_grille[28] <= <GND>
+largeur_grille[29] <= <GND>
+largeur_grille[30] <= <GND>
+largeur_grille[31] <= <GND>
+hauteur_grille[0] <= <GND>
+hauteur_grille[1] <= <GND>
+hauteur_grille[2] <= <VCC>
+hauteur_grille[3] <= <VCC>
+hauteur_grille[4] <= <GND>
+hauteur_grille[5] <= <GND>
+hauteur_grille[6] <= <GND>
+hauteur_grille[7] <= <GND>
+hauteur_grille[8] <= <GND>
+hauteur_grille[9] <= <GND>
+hauteur_grille[10] <= <GND>
+hauteur_grille[11] <= <GND>
+hauteur_grille[12] <= <GND>
+hauteur_grille[13] <= <GND>
+hauteur_grille[14] <= <GND>
+hauteur_grille[15] <= <GND>
+hauteur_grille[16] <= <GND>
+hauteur_grille[17] <= <GND>
+hauteur_grille[18] <= <GND>
+hauteur_grille[19] <= <GND>
+hauteur_grille[20] <= <GND>
+hauteur_grille[21] <= <GND>
+hauteur_grille[22] <= <GND>
+hauteur_grille[23] <= <GND>
+hauteur_grille[24] <= <GND>
+hauteur_grille[25] <= <GND>
+hauteur_grille[26] <= <GND>
+hauteur_grille[27] <= <GND>
+hauteur_grille[28] <= <GND>
+hauteur_grille[29] <= <GND>
+hauteur_grille[30] <= <GND>
+hauteur_grille[31] <= <GND>
+h_position_du_curseur[0] <= <GND>
+h_position_du_curseur[1] <= <GND>
+h_position_du_curseur[2] <= <GND>
+h_position_du_curseur[3] <= <GND>
+v_position_du_curseur[0] <= <VCC>
+v_position_du_curseur[1] <= <GND>
+v_position_du_curseur[2] <= <GND>
+v_position_du_curseur[3] <= <GND>
 
 

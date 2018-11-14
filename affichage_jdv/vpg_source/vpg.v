@@ -44,15 +44,28 @@ module vpg(
 	vpg_vs,
 	vpg_r,
 	vpg_g,
-	vpg_b
+	vpg_b,
+	vecteur_map,
+	select_affichage,
+	largeur_grille,
+	hauteur_grille,
+	h_position_du_curseur,
+	v_position_du_curseur
 );
-
 
 input	  		    clk_50;
 input	  		    reset_n;
 input	  [3:0]	  mode;
 input	  		    mode_change;
 input	  [1:0]	  disp_color; 
+
+input [99:0]	vecteur_map;
+input 			select_affichage;
+input	[31:0]	largeur_grille;
+input	[31:0]	hauteur_grille;
+input [3:0]		h_position_du_curseur;
+input [3:0]		v_position_du_curseur;
+
 output			    vpg_pclk;
 output			    vpg_de;
 output			    vpg_hs;
@@ -113,12 +126,6 @@ pll_controller u_pll_controller (
 	.mgmt_writedata(mgmt_writedata) );
 
 //=============== pattern generator according to vga timing
-parameter vecteur_map = 100'b1101111110110011101100010011110110001100101010010011011100100000000100011000000110000010101110100001;
-parameter select_affichage = 1'b1;
-parameter largeur_grille = 10;
-parameter hauteur_grille = 10;
-parameter h_position_du_curseur = 4'b1000;
-parameter v_position_du_curseur = 4'b1;
 
 vga_generator u_vga_generator (                                    
   .clk(vpg_pclk),                
@@ -144,24 +151,15 @@ vga_generator u_vga_generator (
   .vga_de(vpg_de),
   .vga_r(vpg_r),
   .vga_g(vpg_g),
-  .vga_b(vpg_b) );
+  .vga_b(vpg_b) 
+  
+  );
 
 
 //=======================================================
 //  Structural coding
 //=======================================================
 //============= assign timing constant  
-//h_total : total - 1
-//h_sync : sync - 1
-//h_start : sync + back porch - 1 - 2(delay)
-//h_end : h_start + avtive
-//v_total : total - 1
-//v_sync : sync - 1
-//v_start : sync + back porch - 1
-//v_end : v_start + avtive
-//v_active_14 : v_start + 1/4 avtive
-//v_active_24 : v_start + 2/4 avtive
-//v_active_34 : v_start + 3/4 avtive
 always @(mode)
 begin
 	case (mode)

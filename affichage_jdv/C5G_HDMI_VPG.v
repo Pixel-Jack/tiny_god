@@ -24,7 +24,14 @@ module C5G_HDMI_VPG(
 	HDMI_TX_DE,
 	HDMI_TX_HS,
 	HDMI_TX_INT,
-	HDMI_TX_VS
+	HDMI_TX_VS,
+	
+	vecteur_map,
+	select_affichage,
+	largeur_grille,
+	hauteur_grille,
+	h_position_du_curseur,
+	v_position_du_curseur
 );
 
 //=======================================================
@@ -60,6 +67,13 @@ input 		          		HDMI_TX_INT;
 output		          		HDMI_TX_VS;
 
 
+
+input [99:0]	vecteur_map;
+input 			select_affichage;
+input	[31:0]	largeur_grille;
+input	[31:0]	hauteur_grille;
+input [3:0]		h_position_du_curseur;
+input [3:0]		v_position_du_curseur;
 
 
 //=======================================================
@@ -97,11 +111,12 @@ vpg_mode u_vpg_mode (
 	.reset_n(reset_n),
 	.clk(pll_1200k),
 	.clk_en(en_150),
-	.mode_button(SW[1]),
+	.mode_button(SW[9]),
 	.vpg_mode_change(vpg_mode_change),
 	.vpg_mode(vpg_mode) );
 
 //pattern generator
+
 vpg	u_vpg (
 	.clk_50(CLOCK_50_B7A),
 	.reset_n(reset_n),
@@ -109,6 +124,11 @@ vpg	u_vpg (
 	.mode_change(vpg_mode_change),
 	.disp_color(`COLOR_RGB444),       
 	.vpg_pclk(vpg_pclk),
+	.vecteur_map(vecteur_map),
+	.largeur_grille(largeur_grille),
+	.hauteur_grille(hauteur_grille),
+	.h_position_du_curseur(h_position_du_curseur),
+	.v_position_du_curseur(v_position_du_curseur),
 	.vpg_de(vpg_de),
 	.vpg_hs(vpg_hs),
 	.vpg_vs(vpg_vs),

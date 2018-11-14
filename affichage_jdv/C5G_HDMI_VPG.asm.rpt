@@ -1,5 +1,5 @@
 Assembler report for C5G_HDMI_VPG
-Thu Nov 08 17:58:04 2018
+Wed Nov 14 18:09:28 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -37,9 +37,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 08 17:58:04 2018 ;
+; Assembler Status      ; Successful - Wed Nov 14 18:09:28 2018 ;
 ; Revision Name         ; C5G_HDMI_VPG                          ;
-; Top-level Entity Name ; C5G_HDMI_VPG                          ;
+; Top-level Entity Name ; test_simul                            ;
 ; Family                ; Cyclone V                             ;
 ; Device                ; 5CGXFC5C6F27C7                        ;
 +-----------------------+---------------------------------------+
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                             ;
 +----------------+-----------------------------------------------------+
 ; Device         ; 5CGXFC5C6F27C7                                      ;
-; JTAG usercode  ; 0x00EE2FEF                                          ;
-; Checksum       ; 0x00EE2FEF                                          ;
+; JTAG usercode  ; 0x00ED6634                                          ;
+; Checksum       ; 0x00ED6634                                          ;
 +----------------+-----------------------------------------------------+
 
 
@@ -103,12 +103,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Thu Nov 08 17:57:54 2018
+    Info: Processing started: Wed Nov 14 18:09:18 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off C5G_HDMI_VPG -c C5G_HDMI_VPG
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 655 megabytes
-    Info: Processing ended: Thu Nov 08 17:58:04 2018
+    Info: Peak virtual memory: 660 megabytes
+    Info: Processing ended: Wed Nov 14 18:09:28 2018
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:10
 

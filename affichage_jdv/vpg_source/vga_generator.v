@@ -108,6 +108,8 @@ integer v_in_cell;
 integer y_map;
 integer color_mode_v;
 
+integer int_largeur_grille;
+integer position_index;
 
 parameter border = 1;
 
@@ -205,7 +207,7 @@ begin
 	begin
     vga_de <= 1'b0;
     pre_vga_de <= 1'b0;
-    boarder <= 1'b0;		
+    boarder <= 1'b0;	 
   end
 	else
 	begin
@@ -216,21 +218,24 @@ begin
 			boarder <= 1'b1;
 		 else
 			boarder <= 1'b0;   
+		
+		int_largeur_grille = largeur_grille;
+		position_index = x_map + y_map * int_largeur_grille;
 			
 		if (boarder)
-			{vga_r, vga_g, vga_b} <= {8'hFF,8'h57,8'h33};
+			{vga_r, vga_g, vga_b} <= {8'h32,8'hD8,8'hE0}; // Border window
 		else
 			case (color_mode_h * color_mode_v)
 			0 : {vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'hFF}; // out
-			1 : if (vecteur_map[x_map + y_map * largeur_grille] == 1)
-					{vga_r, vga_g, vga_b} <= {8'hC7,8'h00,8'h39}; // Cell active
+			1 : if (vecteur_map[position_index] == 1)
+					{vga_r, vga_g, vga_b} <= {8'h12,8'hAF,8'hAF}; // Cell active
 				 else 
 					{vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'h00}; // Cell inactive
 			default : 
 				if (h_position_du_curseur == x_map & v_position_du_curseur == y_map)
-					{vga_r, vga_g, vga_b} <= {8'hFF,8'h57,8'h33}; // Border active
+					{vga_r, vga_g, vga_b} <= {8'hFF,8'h5C,8'h39}; // Border active
 				else
-					{vga_r, vga_g, vga_b} <= {8'h58,8'h18,8'h45}; // Border inactive
+					{vga_r, vga_g, vga_b} <= {8'h32,8'hD8,8'hE0}; // Border inactive
 			endcase
 	end
 
