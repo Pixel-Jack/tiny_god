@@ -1,0 +1,34 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity diviseur is
+	port (
+		CLOCK_50M : in std_logic;
+		CLOCK_1 : out std_logic
+	);
+end entity diviseur;
+
+architecture a of diviseur is
+
+signal compteur : std_logic_vector(26 downto 0) := (others => '0');
+
+begin
+	process(CLOCK_50M)
+	begin
+		if rising_edge(CLOCK_50M) then
+			compteur <= compteur + 1;
+			if compteur => x"17d7840" then -- 25 000 000 
+				CLOCK_1 <= 1
+				if compteur => x"2faf080" then -- 50 000 000
+					compteur <= (others => '0');
+					CLOCK_1 <= '0';
+				else 
+					CLOCK_1 <= '1';
+				end if;
+			else
+				CLOCK_1 <= '0';
+			end if;
+		end if;
+	end process;
+
+end architecture a;

@@ -1,0 +1,298 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=D:/tiny_god/interactivite_jeu/ --output-directory=D:/tiny_god/interactivite_jeu/nios/simulation/ --file-set=SIM_VHDL --report-file=sopcinfo:D:/tiny_god/interactivite_jeu/nios.sopcinfo --report-file=html:D:/tiny_god/interactivite_jeu/nios.html --report-file=sip:D:/tiny_god/interactivite_jeu/nios/simulation/nios.sip --report-file=csv:D:/tiny_god/interactivite_jeu/nios.csv --report-file=spd:D:/tiny_god/interactivite_jeu/nios.spd --report-file=cmp:D:/tiny_god/interactivite_jeu/nios.cmp --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CGXFC7C7F23C8 --system-info=DEVICE_SPEEDGRADE=8_H7 --component-file=D:/tiny_god/interactivite_jeu/nios.qsys
+Progress: Loading interactivite_jeu/nios.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding switch [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module switch
+Progress: Adding buttons [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module buttons
+Progress: Adding action [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module action
+Progress: Adding up [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module up
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding pause [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pause
+Progress: Adding down [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module down
+Progress: Adding left [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module left
+Progress: Adding right [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module right
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios.switch: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: nios: Generating nios "nios" for SIM_VHDL
+Info: pipeline_bridge_swap_transform: After transform: 12 modules, 39 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 25 modules, 81 connections
+Info: merlin_domain_transform: After transform: 50 modules, 221 connections
+Info: merlin_router_transform: After transform: 63 modules, 263 connections
+Info: merlin_traffic_limiter_transform: After transform: 65 modules, 273 connections
+Info: reset_adaptation_transform: After transform: 67 modules, 262 connections
+Info: merlin_network_to_switch_transform: After transform: 92 modules, 314 connections
+Info: limiter_update_transform: After transform: 92 modules, 316 connections
+Info: merlin_mm_transform: After transform: 92 modules, 316 connections
+Info: merlin_interrupt_mapper_transform: After transform: 93 modules, 319 connections
+Info: onchip_memory2_0: Starting RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_onchip_memory2_0 --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0001_onchip_memory2_0_gen/ --quartus_dir=C:/altera/13.0/quartus --vhdl --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0001_onchip_memory2_0_gen//nios_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0001_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0: Done RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0: "nios" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: nios2_qsys_0: Starting RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_nios2_qsys_0 --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0002_nios2_qsys_0_gen/ --quartus_dir=C:/altera/13.0/quartus --vhdl --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0002_nios2_qsys_0_gen//nios_nios2_qsys_0_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0002_nios2_qsys_0_gen/    --bogus  ]
+Info: nios2_qsys_0: # 2018.11.14 16:01:25 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2018.11.14 16:01:25 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2018.11.14 16:01:28 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2018.11.14 16:01:28 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys_0: # 2018.11.14 16:01:28 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: nios2_qsys_0: # 2018.11.14 16:01:28 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2018.11.14 16:01:28 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2018.11.14 16:01:28 (*)     Testbench
+Info: nios2_qsys_0: # 2018.11.14 16:01:28 (*)     Instruction decoding
+Info: nios2_qsys_0: # 2018.11.14 16:01:28 (*)       Instruction fields
+Info: nios2_qsys_0: # 2018.11.14 16:01:28 (*)       Instruction decodes
+Info: nios2_qsys_0: # 2018.11.14 16:01:29 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys_0: # 2018.11.14 16:01:29 (*)       Instruction controls
+Info: nios2_qsys_0: # 2018.11.14 16:01:29 (*)     Pipeline frontend
+Info: nios2_qsys_0: # 2018.11.14 16:01:29 (*)     Pipeline backend
+Info: nios2_qsys_0: # 2018.11.14 16:01:31 (*)   Creating 'C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0002_nios2_qsys_0_gen//nios_nios2_qsys_0_nios2_waves.do'
+Info: nios2_qsys_0: # 2018.11.14 16:01:31 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2018.11.14 16:01:35 (*)   Creating encrypted RTL
+Info: nios2_qsys_0: # 2018.11.14 16:01:37 (*)   Creating IP functional simulation model
+Info: nios2_qsys_0: # 2018.11.14 16:01:50 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0: "nios" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: switch: Starting RTL generation for module 'nios_switch'
+Info: switch:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_switch --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0003_switch_gen/ --quartus_dir=C:/altera/13.0/quartus --vhdl --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0003_switch_gen//nios_switch_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0003_switch_gen/  ]
+Info: switch: Done RTL generation for module 'nios_switch'
+Info: switch: "nios" instantiated altera_avalon_pio "switch"
+Info: buttons: Starting RTL generation for module 'nios_buttons'
+Info: buttons:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_buttons --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0004_buttons_gen/ --quartus_dir=C:/altera/13.0/quartus --vhdl --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0004_buttons_gen//nios_buttons_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0004_buttons_gen/  ]
+Info: buttons: Done RTL generation for module 'nios_buttons'
+Info: buttons: "nios" instantiated altera_avalon_pio "buttons"
+Info: action: Starting RTL generation for module 'nios_action'
+Info: action:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_action --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0005_action_gen/ --quartus_dir=C:/altera/13.0/quartus --vhdl --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0005_action_gen//nios_action_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0005_action_gen/  ]
+Info: action: Done RTL generation for module 'nios_action'
+Info: action: "nios" instantiated altera_avalon_pio "action"
+Info: sysid_qsys_0: Generating VHDL simulation model
+Info: sysid_qsys_0: Generated simulation model nios_sysid_qsys_0.vho
+Info: sysid_qsys_0: "nios" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: nios2_qsys_0_instruction_master_translator: "nios" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "nios" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "nios" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "nios" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generating VHDL simulation model
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generated simulation model nios_nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "nios" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "nios" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "nios" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "nios" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "nios" instantiated altera_merlin_router "id_router_002"
+Info: limiter: "nios" instantiated altera_merlin_traffic_limiter "limiter"
+Info: rst_controller: "nios" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: Generating VHDL simulation model
+Info: cmd_xbar_demux: Generated simulation model nios_cmd_xbar_demux.vho
+Info: cmd_xbar_demux: "nios" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: Generating VHDL simulation model
+Info: cmd_xbar_demux_001: Generated simulation model nios_cmd_xbar_demux_001.vho
+Info: cmd_xbar_demux_001: "nios" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: Generating VHDL simulation model
+Info: cmd_xbar_mux: Generated simulation model nios_cmd_xbar_mux.vho
+Info: cmd_xbar_mux: "nios" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: Generating VHDL simulation model
+Info: rsp_xbar_demux: Generated simulation model nios_rsp_xbar_demux.vho
+Info: rsp_xbar_demux: "nios" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: Generating VHDL simulation model
+Info: rsp_xbar_demux_002: Generated simulation model nios_rsp_xbar_demux_002.vho
+Info: rsp_xbar_demux_002: "nios" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: Generating VHDL simulation model
+Info: rsp_xbar_mux: Generated simulation model nios_rsp_xbar_mux.vho
+Info: rsp_xbar_mux: "nios" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: rsp_xbar_mux_001: Generating VHDL simulation model
+Info: rsp_xbar_mux_001: Generated simulation model nios_rsp_xbar_mux_001.vho
+Info: rsp_xbar_mux_001: "nios" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: irq_mapper: Generating VHDL simulation model
+Info: irq_mapper: Generated simulation model nios_irq_mapper.vho
+Info: irq_mapper: "nios" instantiated altera_irq_mapper "irq_mapper"
+Info: nios: Done nios" with 26 modules, 201 files, 10363212 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:/tiny_god/interactivite_jeu/nios.spd --output-directory=D:/tiny_god/interactivite_jeu/nios/simulation/
+Info: Doing: ip-make-simscript --spd=D:/tiny_god/interactivite_jeu/nios.spd --output-directory=D:/tiny_god/interactivite_jeu/nios/simulation/
+Info: Generating the following file(s) for MODELSIM simulator in D:/tiny_god/interactivite_jeu/nios/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in D:/tiny_god/interactivite_jeu/nios/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/tiny_god/interactivite_jeu/nios/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	19 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERAPRO simulator in D:/tiny_god/interactivite_jeu/nios/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/tiny_god/interactivite_jeu/ --output-directory=D:/tiny_god/interactivite_jeu/nios/ --report-file=bsf:D:/tiny_god/interactivite_jeu/nios.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CGXFC7C7F23C8 --system-info=DEVICE_SPEEDGRADE=8_H7 --component-file=D:/tiny_god/interactivite_jeu/nios.qsys
+Progress: Loading interactivite_jeu/nios.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding switch [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module switch
+Progress: Adding buttons [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module buttons
+Progress: Adding action [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module action
+Progress: Adding up [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module up
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding pause [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pause
+Progress: Adding down [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module down
+Progress: Adding left [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module left
+Progress: Adding right [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module right
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios.switch: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/tiny_god/interactivite_jeu/ --output-directory=D:/tiny_god/interactivite_jeu/nios/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:D:/tiny_god/interactivite_jeu/nios.sopcinfo --report-file=html:D:/tiny_god/interactivite_jeu/nios.html --report-file=qip:D:/tiny_god/interactivite_jeu/nios/synthesis/nios.qip --report-file=cmp:D:/tiny_god/interactivite_jeu/nios.cmp --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CGXFC7C7F23C8 --system-info=DEVICE_SPEEDGRADE=8_H7 --component-file=D:/tiny_god/interactivite_jeu/nios.qsys --language=VHDL
+Progress: Loading interactivite_jeu/nios.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding switch [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module switch
+Progress: Adding buttons [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module buttons
+Progress: Adding action [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module action
+Progress: Adding up [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module up
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding pause [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pause
+Progress: Adding down [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module down
+Progress: Adding left [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module left
+Progress: Adding right [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module right
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios.switch: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: nios: Generating nios "nios" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 12 modules, 39 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 25 modules, 81 connections
+Info: merlin_domain_transform: After transform: 50 modules, 221 connections
+Info: merlin_router_transform: After transform: 63 modules, 263 connections
+Info: merlin_traffic_limiter_transform: After transform: 65 modules, 273 connections
+Info: reset_adaptation_transform: After transform: 67 modules, 262 connections
+Info: merlin_network_to_switch_transform: After transform: 92 modules, 314 connections
+Info: limiter_update_transform: After transform: 92 modules, 316 connections
+Info: merlin_mm_transform: After transform: 92 modules, 316 connections
+Info: merlin_interrupt_mapper_transform: After transform: 93 modules, 319 connections
+Info: onchip_memory2_0: Starting RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_onchip_memory2_0 --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0055_onchip_memory2_0_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0055_onchip_memory2_0_gen//nios_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0: "nios" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: nios2_qsys_0: Starting RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_nios2_qsys_0 --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0056_nios2_qsys_0_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0056_nios2_qsys_0_gen//nios_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys_0: # 2018.11.14 16:02:13 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2018.11.14 16:02:13 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2018.11.14 16:02:14 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2018.11.14 16:02:14 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys_0: # 2018.11.14 16:02:14 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: nios2_qsys_0: # 2018.11.14 16:02:14 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2018.11.14 16:02:14 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2018.11.14 16:02:14 (*)     Testbench
+Info: nios2_qsys_0: # 2018.11.14 16:02:14 (*)     Instruction decoding
+Info: nios2_qsys_0: # 2018.11.14 16:02:14 (*)       Instruction fields
+Info: nios2_qsys_0: # 2018.11.14 16:02:14 (*)       Instruction decodes
+Info: nios2_qsys_0: # 2018.11.14 16:02:15 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys_0: # 2018.11.14 16:02:15 (*)       Instruction controls
+Info: nios2_qsys_0: # 2018.11.14 16:02:15 (*)     Pipeline frontend
+Info: nios2_qsys_0: # 2018.11.14 16:02:15 (*)     Pipeline backend
+Info: nios2_qsys_0: # 2018.11.14 16:02:17 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2018.11.14 16:02:19 (*)   Creating encrypted RTL
+Info: nios2_qsys_0: # 2018.11.14 16:02:20 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0: "nios" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: switch: Starting RTL generation for module 'nios_switch'
+Info: switch:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_switch --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0057_switch_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0057_switch_gen//nios_switch_component_configuration.pl  --do_build_sim=0  ]
+Info: switch: Done RTL generation for module 'nios_switch'
+Info: switch: "nios" instantiated altera_avalon_pio "switch"
+Info: buttons: Starting RTL generation for module 'nios_buttons'
+Info: buttons:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_buttons --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0058_buttons_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0058_buttons_gen//nios_buttons_component_configuration.pl  --do_build_sim=0  ]
+Info: buttons: Done RTL generation for module 'nios_buttons'
+Info: buttons: "nios" instantiated altera_avalon_pio "buttons"
+Info: action: Starting RTL generation for module 'nios_action'
+Info: action:   Generation command is [exec C:/altera/13.0/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0/quartus/sopc_builder/bin/europa -I C:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0/quartus/sopc_builder/bin -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_action --dir=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0059_action_gen/ --quartus_dir=C:/altera/13.0/quartus --verilog --config=C:/Users/legoff_tho/AppData/Local/Temp/alt7849_4265413795879090410.dir/0059_action_gen//nios_action_component_configuration.pl  --do_build_sim=0  ]
+Info: action: Done RTL generation for module 'nios_action'
+Info: action: "nios" instantiated altera_avalon_pio "action"
+Info: sysid_qsys_0: "nios" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: nios2_qsys_0_instruction_master_translator: "nios" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "nios" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "nios" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "nios" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "nios" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "nios" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "nios" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "nios" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "nios" instantiated altera_merlin_router "id_router_002"
+Info: limiter: "nios" instantiated altera_merlin_traffic_limiter "limiter"
+Info: rst_controller: "nios" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "nios" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "nios" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "nios" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "nios" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: "nios" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "nios" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/tiny_god/interactivite_jeu/nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "nios" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/tiny_god/interactivite_jeu/nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "nios" instantiated altera_irq_mapper "irq_mapper"
+Info: nios: Done nios" with 26 modules, 138 files, 4040972 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
