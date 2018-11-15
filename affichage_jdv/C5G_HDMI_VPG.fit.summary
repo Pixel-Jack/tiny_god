@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Nov 14 18:09:14 2018
+Fitter Status : Successful - Thu Nov 15 15:22:38 2018
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : C5G_HDMI_VPG
 Top-level Entity Name : test_simul
 Family : Cyclone V
 Device : 5CGXFC5C6F27C7
 Timing Models : Preliminary
-Logic utilization (in ALMs) : 3,618 / 29,080 ( 12 % )
+Logic utilization (in ALMs) : 4,182 / 29,080 ( 14 % )
 Total registers : 684
 Total pins : 46 / 364 ( 13 % )
 Total virtual pins : 0

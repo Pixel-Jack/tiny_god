@@ -68,12 +68,12 @@ output		          		HDMI_TX_VS;
 
 
 
-input [99:0]	vecteur_map;
+input [999:0]	vecteur_map;
 input 			select_affichage;
 input	[31:0]	largeur_grille;
 input	[31:0]	hauteur_grille;
-input [3:0]		h_position_du_curseur;
-input [3:0]		v_position_du_curseur;
+input [31:0]		h_position_du_curseur;
+input [31:0]		v_position_du_curseur;
 
 
 //=======================================================

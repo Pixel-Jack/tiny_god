@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 216 32)
 		(output)
-		(text "vecteur_map[99..0]" (rect 0 0 79 12)(font "Arial" ))
-		(text "vecteur_map[99..0]" (rect 116 27 195 39)(font "Arial" ))
+		(text "vecteur_map[999..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "vecteur_map[999..0]" (rect 112 27 195 39)(font "Arial" ))
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
 	(port
@@ -54,15 +54,15 @@ applicable agreement for further details.
 	(port
 		(pt 216 96)
 		(output)
-		(text "h_position_du_curseur[3..0]" (rect 0 0 110 12)(font "Arial" ))
-		(text "h_position_du_curseur[3..0]" (rect 85 91 195 103)(font "Arial" ))
+		(text "h_position_du_curseur[31..0]" (rect 0 0 114 12)(font "Arial" ))
+		(text "h_position_du_curseur[31..0]" (rect 81 91 195 103)(font "Arial" ))
 		(line (pt 216 96)(pt 200 96)(line_width 3))
 	)
 	(port
 		(pt 216 112)
 		(output)
-		(text "v_position_du_curseur[3..0]" (rect 0 0 112 12)(font "Arial" ))
-		(text "v_position_du_curseur[3..0]" (rect 83 107 195 119)(font "Arial" ))
+		(text "v_position_du_curseur[31..0]" (rect 0 0 115 12)(font "Arial" ))
+		(text "v_position_du_curseur[31..0]" (rect 80 107 195 119)(font "Arial" ))
 		(line (pt 216 112)(pt 200 112)(line_width 3))
 	)
 	(drawing

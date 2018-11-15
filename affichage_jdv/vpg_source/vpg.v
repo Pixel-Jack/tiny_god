@@ -59,12 +59,12 @@ input	  [3:0]	  mode;
 input	  		    mode_change;
 input	  [1:0]	  disp_color; 
 
-input [99:0]	vecteur_map;
+input [999:0]	vecteur_map;
 input 			select_affichage;
 input	[31:0]	largeur_grille;
 input	[31:0]	hauteur_grille;
-input [3:0]		h_position_du_curseur;
-input [3:0]		v_position_du_curseur;
+input [31:0]		h_position_du_curseur;
+input [31:0]		v_position_du_curseur;
 
 output			    vpg_pclk;
 output			    vpg_de;

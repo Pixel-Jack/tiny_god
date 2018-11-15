@@ -46,11 +46,11 @@ module vga_generator(
   input       [11:0] v_active_34, 
   
   
-  input [9:0] vecteur_map,
-  input [3:0] largeur_grille,
-  input [3:0] hauteur_grille,
-  input [3:0] h_position_du_curseur,
-  input [3:0] v_position_du_curseur,
+  input [999:0] vecteur_map,
+  input [31:0] largeur_grille,
+  input [31:0] hauteur_grille,
+  input [31:0] h_position_du_curseur,
+  input [31:0] v_position_du_curseur,
   
   
   output  reg		     vga_hs,             
@@ -107,9 +107,6 @@ integer hauteur_cell;
 integer v_in_cell;
 integer y_map;
 integer color_mode_v;
-
-integer int_largeur_grille;
-integer position_index;
 
 parameter border = 1;
 
@@ -218,16 +215,13 @@ begin
 			boarder <= 1'b1;
 		 else
 			boarder <= 1'b0;   
-		
-		int_largeur_grille = largeur_grille;
-		position_index = x_map + y_map * int_largeur_grille;
 			
 		if (boarder)
 			{vga_r, vga_g, vga_b} <= {8'h32,8'hD8,8'hE0}; // Border window
 		else
 			case (color_mode_h * color_mode_v)
 			0 : {vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'hFF}; // out
-			1 : if (vecteur_map[position_index] == 1)
+			1 : if (vecteur_map[x_map + y_map * largeur_grille] == 1)
 					{vga_r, vga_g, vga_b} <= {8'h12,8'hAF,8'hAF}; // Cell active
 				 else 
 					{vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'h00}; // Cell inactive

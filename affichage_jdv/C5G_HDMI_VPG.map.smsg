@@ -1,6 +1,5 @@
-Warning (10268): Verilog HDL information at vga_generator.v(118): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at vga_generator.v(159): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at vga_generator.v(204): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at vga_generator.v(115): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at vga_generator.v(156): always construct contains both blocking and non-blocking assignments
 Info (10281): Verilog HDL Declaration information at altera_pll_reconfig_core.v(112): object "LOCKED" differs only in case from object "locked" in the same scope
 Info (10281): Verilog HDL Declaration information at altera_pll_reconfig_core.v(1878): object "dps_done" differs only in case from object "DPS_DONE" in the same scope
 Info (10281): Verilog HDL Declaration information at altera_pll_reconfig_core.v(1870): object "dps_changed" differs only in case from object "DPS_CHANGED" in the same scope
