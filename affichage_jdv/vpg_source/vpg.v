@@ -59,7 +59,7 @@ input	  [3:0]	  mode;
 input	  		    mode_change;
 input	  [1:0]	  disp_color; 
 
-input [999:0]	vecteur_map;
+input [15:0]	vecteur_map;
 input 			select_affichage;
 input	[31:0]	largeur_grille;
 input	[31:0]	hauteur_grille;

@@ -1,5 +1,5 @@
 Flow report for tiny_god
-Mon Nov 05 13:38:33 2018
+Thu Nov 15 18:39:41 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -40,26 +40,26 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +-------------------------------------+---------------------------------------------+
-; Flow Status                         ; Successful - Mon Nov 05 13:38:33 2018       ;
+; Flow Status                         ; Successful - Thu Nov 15 18:39:14 2018       ;
 ; Quartus II 64-Bit Version           ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                       ; tiny_god                                    ;
 ; Top-level Entity Name               ; tiny_god                                    ;
 ; Family                              ; Cyclone V                                   ;
-; Device                              ; 5CGXFC7C7F23C8                              ;
+; Device                              ; 5CGXFC5C6F27C7                              ;
 ; Timing Models                       ; Preliminary                                 ;
-; Logic utilization (in ALMs)         ; 1 / 56,480 ( < 1 % )                        ;
-; Total registers                     ; 0                                           ;
-; Total pins                          ; 1 / 268 ( < 1 % )                           ;
+; Logic utilization (in ALMs)         ; 5,588 / 29,080 ( 19 % )                     ;
+; Total registers                     ; 2805                                        ;
+; Total pins                          ; 51 / 364 ( 14 % )                           ;
 ; Total virtual pins                  ; 0                                           ;
-; Total block memory bits             ; 0 / 7,024,640 ( 0 % )                       ;
-; Total DSP Blocks                    ; 0 / 156 ( 0 % )                             ;
+; Total block memory bits             ; 2,160,064 / 4,567,040 ( 47 % )              ;
+; Total DSP Blocks                    ; 5 / 150 ( 3 % )                             ;
 ; Total HSSI RX PCSs                  ; 0 / 6 ( 0 % )                               ;
 ; Total HSSI PMA RX Deserializers     ; 0 / 6 ( 0 % )                               ;
 ; Total HSSI PMA RX ATT Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs                  ; 0 / 6 ( 0 % )                               ;
 ; Total HSSI PMA TX Serializers       ; 0 / 6 ( 0 % )                               ;
 ; Total HSSI PMA TX ATT Serializers   ; 0 / 6 ( 0 % )                               ;
-; Total PLLs                          ; 0 / 13 ( 0 % )                              ;
+; Total PLLs                          ; 2 / 12 ( 17 % )                             ;
 ; Total DLLs                          ; 0 / 4 ( 0 % )                               ;
 +-------------------------------------+---------------------------------------------+
 
@@ -69,48 +69,53 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/05/2018 13:37:50 ;
+; Start date & time ; 11/15/2018 18:36:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; tiny_god            ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 176831339393963.154142147007032 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 176831339393963.154230336406368       ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; None                                  ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 476 MB              ; 00:00:01                           ;
-; Fitter               ; 00:00:41     ; 1.4                     ; 2331 MB             ; 00:00:54                           ;
-; Total                ; 00:00:43     ; --                      ; --                  ; 00:00:55                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:50     ; 1.0                     ; 764 MB              ; 00:00:50                           ;
+; Fitter                    ; 00:01:56     ; 1.7                     ; 2359 MB             ; 00:02:45                           ;
+; Assembler                 ; 00:00:14     ; 1.0                     ; 691 MB              ; 00:00:13                           ;
+; TimeQuest Timing Analyzer ; 00:00:26     ; 1.9                     ; 1388 MB             ; 00:00:46                           ;
+; Total                     ; 00:03:26     ; --                      ; --                  ; 00:04:34                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; CI53214          ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter               ; CI53214          ; Windows 7 ; 6.1        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; CI53214          ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; CI53214          ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; CI53214          ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; CI53214          ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
@@ -118,6 +123,8 @@ applicable agreement for further details.
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off tiny_god -c tiny_god
 quartus_fit --read_settings_files=off --write_settings_files=off tiny_god -c tiny_god
+quartus_asm --read_settings_files=off --write_settings_files=off tiny_god -c tiny_god
+quartus_sta tiny_god -c tiny_god
 
 
 

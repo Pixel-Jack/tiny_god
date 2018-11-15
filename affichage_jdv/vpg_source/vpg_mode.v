@@ -7,7 +7,7 @@ module vpg_mode (
 	vpg_mode
 );
 
-`include "vpg_source/vpg.h"
+`include "affichage_jdv/vpg_source/vpg.h"
 
 input			   reset_n;
 input			   clk;

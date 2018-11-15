@@ -46,7 +46,7 @@ module vga_generator(
   input       [11:0] v_active_34, 
   
   
-  input [999:0] vecteur_map,
+  input [15:0] vecteur_map,
   input [31:0] largeur_grille,
   input [31:0] hauteur_grille,
   input [31:0] h_position_du_curseur,
