@@ -7,7 +7,9 @@ entity initialisation is
 		h_position_du_curseur, v_position_du_curseur : out std_logic_vector(31 downto 0);
 		mode_jeu : out std_logic;
 		type_grille : out std_logic;
-		select_affichage : out std_logic
+		select_affichage : out std_logic;
+		pause : out std_logic;
+		map_init : out  std_logic_vector(15 downto 0)
 	);
 end entity initialisation;
 
@@ -21,5 +23,6 @@ v_position_du_curseur <= x"00000001";
 mode_jeu <= '0';
 type_grille <= '0';
 select_affichage <= '1';
-
+map_init <= x"A5A5";
+pause <= '0';
 end architecture a;

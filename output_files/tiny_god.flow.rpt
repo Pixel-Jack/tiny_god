@@ -1,5 +1,5 @@
 Flow report for tiny_god
-Thu Nov 15 18:39:41 2018
+Fri Nov 16 13:31:40 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +-------------------------------------+---------------------------------------------+
-; Flow Status                         ; Successful - Thu Nov 15 18:39:14 2018       ;
+; Flow Status                         ; Successful - Fri Nov 16 13:31:10 2018       ;
 ; Quartus II 64-Bit Version           ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                       ; tiny_god                                    ;
 ; Top-level Entity Name               ; tiny_god                                    ;
 ; Family                              ; Cyclone V                                   ;
 ; Device                              ; 5CGXFC5C6F27C7                              ;
 ; Timing Models                       ; Preliminary                                 ;
-; Logic utilization (in ALMs)         ; 5,588 / 29,080 ( 19 % )                     ;
-; Total registers                     ; 2805                                        ;
+; Logic utilization (in ALMs)         ; 5,567 / 29,080 ( 19 % )                     ;
+; Total registers                     ; 2765                                        ;
 ; Total pins                          ; 51 / 364 ( 14 % )                           ;
 ; Total virtual pins                  ; 0                                           ;
 ; Total block memory bits             ; 2,160,064 / 4,567,040 ( 47 % )              ;
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/15/2018 18:36:04 ;
+; Start date & time ; 11/16/2018 13:27:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; tiny_god            ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 176831339393963.154230336406368       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 176831339393963.154237127804588       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; None                                  ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
@@ -98,11 +98,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:50     ; 1.0                     ; 764 MB              ; 00:00:50                           ;
-; Fitter                    ; 00:01:56     ; 1.7                     ; 2359 MB             ; 00:02:45                           ;
-; Assembler                 ; 00:00:14     ; 1.0                     ; 691 MB              ; 00:00:13                           ;
-; TimeQuest Timing Analyzer ; 00:00:26     ; 1.9                     ; 1388 MB             ; 00:00:46                           ;
-; Total                     ; 00:03:26     ; --                      ; --                  ; 00:04:34                           ;
+; Analysis & Synthesis      ; 00:00:50     ; 1.0                     ; 748 MB              ; 00:00:50                           ;
+; Fitter                    ; 00:01:59     ; 1.7                     ; 2363 MB             ; 00:02:47                           ;
+; Assembler                 ; 00:00:14     ; 1.0                     ; 697 MB              ; 00:00:14                           ;
+; TimeQuest Timing Analyzer ; 00:00:28     ; 1.9                     ; 1379 MB             ; 00:00:48                           ;
+; Total                     ; 00:03:31     ; --                      ; --                  ; 00:04:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -48,11 +48,61 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_Y16 -to Buttons[3]
+set_location_assignment PIN_Y15 -to Buttons[2]
+set_location_assignment PIN_P12 -to Buttons[1]
+set_location_assignment PIN_P11 -to Buttons[0]
+set_location_assignment PIN_R20 -to CLOCK_50_B5B
+set_location_assignment PIN_N20 -to CLOCK_50_B6A
+set_location_assignment PIN_H12 -to CLOCK_50_B7A
+set_location_assignment PIN_H10 -to CLOCK_50_B8A
+set_location_assignment PIN_U12 -to CLOCK_125_p
+set_location_assignment PIN_AB24 -to CPU_RESET_n
+set_location_assignment PIN_Y25 -to HDMI_TX_CLK
+set_location_assignment PIN_AD25 -to HDMI_TX_D[23]
+set_location_assignment PIN_AC25 -to HDMI_TX_D[22]
+set_location_assignment PIN_AB25 -to HDMI_TX_D[21]
+set_location_assignment PIN_AB26 -to HDMI_TX_D[19]
+set_location_assignment PIN_R26 -to HDMI_TX_D[18]
+set_location_assignment PIN_R24 -to HDMI_TX_D[17]
+set_location_assignment PIN_P21 -to HDMI_TX_D[16]
+set_location_assignment PIN_P26 -to HDMI_TX_D[15]
+set_location_assignment PIN_N25 -to HDMI_TX_D[14]
+set_location_assignment PIN_P23 -to HDMI_TX_D[13]
+set_location_assignment PIN_P22 -to HDMI_TX_D[12]
+set_location_assignment PIN_R25 -to HDMI_TX_D[11]
+set_location_assignment PIN_R23 -to HDMI_TX_D[10]
+set_location_assignment PIN_T26 -to HDMI_TX_D[9]
+set_location_assignment PIN_T24 -to HDMI_TX_D[8]
+set_location_assignment PIN_T23 -to HDMI_TX_D[7]
+set_location_assignment PIN_U24 -to HDMI_TX_D[6]
+set_location_assignment PIN_V25 -to HDMI_TX_D[5]
+set_location_assignment PIN_V24 -to HDMI_TX_D[4]
+set_location_assignment PIN_W26 -to HDMI_TX_D[3]
+set_location_assignment PIN_W25 -to HDMI_TX_D[2]
+set_location_assignment PIN_AA26 -to HDMI_TX_D[1]
+set_location_assignment PIN_V23 -to HDMI_TX_D[0]
+set_location_assignment PIN_Y26 -to HDMI_TX_DE
+set_location_assignment PIN_U26 -to HDMI_TX_HS
+set_location_assignment PIN_T12 -to HDMI_TX_INT
+set_location_assignment PIN_U25 -to HDMI_TX_VS
+set_location_assignment PIN_F7 -to LED0
+set_location_assignment PIN_F6 -to LED1
+set_location_assignment PIN_AE19 -to SW[9]
+set_location_assignment PIN_Y11 -to SW[8]
+set_location_assignment PIN_AC10 -to SW[7]
+set_location_assignment PIN_V10 -to SW[6]
+set_location_assignment PIN_AB10 -to SW[5]
+set_location_assignment PIN_W11 -to SW[4]
+set_location_assignment PIN_AC8 -to SW[3]
+set_location_assignment PIN_AD13 -to SW[2]
+set_location_assignment PIN_AE10 -to SW[1]
+set_location_assignment PIN_AC9 -to SW[0]
+set_location_assignment PIN_AA24 -to HDMI_TX_D[20]
+set_global_assignment -name VHDL_FILE Jeu_v2.vhd
 set_global_assignment -name VERILOG_FILE affichage_jdv/sys_pll/sys_pll_0002.v
 set_global_assignment -name VERILOG_FILE affichage_jdv/vpg_source/pll/pll_0002.v
 set_global_assignment -name VERILOG_FILE affichage_jdv/vpg_source/pll_reconfig/altera_pll_reconfig_top.v
@@ -116,63 +166,13 @@ set_global_assignment -name BDF_FILE interactivites_du_jeu_ex.bdf
 set_global_assignment -name BDF_FILE affichage_parametres_ex.bdf
 set_global_assignment -name BDF_FILE affichage_jdv_ex.bdf
 set_global_assignment -name VHDL_FILE prov.vhd
-set_global_assignment -name VHDL_FILE Jeu.vhd
 set_global_assignment -name VHDL_FILE compteur.vhd
 set_global_assignment -name BDF_FILE tiny_god.bdf
 set_global_assignment -name VERILOG_FILE affichage_jdv/vpg_source/vpg_mode.v
 set_global_assignment -name VERILOG_FILE affichage_jdv/vpg_source/vpg.v
 set_global_assignment -name VERILOG_FILE affichage_jdv/vpg_source/pll_reconfig/altera_pll_reconfig_core.v
-set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_Y16 -to Buttons[3]
-set_location_assignment PIN_Y15 -to Buttons[2]
-set_location_assignment PIN_P12 -to Buttons[1]
-set_location_assignment PIN_P11 -to Buttons[0]
-set_location_assignment PIN_R20 -to CLOCK_50_B5B
-set_location_assignment PIN_N20 -to CLOCK_50_B6A
-set_location_assignment PIN_H12 -to CLOCK_50_B7A
-set_location_assignment PIN_H10 -to CLOCK_50_B8A
-set_location_assignment PIN_U12 -to CLOCK_125_p
-set_location_assignment PIN_AB24 -to CPU_RESET_n
-set_location_assignment PIN_Y25 -to HDMI_TX_CLK
-set_location_assignment PIN_AD25 -to HDMI_TX_D[23]
-set_location_assignment PIN_AC25 -to HDMI_TX_D[22]
-set_location_assignment PIN_AB25 -to HDMI_TX_D[21]
-set_location_assignment PIN_AB26 -to HDMI_TX_D[19]
-set_location_assignment PIN_R26 -to HDMI_TX_D[18]
-set_location_assignment PIN_R24 -to HDMI_TX_D[17]
-set_location_assignment PIN_P21 -to HDMI_TX_D[16]
-set_location_assignment PIN_P26 -to HDMI_TX_D[15]
-set_location_assignment PIN_N25 -to HDMI_TX_D[14]
-set_location_assignment PIN_P23 -to HDMI_TX_D[13]
-set_location_assignment PIN_P22 -to HDMI_TX_D[12]
-set_location_assignment PIN_R25 -to HDMI_TX_D[11]
-set_location_assignment PIN_R23 -to HDMI_TX_D[10]
-set_location_assignment PIN_T26 -to HDMI_TX_D[9]
-set_location_assignment PIN_T24 -to HDMI_TX_D[8]
-set_location_assignment PIN_T23 -to HDMI_TX_D[7]
-set_location_assignment PIN_U24 -to HDMI_TX_D[6]
-set_location_assignment PIN_V25 -to HDMI_TX_D[5]
-set_location_assignment PIN_V24 -to HDMI_TX_D[4]
-set_location_assignment PIN_W26 -to HDMI_TX_D[3]
-set_location_assignment PIN_W25 -to HDMI_TX_D[2]
-set_location_assignment PIN_AA26 -to HDMI_TX_D[1]
-set_location_assignment PIN_V23 -to HDMI_TX_D[0]
-set_location_assignment PIN_Y26 -to HDMI_TX_DE
-set_location_assignment PIN_U26 -to HDMI_TX_HS
-set_location_assignment PIN_T12 -to HDMI_TX_INT
-set_location_assignment PIN_U25 -to HDMI_TX_VS
-set_location_assignment PIN_F7 -to LED0
-set_location_assignment PIN_F6 -to LED1
-set_location_assignment PIN_AE19 -to SW[9]
-set_location_assignment PIN_Y11 -to SW[8]
-set_location_assignment PIN_AC10 -to SW[7]
-set_location_assignment PIN_V10 -to SW[6]
-set_location_assignment PIN_AB10 -to SW[5]
-set_location_assignment PIN_W11 -to SW[4]
-set_location_assignment PIN_AC8 -to SW[3]
-set_location_assignment PIN_AD13 -to SW[2]
-set_location_assignment PIN_AE10 -to SW[1]
-set_location_assignment PIN_AC9 -to SW[0]
-set_location_assignment PIN_AA24 -to HDMI_TX_D[20]
 set_global_assignment -name VHDL_FILE initialisation.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

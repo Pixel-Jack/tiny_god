@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 232 192)
+	(rect 16 16 232 224)
 	(text "initialisation" (rect 5 0 45 12)(font "Arial" ))
-	(text "inst" (rect 8 160 20 172)(font "Arial" ))
+	(text "inst" (rect 8 192 20 204)(font "Arial" ))
 	(port
 		(pt 216 32)
 		(output)
@@ -72,7 +72,21 @@ applicable agreement for further details.
 		(text "select_affichage" (rect 131 123 195 135)(font "Arial" ))
 		(line (pt 216 128)(pt 200 128)(line_width 1))
 	)
+	(port
+		(pt 216 144)
+		(output)
+		(text "pause" (rect 0 0 23 12)(font "Arial" ))
+		(text "pause" (rect 172 139 195 151)(font "Arial" ))
+		(line (pt 216 144)(pt 200 144)(line_width 1))
+	)
+	(port
+		(pt 216 160)
+		(output)
+		(text "map_init[15..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "map_init[15..0]" (rect 139 155 195 167)(font "Arial" ))
+		(line (pt 216 160)(pt 200 160)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 200 160)(line_width 1))
+		(rectangle (rect 16 16 200 192)(line_width 1))
 	)
 )
