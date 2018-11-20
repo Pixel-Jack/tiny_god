@@ -68,9 +68,9 @@ applicable agreement for further details.
 	(port
 		(pt 0 128)
 		(input)
-		(text "SW[9..0]" (rect 0 0 36 12)(font "Arial" ))
-		(text "SW[9..0]" (rect 21 123 57 135)(font "Arial" ))
-		(line (pt 0 128)(pt 16 128)(line_width 3))
+		(text "SW" (rect 0 0 16 12)(font "Arial" ))
+		(text "SW" (rect 21 123 37 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
 		(pt 0 144)
@@ -82,8 +82,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 160)
 		(input)
-		(text "vecteur_map[999..0]" (rect 0 0 83 12)(font "Arial" ))
-		(text "vecteur_map[999..0]" (rect 21 155 104 167)(font "Arial" ))
+		(text "vecteur_map[15..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "vecteur_map[15..0]" (rect 21 155 98 167)(font "Arial" ))
 		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port

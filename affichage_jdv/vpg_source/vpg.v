@@ -141,6 +141,7 @@ vga_generator u_vga_generator (
   .v_active_14(v_active_14), 
   .v_active_24(v_active_24), 
   .v_active_34(v_active_34), 
+  .select_affichage(select_affichage),
   .vecteur_map(vecteur_map),
   .largeur_grille(largeur_grille),
   .hauteur_grille(hauteur_grille),

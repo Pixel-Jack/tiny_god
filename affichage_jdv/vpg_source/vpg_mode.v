@@ -8,20 +8,21 @@ module vpg_mode (
 );
 
 `include "affichage_jdv/vpg_source/vpg.h"
+//`include "vpg_source/vpg.h"
 
 input			   reset_n;
 input			   clk;
 input			   clk_en;
 input			   mode_button;
-output       vpg_mode_change;
-output [3:0] vpg_mode;
+output       	vpg_mode_change;
+output [3:0] 	vpg_mode;
 
 
 
 reg		      pre_mode_button;
-reg			    vpg_mode_change;
+reg			   vpg_mode_change;
 reg		[3:0]	vpg_mode;	
-reg   [9:0] virtual;
+reg   	[9:0] virtual;
 
 
 

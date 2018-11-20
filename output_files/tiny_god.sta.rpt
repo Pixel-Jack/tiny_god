@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for tiny_god
-Fri Nov 16 13:31:40 2018
+Tue Nov 20 16:39:22 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -160,7 +160,7 @@ applicable agreement for further details.
 +-----------+-----------------+---------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name          ; Note ;
 +-----------+-----------------+---------------------+------+
-; 60.44 MHz ; 60.44 MHz       ; altera_reserved_tck ;      ;
+; 55.76 MHz ; 55.76 MHz       ; altera_reserved_tck ;      ;
 +-----------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -176,7 +176,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 10.015 ; 0.000         ;
+; altera_reserved_tck ; 11.592 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -185,7 +185,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.303 ; 0.000         ;
+; altera_reserved_tck ; 0.306 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -194,7 +194,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 14.868 ; 0.000         ;
+; altera_reserved_tck ; 15.056 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -203,7 +203,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.746 ; 0.000         ;
+; altera_reserved_tck ; 0.716 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -212,7 +212,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+--------------------+
 ; Clock               ; Slack  ; End Point TNS      ;
 +---------------------+--------+--------------------+
-; altera_reserved_tck ; 15.846 ; 0.000              ;
+; altera_reserved_tck ; 15.847 ; 0.000              ;
 +---------------------+--------+--------------------+
 
 
@@ -221,8 +221,8 @@ HTML report is unavailable in plain text report export.
 +---------------------+---------------------+--------+--------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 10.065 ; 13.914 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 10.902 ; 13.683 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 11.351 ; 15.301 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 11.871 ; 14.544 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 
 
@@ -242,7 +242,7 @@ HTML report is unavailable in plain text report export.
 ; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 ; altera_reserved_tdo ; altera_reserved_tck ; 6.639  ; 6.703  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 11.108 ; 11.229 ; Fall       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 11.129 ; 11.249 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 
 
@@ -261,7 +261,7 @@ HTML report is unavailable in plain text report export.
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 5.790 ; 5.661 ; 5.833 ; 5.704 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 5.793 ; 5.664 ; 5.836 ; 5.707 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -270,7 +270,7 @@ HTML report is unavailable in plain text report export.
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 4.450 ; 4.329 ; 4.495 ; 4.374 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 4.453 ; 4.332 ; 4.498 ; 4.377 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -283,7 +283,7 @@ Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Number of Synchronizer Chains Found: 2
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.000
-Worst Case Available Settling Time: 63.741 ns
+Worst Case Available Settling Time: 64.059 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 7.8
@@ -292,14 +292,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Synchronizer Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
-; Source Node                                                                                                                                                                                 ; Synchronization Node                                                                                                                                                                                                                                                                                                                              ; Worst-Case MTBF (Years) ; Typical MTBF (Years)   ; Included in Design MTBF ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
-; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
-; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                    ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synchronizer Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
+; Source Node                                                                                                                                                                                           ; Synchronization Node                                                                                                                                                                                                                                                                                                                              ; Worst-Case MTBF (Years) ; Typical MTBF (Years)   ; Included in Design MTBF ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
+; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
+; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                              ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
 
 
 Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
@@ -309,7 +309,7 @@ Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
 +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Property                ; Value                                                                                                                                                                                                                                                                                                                                             ;
 +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source Node             ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready                                                                                                                                                       ;
+; Source Node             ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE                                                                                                                                             ;
 ; Synchronization Node    ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ;
 ; Worst-Case MTBF (years) ; Greater than 1 Billion                                                                                                                                                                                                                                                                                                                            ;
 ; Typical MTBF (years)    ; Greater than 1 Billion                                                                                                                                                                                                                                                                                                                            ;
@@ -325,17 +325,17 @@ Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
 ; Worst-Case MTBF (years)                                                                                                                                                                                                                                                                                                                             ; Greater than 1 Billion ;              ;                  ;              ;
 ; Typical MTBF (years)                                                                                                                                                                                                                                                                                                                                ; Greater than 1 Billion ;              ;                  ;              ;
 ; Number of Synchronization Registers in Chain                                                                                                                                                                                                                                                                                                        ; 2                      ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 63.741                 ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 64.059                 ;              ;                  ;              ;
 ; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                                                                                                                                           ; 3.75                   ;              ;                  ;              ;
 ; Source Clock                                                                                                                                                                                                                                                                                                                                        ;                        ;              ;                  ;              ;
 ;  Unknown                                                                                                                                                                                                                                                                                                                                            ;                        ;              ;                  ;              ;
 ; Synchronization Clock                                                                                                                                                                                                                                                                                                                               ;                        ;              ;                  ;              ;
 ;  altera_reserved_tck                                                                                                                                                                                                                                                                                                                                ;                        ; 33.333       ; 30.0 MHz         ;              ;
 ; Asynchronous Source                                                                                                                                                                                                                                                                                                                                 ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready                                                                                                                                                        ;                        ;              ;                  ;              ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE                                                                                                                                              ;                        ;              ;                  ;              ;
 ; Synchronization Registers                                                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1  ;                        ;              ;                  ; 31.925       ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|dreg[0] ;                        ;              ;                  ; 31.816       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1  ;                        ;              ;                  ; 31.954       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|dreg[0] ;                        ;              ;                  ; 32.105       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+------------------+--------------+
 
 
@@ -363,7 +363,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Worst-Case MTBF (years)                                                                                                                                                                                                                                                                                                                             ; Greater than 1 Billion ;              ;                  ;              ;
 ; Typical MTBF (years)                                                                                                                                                                                                                                                                                                                                ; Greater than 1 Billion ;              ;                  ;              ;
 ; Number of Synchronization Registers in Chain                                                                                                                                                                                                                                                                                                        ; 2                      ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 63.924                 ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 64.377                 ;              ;                  ;              ;
 ; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                                                                                                                                           ; 3.75                   ;              ;                  ;              ;
 ; Source Clock                                                                                                                                                                                                                                                                                                                                        ;                        ;              ;                  ;              ;
 ;  Unknown                                                                                                                                                                                                                                                                                                                                            ;                        ;              ;                  ;              ;
@@ -372,8 +372,8 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Asynchronous Source                                                                                                                                                                                                                                                                                                                                 ;                        ;              ;                  ;              ;
 ;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
 ; Synchronization Registers                                                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1  ;                        ;              ;                  ; 32.111       ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|dreg[0] ;                        ;              ;                  ; 31.813       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1  ;                        ;              ;                  ; 32.456       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|dreg[0] ;                        ;              ;                  ; 31.921       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+------------------+--------------+
 
 
@@ -383,7 +383,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +-----------+-----------------+---------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name          ; Note ;
 +-----------+-----------------+---------------------+------+
-; 60.92 MHz ; 60.92 MHz       ; altera_reserved_tck ;      ;
+; 56.16 MHz ; 56.16 MHz       ; altera_reserved_tck ;      ;
 +-----------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -393,7 +393,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 10.028 ; 0.000         ;
+; altera_reserved_tck ; 11.581 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -402,7 +402,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.281 ; 0.000         ;
+; altera_reserved_tck ; 0.283 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -411,7 +411,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 14.910 ; 0.000         ;
+; altera_reserved_tck ; 15.093 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -420,7 +420,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.684 ; 0.000         ;
+; altera_reserved_tck ; 0.660 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -429,7 +429,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+-------------------+
 ; Clock               ; Slack  ; End Point TNS     ;
 +---------------------+--------+-------------------+
-; altera_reserved_tck ; 15.943 ; 0.000             ;
+; altera_reserved_tck ; 15.945 ; 0.000             ;
 +---------------------+--------+-------------------+
 
 
@@ -438,8 +438,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+---------------------+--------+--------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 9.392  ; 13.598 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 10.340 ; 13.274 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 10.569 ; 14.989 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 11.263 ; 14.008 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 
 
@@ -459,7 +459,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 ; altera_reserved_tdo ; altera_reserved_tck ; 6.715  ; 6.770  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 10.891 ; 10.992 ; Fall       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 10.909 ; 11.012 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 
 
@@ -478,7 +478,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 5.705 ; 5.527 ; 5.718 ; 5.540 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 5.717 ; 5.532 ; 5.730 ; 5.545 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -487,7 +487,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 4.393 ; 4.227 ; 4.406 ; 4.240 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 4.404 ; 4.232 ; 4.417 ; 4.245 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -500,7 +500,7 @@ Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Number of Synchronizer Chains Found: 2
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.000
-Worst Case Available Settling Time: 63.678 ns
+Worst Case Available Settling Time: 64.014 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 2.4
@@ -509,14 +509,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Synchronizer Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
-; Source Node                                                                                                                                                                                 ; Synchronization Node                                                                                                                                                                                                                                                                                                                              ; Worst-Case MTBF (Years) ; Typical MTBF (Years)   ; Included in Design MTBF ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
-; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
-; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                    ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synchronizer Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
+; Source Node                                                                                                                                                                                           ; Synchronization Node                                                                                                                                                                                                                                                                                                                              ; Worst-Case MTBF (Years) ; Typical MTBF (Years)   ; Included in Design MTBF ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
+; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
+; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                              ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
 
 
 Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
@@ -526,7 +526,7 @@ Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
 +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Property                ; Value                                                                                                                                                                                                                                                                                                                                             ;
 +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source Node             ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready                                                                                                                                                       ;
+; Source Node             ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE                                                                                                                                             ;
 ; Synchronization Node    ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ;
 ; Worst-Case MTBF (years) ; Greater than 1 Billion                                                                                                                                                                                                                                                                                                                            ;
 ; Typical MTBF (years)    ; Greater than 1 Billion                                                                                                                                                                                                                                                                                                                            ;
@@ -542,17 +542,17 @@ Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
 ; Worst-Case MTBF (years)                                                                                                                                                                                                                                                                                                                             ; Greater than 1 Billion ;              ;                  ;              ;
 ; Typical MTBF (years)                                                                                                                                                                                                                                                                                                                                ; Greater than 1 Billion ;              ;                  ;              ;
 ; Number of Synchronization Registers in Chain                                                                                                                                                                                                                                                                                                        ; 2                      ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 63.678                 ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 64.014                 ;              ;                  ;              ;
 ; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                                                                                                                                           ; 3.75                   ;              ;                  ;              ;
 ; Source Clock                                                                                                                                                                                                                                                                                                                                        ;                        ;              ;                  ;              ;
 ;  Unknown                                                                                                                                                                                                                                                                                                                                            ;                        ;              ;                  ;              ;
 ; Synchronization Clock                                                                                                                                                                                                                                                                                                                               ;                        ;              ;                  ;              ;
 ;  altera_reserved_tck                                                                                                                                                                                                                                                                                                                                ;                        ; 33.333       ; 30.0 MHz         ;              ;
 ; Asynchronous Source                                                                                                                                                                                                                                                                                                                                 ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready                                                                                                                                                        ;                        ;              ;                  ;              ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE                                                                                                                                              ;                        ;              ;                  ;              ;
 ; Synchronization Registers                                                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1  ;                        ;              ;                  ; 31.891       ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|dreg[0] ;                        ;              ;                  ; 31.787       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1  ;                        ;              ;                  ; 31.957       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|dreg[0] ;                        ;              ;                  ; 32.057       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+------------------+--------------+
 
 
@@ -580,7 +580,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Worst-Case MTBF (years)                                                                                                                                                                                                                                                                                                                             ; Greater than 1 Billion ;              ;                  ;              ;
 ; Typical MTBF (years)                                                                                                                                                                                                                                                                                                                                ; Greater than 1 Billion ;              ;                  ;              ;
 ; Number of Synchronization Registers in Chain                                                                                                                                                                                                                                                                                                        ; 2                      ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 63.920                 ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 64.416                 ;              ;                  ;              ;
 ; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                                                                                                                                           ; 3.75                   ;              ;                  ;              ;
 ; Source Clock                                                                                                                                                                                                                                                                                                                                        ;                        ;              ;                  ;              ;
 ;  Unknown                                                                                                                                                                                                                                                                                                                                            ;                        ;              ;                  ;              ;
@@ -589,8 +589,8 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Asynchronous Source                                                                                                                                                                                                                                                                                                                                 ;                        ;              ;                  ;              ;
 ;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
 ; Synchronization Registers                                                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1  ;                        ;              ;                  ; 32.068       ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|dreg[0] ;                        ;              ;                  ; 31.852       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1  ;                        ;              ;                  ; 32.455       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|dreg[0] ;                        ;              ;                  ; 31.961       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+------------------+--------------+
 
 
@@ -600,7 +600,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 13.017 ; 0.000         ;
+; altera_reserved_tck ; 14.031 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -609,7 +609,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.163 ; 0.000         ;
+; altera_reserved_tck ; 0.165 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -618,7 +618,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 16.105 ; 0.000         ;
+; altera_reserved_tck ; 16.241 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -627,7 +627,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.339 ; 0.000         ;
+; altera_reserved_tck ; 0.324 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -636,18 +636,18 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+--------+--------------------+
 ; Clock               ; Slack  ; End Point TNS      ;
 +---------------------+--------+--------------------+
-; altera_reserved_tck ; 15.836 ; 0.000              ;
+; altera_reserved_tck ; 15.835 ; 0.000              ;
 +---------------------+--------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------+
-; Setup Times                                                                                  ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 5.798 ; 9.868 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 7.000 ; 9.742 ; Rise       ; altera_reserved_tck ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
++-----------------------------------------------------------------------------------------------+
+; Setup Times                                                                                   ;
++---------------------+---------------------+-------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+--------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 6.239 ; 10.352 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 7.630 ; 10.459 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+-------+--------+------------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------+
@@ -666,7 +666,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.474 ; 3.492 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 6.577 ; 6.606 ; Fall       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 6.593 ; 6.619 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 
 
@@ -685,7 +685,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 3.338 ; 3.266 ; 3.684 ; 3.612 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 3.342 ; 3.271 ; 3.688 ; 3.617 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -694,7 +694,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 2.696 ; 2.626 ; 3.042 ; 2.972 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 2.700 ; 2.631 ; 3.046 ; 2.977 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -707,7 +707,7 @@ Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Number of Synchronizer Chains Found: 2
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.000
-Worst Case Available Settling Time: 65.150 ns
+Worst Case Available Settling Time: 65.350 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 7.8
@@ -716,14 +716,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Synchronizer Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
-; Source Node                                                                                                                                                                                 ; Synchronization Node                                                                                                                                                                                                                                                                                                                              ; Worst-Case MTBF (Years) ; Typical MTBF (Years)   ; Included in Design MTBF ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
-; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
-; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                    ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synchronizer Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
+; Source Node                                                                                                                                                                                           ; Synchronization Node                                                                                                                                                                                                                                                                                                                              ; Worst-Case MTBF (Years) ; Typical MTBF (Years)   ; Included in Design MTBF ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
+; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
+; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                              ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
 
 
 Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
@@ -733,7 +733,7 @@ Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
 +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Property                ; Value                                                                                                                                                                                                                                                                                                                                             ;
 +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source Node             ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready                                                                                                                                                       ;
+; Source Node             ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE                                                                                                                                             ;
 ; Synchronization Node    ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ;
 ; Worst-Case MTBF (years) ; Greater than 1 Billion                                                                                                                                                                                                                                                                                                                            ;
 ; Typical MTBF (years)    ; Greater than 1 Billion                                                                                                                                                                                                                                                                                                                            ;
@@ -749,17 +749,17 @@ Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
 ; Worst-Case MTBF (years)                                                                                                                                                                                                                                                                                                                             ; Greater than 1 Billion ;              ;                  ;              ;
 ; Typical MTBF (years)                                                                                                                                                                                                                                                                                                                                ; Greater than 1 Billion ;              ;                  ;              ;
 ; Number of Synchronization Registers in Chain                                                                                                                                                                                                                                                                                                        ; 2                      ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 65.150                 ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 65.350                 ;              ;                  ;              ;
 ; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                                                                                                                                           ; 3.75                   ;              ;                  ;              ;
 ; Source Clock                                                                                                                                                                                                                                                                                                                                        ;                        ;              ;                  ;              ;
 ;  Unknown                                                                                                                                                                                                                                                                                                                                            ;                        ;              ;                  ;              ;
 ; Synchronization Clock                                                                                                                                                                                                                                                                                                                               ;                        ;              ;                  ;              ;
 ;  altera_reserved_tck                                                                                                                                                                                                                                                                                                                                ;                        ; 33.333       ; 30.0 MHz         ;              ;
 ; Asynchronous Source                                                                                                                                                                                                                                                                                                                                 ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready                                                                                                                                                        ;                        ;              ;                  ;              ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE                                                                                                                                              ;                        ;              ;                  ;              ;
 ; Synchronization Registers                                                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1  ;                        ;              ;                  ; 32.604       ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|dreg[0] ;                        ;              ;                  ; 32.546       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1  ;                        ;              ;                  ; 32.615       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|dreg[0] ;                        ;              ;                  ; 32.735       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+------------------+--------------+
 
 
@@ -787,7 +787,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Worst-Case MTBF (years)                                                                                                                                                                                                                                                                                                                             ; Greater than 1 Billion ;              ;                  ;              ;
 ; Typical MTBF (years)                                                                                                                                                                                                                                                                                                                                ; Greater than 1 Billion ;              ;                  ;              ;
 ; Number of Synchronization Registers in Chain                                                                                                                                                                                                                                                                                                        ; 2                      ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 65.279                 ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 65.482                 ;              ;                  ;              ;
 ; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                                                                                                                                           ; 3.75                   ;              ;                  ;              ;
 ; Source Clock                                                                                                                                                                                                                                                                                                                                        ;                        ;              ;                  ;              ;
 ;  Unknown                                                                                                                                                                                                                                                                                                                                            ;                        ;              ;                  ;              ;
@@ -796,8 +796,8 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Asynchronous Source                                                                                                                                                                                                                                                                                                                                 ;                        ;              ;                  ;              ;
 ;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
 ; Synchronization Registers                                                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1  ;                        ;              ;                  ; 32.741       ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|dreg[0] ;                        ;              ;                  ; 32.538       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1  ;                        ;              ;                  ; 32.871       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|dreg[0] ;                        ;              ;                  ; 32.611       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+------------------+--------------+
 
 
@@ -807,7 +807,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 13.425 ; 0.000         ;
+; altera_reserved_tck ; 14.310 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -816,7 +816,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.150 ; 0.000         ;
+; altera_reserved_tck ; 0.153 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -825,7 +825,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 16.186 ; 0.000         ;
+; altera_reserved_tck ; 16.305 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -834,7 +834,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.302 ; 0.000         ;
+; altera_reserved_tck ; 0.290 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -852,8 +852,8 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 5.061 ; 8.523 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 6.024 ; 8.386 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 5.463 ; 8.986 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 6.600 ; 8.986 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 
 
@@ -873,7 +873,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 ; altera_reserved_tdo ; altera_reserved_tck ; 3.339 ; 3.354 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 6.257 ; 6.288 ; Fall       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 6.271 ; 6.300 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+-------+-------+------------+---------------------+
 
 
@@ -892,7 +892,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 3.154 ; 3.072 ; 3.511 ; 3.429 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 3.157 ; 3.076 ; 3.514 ; 3.433 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -901,7 +901,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 2.529 ; 2.450 ; 2.886 ; 2.807 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 2.532 ; 2.453 ; 2.889 ; 2.810 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -914,7 +914,7 @@ Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Number of Synchronizer Chains Found: 2
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.000
-Worst Case Available Settling Time: 65.240 ns
+Worst Case Available Settling Time: 65.415 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 2.4
@@ -923,14 +923,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Synchronizer Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
-; Source Node                                                                                                                                                                                 ; Synchronization Node                                                                                                                                                                                                                                                                                                                              ; Worst-Case MTBF (Years) ; Typical MTBF (Years)   ; Included in Design MTBF ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
-; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
-; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                    ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synchronizer Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
+; Source Node                                                                                                                                                                                           ; Synchronization Node                                                                                                                                                                                                                                                                                                                              ; Worst-Case MTBF (Years) ; Typical MTBF (Years)   ; Included in Design MTBF ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
+; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
+; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                              ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1 ; Greater than 1 Billion  ; Greater than 1 Billion ; Yes                     ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+------------------------+-------------------------+
 
 
 Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
@@ -940,7 +940,7 @@ Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
 +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Property                ; Value                                                                                                                                                                                                                                                                                                                                             ;
 +-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source Node             ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready                                                                                                                                                       ;
+; Source Node             ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE                                                                                                                                             ;
 ; Synchronization Node    ; nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1 ;
 ; Worst-Case MTBF (years) ; Greater than 1 Billion                                                                                                                                                                                                                                                                                                                            ;
 ; Typical MTBF (years)    ; Greater than 1 Billion                                                                                                                                                                                                                                                                                                                            ;
@@ -956,17 +956,17 @@ Synchronizer Chain #1: Worst-Case MTBF is Greater than 1 Billion Years
 ; Worst-Case MTBF (years)                                                                                                                                                                                                                                                                                                                             ; Greater than 1 Billion ;              ;                  ;              ;
 ; Typical MTBF (years)                                                                                                                                                                                                                                                                                                                                ; Greater than 1 Billion ;              ;                  ;              ;
 ; Number of Synchronization Registers in Chain                                                                                                                                                                                                                                                                                                        ; 2                      ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 65.240                 ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 65.415                 ;              ;                  ;              ;
 ; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                                                                                                                                           ; 3.75                   ;              ;                  ;              ;
 ; Source Clock                                                                                                                                                                                                                                                                                                                                        ;                        ;              ;                  ;              ;
 ;  Unknown                                                                                                                                                                                                                                                                                                                                            ;                        ;              ;                  ;              ;
 ; Synchronization Clock                                                                                                                                                                                                                                                                                                                               ;                        ;              ;                  ;              ;
 ;  altera_reserved_tck                                                                                                                                                                                                                                                                                                                                ;                        ; 33.333       ; 30.0 MHz         ;              ;
 ; Asynchronous Source                                                                                                                                                                                                                                                                                                                                 ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready                                                                                                                                                        ;                        ;              ;                  ;              ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_oci_debug:the_nios_nios2_qsys_0_nios2_oci_debug|monitor_ready~DUPLICATE                                                                                                                                              ;                        ;              ;                  ;              ;
 ; Synchronization Registers                                                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1  ;                        ;              ;                  ; 32.648       ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|dreg[0] ;                        ;              ;                  ; 32.592       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1  ;                        ;              ;                  ; 32.662       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer2|dreg[0] ;                        ;              ;                  ; 32.753       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+------------------+--------------+
 
 
@@ -994,7 +994,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Worst-Case MTBF (years)                                                                                                                                                                                                                                                                                                                             ; Greater than 1 Billion ;              ;                  ;              ;
 ; Typical MTBF (years)                                                                                                                                                                                                                                                                                                                                ; Greater than 1 Billion ;              ;                  ;              ;
 ; Number of Synchronization Registers in Chain                                                                                                                                                                                                                                                                                                        ; 2                      ;              ;                  ;              ;
-; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 65.362                 ;              ;                  ;              ;
+; Available Settling Time (ns)                                                                                                                                                                                                                                                                                                                        ; 65.555                 ;              ;                  ;              ;
 ; Data Toggle Rate Used in MTBF Calculation (millions of transitions / sec)                                                                                                                                                                                                                                                                           ; 3.75                   ;              ;                  ;              ;
 ; Source Clock                                                                                                                                                                                                                                                                                                                                        ;                        ;              ;                  ;              ;
 ;  Unknown                                                                                                                                                                                                                                                                                                                                            ;                        ;              ;                  ;              ;
@@ -1003,8 +1003,8 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Asynchronous Source                                                                                                                                                                                                                                                                                                                                 ;                        ;              ;                  ;              ;
 ;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|hbreak_enabled                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
 ; Synchronization Registers                                                                                                                                                                                                                                                                                                                           ;                        ;              ;                  ;              ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1  ;                        ;              ;                  ; 32.764       ;
-;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|dreg[0] ;                        ;              ;                  ; 32.598       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|din_s1  ;                        ;              ;                  ; 32.894       ;
+;  nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1|dreg[0] ;                        ;              ;                  ; 32.661       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+------------------+--------------+
 
 
@@ -1014,8 +1014,8 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +----------------------+--------+-------+----------+---------+---------------------+
 ; Clock                ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +----------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack     ; 10.015 ; 0.150 ; 14.868   ; 0.302   ; 15.836              ;
-;  altera_reserved_tck ; 10.015 ; 0.150 ; 14.868   ; 0.302   ; 15.836              ;
+; Worst-case Slack     ; 11.581 ; 0.153 ; 15.056   ; 0.290   ; 15.835              ;
+;  altera_reserved_tck ; 11.581 ; 0.153 ; 15.056   ; 0.290   ; 15.835              ;
 ; Design-wide TNS      ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  altera_reserved_tck ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 +----------------------+--------+-------+----------+---------+---------------------+
@@ -1026,8 +1026,8 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+---------------------+--------+--------+------------+---------------------+
 ; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 10.065 ; 13.914 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 10.902 ; 13.683 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tdi ; altera_reserved_tck ; 11.351 ; 15.301 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 11.871 ; 14.544 ; Rise       ; altera_reserved_tck ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 
 
@@ -1047,7 +1047,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 ; altera_reserved_tdo ; altera_reserved_tck ; 6.715  ; 6.770  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo ; altera_reserved_tck ; 11.108 ; 11.229 ; Fall       ; altera_reserved_tck ;
+; altera_reserved_tdo ; altera_reserved_tck ; 11.129 ; 11.249 ; Fall       ; altera_reserved_tck ;
 +---------------------+---------------------+--------+--------+------------+---------------------+
 
 
@@ -1066,7 +1066,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 5.790 ; 5.661 ; 5.833 ; 5.704 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 5.793 ; 5.664 ; 5.836 ; 5.707 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -1075,7 +1075,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; CLOCK_50_B7A ; HDMI_TX_CLK ; 2.529 ; 2.450 ; 2.886 ; 2.807 ;
+; CLOCK_50_B7A ; HDMI_TX_CLK ; 2.532 ; 2.453 ; 2.889 ; 2.810 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -1128,18 +1128,10 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 ; CLOCK_50_B6A        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; CLOCK_50_B8A        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; HDMI_TX_INT         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[8]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[7]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[6]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[5]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[4]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[3]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[2]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[1]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[0]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; CLOCK_50_B7A        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; CPU_RESET_n         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[8]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[9]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; CPU_RESET_n         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Buttons[3]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Buttons[2]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Buttons[0]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -1311,7 +1303,7 @@ Synchronizer Chain #2: Worst-Case MTBF is Greater than 1 Billion Years
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 1717     ; 0        ; 28       ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 1706     ; 0        ; 28       ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1321,7 +1313,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 1717     ; 0        ; 28       ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 1706     ; 0        ; 28       ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1331,7 +1323,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 72       ; 0        ; 1        ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 74       ; 0        ; 1        ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1341,7 +1333,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 72       ; 0        ; 1        ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 74       ; 0        ; 1        ; 0        ;
 +---------------------+---------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1364,9 +1356,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 1     ; 1    ;
-; Unconstrained Input Ports       ; 9     ; 9    ;
-; Unconstrained Input Port Paths  ; 92    ; 92   ;
+; Unconstrained Clocks            ; 2     ; 2    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 93    ; 93   ;
 ; Unconstrained Output Ports      ; 30    ; 30   ;
 ; Unconstrained Output Port Paths ; 34    ; 34   ;
 +---------------------------------+-------+------+
@@ -1378,13 +1370,13 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Fri Nov 16 13:31:12 2018
+    Info: Processing started: Tue Nov 20 16:38:54 2018
 Info: Command: quartus_sta tiny_god -c tiny_god
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (335093): TimeQuest Timing Analyzer is analyzing 26 combinational loops as latches.
+Warning (335093): TimeQuest Timing Analyzer is analyzing 28 combinational loops as latches.
 Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity GHVD5181
         Info (332166): set_disable_timing [get_cells -hierarchical QXXQ6833_0]
@@ -1406,55 +1398,8 @@ Info (332164): Evaluating HDL-embedded SDC commands
         Info (332166): if { [string equal quartus_fit $::TimeQuestInfo(nameofexecutable)] } { set_max_delay -to [get_ports { altera_reserved_tdo } ] 0 }
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'tiny_god.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~57|dataf"
-    Warning (332126): Node "inst|Add0~57|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~53|dataf"
-    Warning (332126): Node "inst|Add0~53|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~49|datac"
-    Warning (332126): Node "inst|Add0~49|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~45|datac"
-    Warning (332126): Node "inst|Add0~45|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~41|dataf"
-    Warning (332126): Node "inst|Add0~41|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~37|datad"
-    Warning (332126): Node "inst|Add0~37|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~33|dataf"
-    Warning (332126): Node "inst|Add0~33|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~29|datad"
-    Warning (332126): Node "inst|Add0~29|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~25|dataf"
-    Warning (332126): Node "inst|Add0~25|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~21|dataf"
-    Warning (332126): Node "inst|Add0~21|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~17|dataf"
-    Warning (332126): Node "inst|Add0~17|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~13|dataf"
-    Warning (332126): Node "inst|Add0~13|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~9|dataf"
-    Warning (332126): Node "inst|Add0~9|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~5|datad"
-    Warning (332126): Node "inst|Add0~5|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|Add0~1|datac"
-    Warning (332126): Node "inst|Add0~1|sumout"
-Warning (332125): Found combinational loop of 2 nodes
-    Warning (332126): Node "inst|vec_map[0]~0|combout"
-    Warning (332126): Node "inst|vec_map[0]~0|dataf"
 Warning (332060): Node: CLOCK_50_B7A was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: diviseur:inst3|CLOCK_1 was determined to be a clock but was found without an associated clock assignment.
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
@@ -1476,26 +1421,26 @@ Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[7] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
-Info (332146): Worst-case setup slack is 10.015
+Info (332146): Worst-case setup slack is 11.592
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    10.015         0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.303
+    Info (332119):    11.592         0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.306
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.303         0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 14.868
+    Info (332119):     0.306         0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 15.056
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    14.868         0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.746
+    Info (332119):    15.056         0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.716
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.746         0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 15.846
+    Info (332119):     0.716         0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 15.847
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    15.846         0.000 altera_reserved_tck 
+    Info (332119):    15.847         0.000 altera_reserved_tck 
 Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
@@ -1503,7 +1448,7 @@ Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 2
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.000
-    Info (332114): Worst Case Available Settling Time: 63.741 ns
+    Info (332114): Worst Case Available Settling Time: 64.059 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 7.8
@@ -1514,6 +1459,7 @@ Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 5CGXFC5C6F27C7 are preliminary
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: CLOCK_50_B7A was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: diviseur:inst3|CLOCK_1 was determined to be a clock but was found without an associated clock assignment.
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: inst5|u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
@@ -1532,26 +1478,26 @@ Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[5] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[6] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[7] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
-Info (332146): Worst-case setup slack is 10.028
+Info (332146): Worst-case setup slack is 11.581
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    10.028         0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.281
+    Info (332119):    11.581         0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.283
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.281         0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 14.910
+    Info (332119):     0.283         0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 15.093
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    14.910         0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.684
+    Info (332119):    15.093         0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.660
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.684         0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 15.943
+    Info (332119):     0.660         0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 15.945
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    15.943         0.000 altera_reserved_tck 
+    Info (332119):    15.945         0.000 altera_reserved_tck 
 Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
@@ -1559,7 +1505,7 @@ Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 2
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.000
-    Info (332114): Worst Case Available Settling Time: 63.678 ns
+    Info (332114): Worst Case Available Settling Time: 64.014 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 2.4
@@ -1570,6 +1516,7 @@ Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 5CGXFC5C6F27C7 are preliminary
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: CLOCK_50_B7A was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: diviseur:inst3|CLOCK_1 was determined to be a clock but was found without an associated clock assignment.
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: inst5|u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
@@ -1588,26 +1535,26 @@ Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[5] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[6] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[7] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
-Info (332146): Worst-case setup slack is 13.017
+Info (332146): Worst-case setup slack is 14.031
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    13.017         0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.163
+    Info (332119):    14.031         0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.165
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.163         0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 16.105
+    Info (332119):     0.165         0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 16.241
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    16.105         0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.339
+    Info (332119):    16.241         0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.324
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.339         0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 15.836
+    Info (332119):     0.324         0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 15.835
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    15.836         0.000 altera_reserved_tck 
+    Info (332119):    15.835         0.000 altera_reserved_tck 
 Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
@@ -1615,7 +1562,7 @@ Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 2
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.000
-    Info (332114): Worst Case Available Settling Time: 65.150 ns
+    Info (332114): Worst Case Available Settling Time: 65.350 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 7.8
@@ -1623,6 +1570,7 @@ Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 17.8
 Info: Analyzing Fast 1100mV 0C Model
 Warning (332060): Node: CLOCK_50_B7A was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: diviseur:inst3|CLOCK_1 was determined to be a clock but was found without an associated clock assignment.
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: inst5|u_vpg|u_pll|pll_inst|altera_pll_i|cyclonev_pll|fpll_0|fpll|vcoph[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
@@ -1641,22 +1589,22 @@ Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[5] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[6] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: inst5|u_sys_pll|sys_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[7] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
-Info (332146): Worst-case setup slack is 13.425
+Info (332146): Worst-case setup slack is 14.310
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    13.425         0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.150
+    Info (332119):    14.310         0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.153
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.150         0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 16.186
+    Info (332119):     0.153         0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 16.305
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    16.186         0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.302
+    Info (332119):    16.305         0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.290
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.302         0.000 altera_reserved_tck 
+    Info (332119):     0.290         0.000 altera_reserved_tck 
 Info (332146): Worst-case minimum pulse width slack is 15.871
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1668,7 +1616,7 @@ Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 2
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.000
-    Info (332114): Worst Case Available Settling Time: 65.240 ns
+    Info (332114): Worst Case Available Settling Time: 65.415 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 2.4
@@ -1676,10 +1624,10 @@ Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 17.8
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 124 warnings
-    Info: Peak virtual memory: 1379 megabytes
-    Info: Processing ended: Fri Nov 16 13:31:40 2018
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 80 warnings
+    Info: Peak virtual memory: 1386 megabytes
+    Info: Processing ended: Tue Nov 20 16:39:22 2018
     Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:48
+    Info: Total CPU time (on all processors): 00:00:47
 
 

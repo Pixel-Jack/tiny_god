@@ -16,10 +16,11 @@ begin
 	process(CLOCK_50M)
 	begin
 		if rising_edge(CLOCK_50M) then
-			compteur <= compteur + 1;
 			if compteur >= 25000000 then -- x"17d7840" x"2faf080"
 				CLOCK_1 <= '1';
+				compteur <= 0;
 			else
+				compteur <= compteur + 1;
 				CLOCK_1 <= '0';
 			end if;
 		end if;

@@ -55,7 +55,7 @@ input 		          		CLOCK_50_B8A;
 input 		          		CPU_RESET_n;
 
 //////////// SW //////////
-input 		     [9:0]		SW;
+input 		    				SW;
 
 
 //////////// HDMI-TX //////////
@@ -84,8 +84,6 @@ wire        reset_n;
 wire        pll_1200k;
 reg  [12:0] counter_1200k;
 reg         en_150;
-//wire        loopback_mode;
-//wire        edid_writing;
 //Video Pattern Generator
 wire [3:0]	vpg_disp_mode;
 wire        vpg_pclk;
@@ -111,7 +109,7 @@ vpg_mode u_vpg_mode (
 	.reset_n(reset_n),
 	.clk(pll_1200k),
 	.clk_en(en_150),
-	.mode_button(SW[9]),
+	.mode_button(SW),
 	.vpg_mode_change(vpg_mode_change),
 	.vpg_mode(vpg_mode) );
 
@@ -125,6 +123,7 @@ vpg	u_vpg (
 	.disp_color(`COLOR_RGB444),       
 	.vpg_pclk(vpg_pclk),
 	.vecteur_map(vecteur_map),
+	.select_affichage(select_affichage),
 	.largeur_grille(largeur_grille),
 	.hauteur_grille(hauteur_grille),
 	.h_position_du_curseur(h_position_du_curseur),

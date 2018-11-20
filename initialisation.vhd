@@ -23,6 +23,6 @@ v_position_du_curseur <= x"00000001";
 mode_jeu <= '0';
 type_grille <= '0';
 select_affichage <= '1';
-map_init <= x"A5A5";
+map_init <= x"4321";
 pause <= '0';
 end architecture a;

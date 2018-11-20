@@ -51,6 +51,7 @@ module vga_generator(
   input [31:0] hauteur_grille,
   input [31:0] h_position_du_curseur,
   input [31:0] v_position_du_curseur,
+  input 			select_affichage,
   
   
   output  reg		     vga_hs,             
@@ -75,6 +76,10 @@ reg               boarder;
 wire              h_max, hs_end, hr_start, hr_end;
 wire              v_max, vs_end, vr_start, vr_end;
 wire              v_act_14, v_act_24, v_act_34;
+
+reg			  [15:0]	vecteur_map_current;			
+
+
 
 //=======================================================
 //  Structural coding
@@ -115,7 +120,7 @@ parameter border = 1;
 always @ (posedge clk or negedge reset_n)
 	if (!reset_n)
 	begin
-    h_act_d   <=  1'b0;
+		h_act_d   <=  1'b0;
 		h_count		<=	12'b0;
 		vga_hs		<=	1'b1;
 		h_act	    <=	1'b0;
@@ -125,9 +130,9 @@ always @ (posedge clk or negedge reset_n)
 	end
 	else
 	begin
-    h_act_d   <=  h_act;
+		h_act_d   <=  h_act;
 
-    if (h_max)
+		if (h_max)
 		  h_count	<= 12'b0;
 		else
 		  h_count	<= h_count + 12'b1;
@@ -163,6 +168,9 @@ always@(posedge clk or negedge reset_n)
 		
 		color_mode_v <=  0;
 		hauteur_cell <= (v_end - v_start) / hauteur_grille;
+		
+		vecteur_map_current <= vecteur_map;
+		
 	end
 	else 
 	begin		
@@ -171,7 +179,10 @@ always@(posedge clk or negedge reset_n)
   		v_act_d	  <=	v_act;
 		  
 	  if (v_max)
-		 v_count	<=	12'b0;
+		begin
+			 v_count	<=	12'b0;
+			 vecteur_map_current <= vecteur_map;
+		 end
 	  else
 		 v_count	<=	v_count + 12'b1;
 
@@ -221,12 +232,12 @@ begin
 		else
 			case (color_mode_h * color_mode_v)
 			0 : {vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'hFF}; // out
-			1 : if (vecteur_map[x_map + y_map * largeur_grille] == 1)
+			1 : if (vecteur_map_current[x_map + y_map * largeur_grille] == 1)
 					{vga_r, vga_g, vga_b} <= {8'h12,8'hAF,8'hAF}; // Cell active
 				 else 
 					{vga_r, vga_g, vga_b} <= {8'h00,8'h00,8'h00}; // Cell inactive
 			default : 
-				if (h_position_du_curseur == x_map & v_position_du_curseur == y_map)
+				if (h_position_du_curseur == x_map & v_position_du_curseur == y_map & select_affichage == 1)
 					{vga_r, vga_g, vga_b} <= {8'hFF,8'h5C,8'h39}; // Border active
 				else
 					{vga_r, vga_g, vga_b} <= {8'h32,8'hD8,8'hE0}; // Border inactive
