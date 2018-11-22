@@ -115,6 +115,13 @@ applicable agreement for further details.
 		(line (pt 0 224)(pt 16 224)(line_width 3))
 	)
 	(port
+		(pt 0 240)
+		(input)
+		(text "clk_50" (rect 0 0 25 12)(font "Arial" ))
+		(text "clk_50" (rect 21 235 46 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 1))
+	)
+	(port
 		(pt 264 32)
 		(output)
 		(text "position_curseur[6..1]" (rect 0 0 83 12)(font "Arial" ))

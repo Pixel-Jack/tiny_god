@@ -791,7 +791,7 @@ static void handle_buttons_interrupt(void* context, alt_u32 id){
    4033c:	10841804 	addi	r2,r2,4192
    40340:	10800037 	ldwio	r2,0(r2)
    40344:	e0bffc15 	stw	r2,-16(fp)
-	//printf("%x\n",code);
+	//printf("boutons :%x\n",code);
 	switch(code) {
    40348:	e0bffc17 	ldw	r2,-16(fp)
    4034c:	e0bfff15 	stw	r2,-4(fp)
@@ -836,7 +836,7 @@ static void handle_buttons_interrupt(void* context, alt_u32 id){
    403d0:	00402f00 	call	402f0 <set_right>
 	int code;
 	code = IORD(BUTTONS_BASE,0);
-	//printf("%x\n",code);
+	//printf("boutons :%x\n",code);
 	switch(code) {
 	case 7 :
 		if (pause == 1 || pause == 3) {
@@ -1053,6 +1053,7 @@ static void handle_switch_interrupt(void* context, alt_u32 id){
    40594:	10841c04 	addi	r2,r2,4208
    40598:	10800037 	ldwio	r2,0(r2)
    4059c:	d0a59805 	stb	r2,-27040(gp)
+	//printf("switch :%x\n",pause);
 	switch(pause) {
    405a0:	d0a59803 	ldbu	r2,-27040(gp)
    405a4:	10803fcc 	andi	r2,r2,255

@@ -48,7 +48,7 @@ unsigned char pause;
 static void handle_buttons_interrupt(void* context, alt_u32 id){
 	int code;
 	code = IORD(BUTTONS_BASE,0);
-	//printf("%x\n",code);
+	//printf("boutons :%x\n",code);
 	switch(code) {
 	case 7 :
 		if (pause == 1 || pause == 3) {
@@ -182,6 +182,7 @@ static void handle_buttons_interrupt(void* context, alt_u32 id){
 static void handle_switch_interrupt(void* context, alt_u32 id){
 
 	pause = IORD(SWITCH_BASE, 0);
+	//printf("switch :%x\n",pause);
 	switch(pause) {
 		case 0 :
 			set_led('0');

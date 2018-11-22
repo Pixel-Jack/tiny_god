@@ -222,3 +222,110 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 16:10:14.800
 !MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]
+!SESSION 2018-11-22 17:18:38.451 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:19:03.457
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81088 --id=0x1337 --timestamp=1542894059]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:19:06.095
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]
+!SESSION 2018-11-22 17:30:34.889 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:31:11.503
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81088 --id=0x1337 --timestamp=1542894059]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:31:15.029
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:33:48.005
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:33:48.598
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81088 --id=0x1337 --timestamp=1542894059]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:33:51.126
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:35:57.863
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:35:58.471
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81088 --id=0x1337 --timestamp=1542894059]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:36:01.063
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:37:12.982
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:37:13.559
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81088 --id=0x1337 --timestamp=1542894059]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:37:16.040
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]
+!SESSION 2018-11-22 17:38:43.777 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:39:07.083
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81088 --id=0x1337 --timestamp=1542894059]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:39:09.534
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-11-22 17:39:14.513
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x81088, --id=0x1337, --timestamp=1542894059, /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-11-22 17:39:14.528
+!MESSAGE Downloading ELF Process failed
+!SESSION 2018-11-22 17:40:16.193 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:41:12.992
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81088 --id=0x1337 --timestamp=1542894059]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:41:15.442
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:42:27.485
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:42:28.077
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81088 --id=0x1337 --timestamp=1542894059]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:42:30.591
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]
+!SESSION 2018-11-22 17:51:31.833 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:52:19.255
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81088 --id=0x1337 --timestamp=1542894059]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-22 17:52:21.768
+!MESSAGE Executing: [C:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81088 --id=0x1337 --timestamp=1542894059 /cygdrive/d/tiny_god/interactivite_jeu/software/test/test.elf]

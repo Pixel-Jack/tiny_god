@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Nov 22 16:06:59 2018
+Fitter Status : Successful - Thu Nov 22 17:50:03 2018
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : tiny_god
 Top-level Entity Name : tiny_god
 Family : Cyclone V
 Device : 5CGXFC5C6F27C7
 Timing Models : Preliminary
-Logic utilization (in ALMs) : 5,794 / 29,080 ( 20 % )
-Total registers : 3063
+Logic utilization (in ALMs) : 5,778 / 29,080 ( 20 % )
+Total registers : 3076
 Total pins : 44 / 364 ( 12 % )
 Total virtual pins : 0
 Total block memory bits : 2,161,088 / 4,567,040 ( 47 % )

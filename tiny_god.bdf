@@ -276,7 +276,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 560 -176 736 -160)
+	(rect 520 192 696 208)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "LED1" (rect 90 0 117 12)(font "Arial" ))
 	(pt 0 8)
@@ -289,7 +289,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 736 -160 784 -144))
+	(annotation_block (location)(rect 696 208 744 224))
 )
 (pin
 	(output)
@@ -572,6 +572,63 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 160 -312 336 -136)
+	(text "initialisation" (rect 5 0 61 12)(font "Arial" ))
+	(text "inst1" (rect 8 160 31 172)(font "Arial" ))
+	(port
+		(pt 176 32)
+		(output)
+		(text "largeur_grille[31..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "largeur_grille[31..0]" (rect 77 27 170 39)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32)(line_width 3))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "hauteur_grille[31..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "hauteur_grille[31..0]" (rect 74 43 170 55)(font "Arial" ))
+		(line (pt 176 48)(pt 160 48)(line_width 3))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "mode_jeu" (rect 0 0 47 12)(font "Arial" ))
+		(text "mode_jeu" (rect 116 59 163 71)(font "Arial" ))
+		(line (pt 176 64)(pt 160 64))
+	)
+	(port
+		(pt 176 80)
+		(output)
+		(text "type_grille" (rect 0 0 50 12)(font "Arial" ))
+		(text "type_grille" (rect 113 75 163 87)(font "Arial" ))
+		(line (pt 176 80)(pt 160 80))
+	)
+	(port
+		(pt 176 96)
+		(output)
+		(text "select_affichage" (rect 0 0 82 12)(font "Arial" ))
+		(text "select_affichage" (rect 86 91 168 103)(font "Arial" ))
+		(line (pt 176 96)(pt 160 96))
+	)
+	(port
+		(pt 176 112)
+		(output)
+		(text "pause" (rect 0 0 29 12)(font "Arial" ))
+		(text "pause" (rect 131 107 160 119)(font "Arial" ))
+		(line (pt 176 112)(pt 160 112))
+	)
+	(port
+		(pt 176 128)
+		(output)
+		(text "map_init[15..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "map_init[15..0]" (rect 94 123 167 135)(font "Arial" ))
+		(line (pt 176 128)(pt 160 128)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 160))
+	)
+)
+(symbol
 	(rect 552 -104 816 168)
 	(text "jeu_v4" (rect 5 0 38 12)(font "Arial" ))
 	(text "inst" (rect 8 256 25 268)(font "Arial" ))
@@ -667,6 +724,13 @@ applicable agreement for further details.
 		(line (pt 0 224)(pt 16 224)(line_width 3))
 	)
 	(port
+		(pt 0 240)
+		(input)
+		(text "clk_50" (rect 0 0 31 12)(font "Arial" ))
+		(text "clk_50" (rect 21 235 52 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
 		(pt 264 32)
 		(output)
 		(text "position_curseur[6..1]" (rect 0 0 106 12)(font "Arial" ))
@@ -698,63 +762,6 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 248 256))
 	)
 )
-(symbol
-	(rect 160 -312 336 -136)
-	(text "initialisation" (rect 5 0 61 12)(font "Arial" ))
-	(text "inst1" (rect 8 160 31 172)(font "Arial" ))
-	(port
-		(pt 176 32)
-		(output)
-		(text "largeur_grille[31..0]" (rect 0 0 93 12)(font "Arial" ))
-		(text "largeur_grille[31..0]" (rect 77 27 155 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32)(line_width 3))
-	)
-	(port
-		(pt 176 48)
-		(output)
-		(text "hauteur_grille[31..0]" (rect 0 0 96 12)(font "Arial" ))
-		(text "hauteur_grille[31..0]" (rect 74 43 155 55)(font "Arial" ))
-		(line (pt 176 48)(pt 160 48)(line_width 3))
-	)
-	(port
-		(pt 176 64)
-		(output)
-		(text "mode_jeu" (rect 0 0 47 12)(font "Arial" ))
-		(text "mode_jeu" (rect 116 59 155 71)(font "Arial" ))
-		(line (pt 176 64)(pt 160 64))
-	)
-	(port
-		(pt 176 80)
-		(output)
-		(text "type_grille" (rect 0 0 50 12)(font "Arial" ))
-		(text "type_grille" (rect 113 75 155 87)(font "Arial" ))
-		(line (pt 176 80)(pt 160 80))
-	)
-	(port
-		(pt 176 96)
-		(output)
-		(text "select_affichage" (rect 0 0 82 12)(font "Arial" ))
-		(text "select_affichage" (rect 86 91 155 103)(font "Arial" ))
-		(line (pt 176 96)(pt 160 96))
-	)
-	(port
-		(pt 176 112)
-		(output)
-		(text "pause" (rect 0 0 29 12)(font "Arial" ))
-		(text "pause" (rect 131 107 155 119)(font "Arial" ))
-		(line (pt 176 112)(pt 160 112))
-	)
-	(port
-		(pt 176 128)
-		(output)
-		(text "map_init[15..0]" (rect 0 0 73 12)(font "Arial" ))
-		(text "map_init[15..0]" (rect 94 123 155 135)(font "Arial" ))
-		(line (pt 176 128)(pt 160 128)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 160 160))
-	)
-)
 (connector
 	(pt 552 -8)
 	(pt 504 -8)
@@ -765,10 +772,6 @@ applicable agreement for further details.
 )
 (connector
 	(pt 40 -200)
-	(pt 56 -200)
-)
-(connector
-	(pt 56 -392)
 	(pt 56 -200)
 )
 (connector
@@ -819,10 +822,6 @@ applicable agreement for further details.
 (connector
 	(pt 544 8)
 	(pt 552 8)
-)
-(connector
-	(pt 504 -168)
-	(pt 560 -168)
 )
 (connector
 	(pt 552 -56)
@@ -903,10 +902,6 @@ applicable agreement for further details.
 	(pt 56 -120)
 )
 (connector
-	(pt 504 -168)
-	(pt 504 -8)
-)
-(connector
 	(pt 504 -8)
 	(pt 504 40)
 )
@@ -925,10 +920,6 @@ applicable agreement for further details.
 (connector
 	(pt 408 88)
 	(pt 552 88)
-)
-(connector
-	(pt 408 104)
-	(pt 552 104)
 )
 (connector
 	(pt -16 56)
@@ -1086,12 +1077,49 @@ applicable agreement for further details.
 	(pt 856 -24)
 	(bus)
 )
+(connector
+	(pt 552 136)
+	(pt -256 136)
+)
+(connector
+	(pt -256 136)
+	(pt -256 -264)
+)
+(connector
+	(pt -256 -264)
+	(pt 56 -264)
+)
+(connector
+	(pt 56 -392)
+	(pt 56 -264)
+)
+(connector
+	(pt 56 -264)
+	(pt 56 -200)
+)
+(connector
+	(pt 440 104)
+	(pt 440 200)
+)
+(connector
+	(pt 408 104)
+	(pt 440 104)
+)
+(connector
+	(pt 440 104)
+	(pt 552 104)
+)
+(connector
+	(pt 440 200)
+	(pt 520 200)
+)
 (junction (pt 56 -200))
 (junction (pt 56 -120))
-(junction (pt 504 -8))
 (junction (pt 472 -280))
 (junction (pt 448 -264))
 (junction (pt 488 -360))
 (junction (pt 456 -136))
 (junction (pt 456 24))
 (junction (pt 856 -56))
+(junction (pt 56 -264))
+(junction (pt 440 104))
