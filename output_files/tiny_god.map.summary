@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Nov 20 16:36:29 2018
+Analysis & Synthesis Status : Successful - Thu Nov 22 14:42:35 2018
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : tiny_god
 Top-level Entity Name : tiny_god
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 2710
-Total pins : 43
+Total registers : 2998
+Total pins : 44
 Total virtual pins : 0
-Total block memory bits : 2,160,064
+Total block memory bits : 2,161,088
 Total DSP Blocks : 5
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

@@ -69,9 +69,11 @@ add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_bstatu
 add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_ienable_reg
 add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_ienable_reg_irq0
 add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_ienable_reg_irq1
+add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_ienable_reg_irq2
 add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_ipending_reg
 add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_ipending_reg_irq0
 add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_ipending_reg_irq1
+add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_ipending_reg_irq2
 add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/A_cpuid_reg
 add wave -noupdate -format Logic -radix hexadecimal /NIOS2_INSTANCE_TOP/E_valid_prior_to_hbreak
 

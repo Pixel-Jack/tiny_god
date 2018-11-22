@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 13.0 156 win32 2018.11.06.15:41:04
+# ACDS 13.0 156 win32 2018.11.22.14:40:58
 
 # ----------------------------------------
 # vcsmx - auto-generated simulation script
@@ -59,6 +59,7 @@ mkdir -p ./libraries/id_router/
 mkdir -p ./libraries/addr_router_001/
 mkdir -p ./libraries/addr_router/
 mkdir -p ./libraries/nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo/
+mkdir -p ./libraries/jtag_uart_0/
 mkdir -p ./libraries/sysid_qsys_0/
 mkdir -p ./libraries/action/
 mkdir -p ./libraries/buttons/
@@ -134,6 +135,7 @@ if [ $SKIP_COM -eq 0 ]; then
   vhdlan -xlrm "$QSYS_SIMDIR/submodules/nios_addr_router_001.vho"                                                                   -work addr_router_001                                                                  
   vhdlan -xlrm "$QSYS_SIMDIR/submodules/nios_addr_router.vho"                                                                       -work addr_router                                                                      
   vhdlan -xlrm "$QSYS_SIMDIR/submodules/nios_nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho" -work nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo
+  vhdlan -xlrm "$QSYS_SIMDIR/submodules/nios_jtag_uart_0.vhd"                                                                       -work jtag_uart_0                                                                      
   vhdlan -xlrm "$QSYS_SIMDIR/submodules/nios_sysid_qsys_0.vho"                                                                      -work sysid_qsys_0                                                                     
   vhdlan -xlrm "$QSYS_SIMDIR/submodules/nios_action.vhd"                                                                            -work action                                                                           
   vhdlan -xlrm "$QSYS_SIMDIR/submodules/nios_buttons.vhd"                                                                           -work buttons                                                                          
@@ -153,6 +155,7 @@ if [ $SKIP_COM -eq 0 ]; then
   vhdlan -xlrm "$QSYS_SIMDIR/nios_onchip_memory2_0_s1_translator.vhd"                                                                                                                                                      
   vhdlan -xlrm "$QSYS_SIMDIR/nios_switch_s1_translator.vhd"                                                                                                                                                                
   vhdlan -xlrm "$QSYS_SIMDIR/nios_sysid_qsys_0_control_slave_translator.vhd"                                                                                                                                               
+  vhdlan -xlrm "$QSYS_SIMDIR/nios_jtag_uart_0_avalon_jtag_slave_translator.vhd"                                                                                                                                            
   vhdlan -xlrm "$QSYS_SIMDIR/nios_rst_controller.vhd"                                                                                                                                                                      
   vhdlan -xlrm "$QSYS_SIMDIR/nios_rst_controller_001.vhd"                                                                                                                                                                  
 fi

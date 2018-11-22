@@ -37,7 +37,7 @@
 		 sink_ready	:	OUT  STD_LOGIC;
 		 sink_startofpacket	:	IN  STD_LOGIC;
 		 sink_valid	:	IN  STD_LOGIC;
-		 src_channel	:	OUT  STD_LOGIC_VECTOR (10 DOWNTO 0);
+		 src_channel	:	OUT  STD_LOGIC_VECTOR (11 DOWNTO 0);
 		 src_data	:	OUT  STD_LOGIC_VECTOR (94 DOWNTO 0);
 		 src_endofpacket	:	OUT  STD_LOGIC;
 		 src_ready	:	IN  STD_LOGIC;
@@ -51,13 +51,13 @@
 	 ATTRIBUTE synthesis_clearbox : natural;
 	 ATTRIBUTE synthesis_clearbox OF RTL : ARCHITECTURE IS 1;
 	 SIGNAL  wire_w286w	:	STD_LOGIC_VECTOR (0 DOWNTO 0);
-	 SIGNAL  s_wire_nios_id_router_src_channel_1_317_dataout :	STD_LOGIC;
+	 SIGNAL  s_wire_nios_id_router_src_channel_1_321_dataout :	STD_LOGIC;
  BEGIN
 
-	wire_w286w(0) <= NOT s_wire_nios_id_router_src_channel_1_317_dataout;
-	s_wire_nios_id_router_src_channel_1_317_dataout <= ((((NOT sink_data(81)) AND (NOT sink_data(82))) AND (NOT sink_data(83))) AND (NOT sink_data(84)));
+	wire_w286w(0) <= NOT s_wire_nios_id_router_src_channel_1_321_dataout;
+	s_wire_nios_id_router_src_channel_1_321_dataout <= ((((NOT sink_data(81)) AND (NOT sink_data(82))) AND (NOT sink_data(83))) AND (NOT sink_data(84)));
 	sink_ready <= src_ready;
-	src_channel <= ( "0" & "0" & "0" & "0" & "0" & "0" & "0" & "0" & "0" & s_wire_nios_id_router_src_channel_1_317_dataout & wire_w286w);
+	src_channel <= ( "0" & "0" & "0" & "0" & "0" & "0" & "0" & "0" & "0" & "0" & s_wire_nios_id_router_src_channel_1_321_dataout & wire_w286w);
 	src_data <= ( sink_data(94 DOWNTO 0));
 	src_endofpacket <= sink_endofpacket;
 	src_startofpacket <= sink_startofpacket;

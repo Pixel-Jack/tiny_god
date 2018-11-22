@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 13.0 156 win32 2018.11.06.15:41:04
+# ACDS 13.0 156 win32 2018.11.22.14:40:58
 
 # ----------------------------------------
 # Auto-generated simulation script
@@ -145,6 +145,8 @@ ensure_lib                                                                      
 vmap       nios2_qsys_0_jtag_debug_module_translator                                         ./libraries/nios2_qsys_0_jtag_debug_module_translator                                        
 ensure_lib                                                                                   ./libraries/nios2_qsys_0_instruction_master_translator                                       
 vmap       nios2_qsys_0_instruction_master_translator                                        ./libraries/nios2_qsys_0_instruction_master_translator                                       
+ensure_lib                                                                                   ./libraries/jtag_uart_0                                                                      
+vmap       jtag_uart_0                                                                       ./libraries/jtag_uart_0                                                                      
 ensure_lib                                                                                   ./libraries/sysid_qsys_0                                                                     
 vmap       sysid_qsys_0                                                                      ./libraries/sysid_qsys_0                                                                     
 ensure_lib                                                                                   ./libraries/action                                                                           
@@ -217,6 +219,7 @@ alias com {
   vlog  "$QSYS_SIMDIR/submodules/aldec/altera_merlin_master_agent.sv"                                                        -work nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent       
   vlog  "$QSYS_SIMDIR/submodules/aldec/altera_merlin_slave_translator.sv"                                                    -work nios2_qsys_0_jtag_debug_module_translator                                        
   vlog  "$QSYS_SIMDIR/submodules/aldec/altera_merlin_master_translator.sv"                                                   -work nios2_qsys_0_instruction_master_translator                                       
+  vcom  "$QSYS_SIMDIR/submodules/nios_jtag_uart_0.vhd"                                                                       -work jtag_uart_0                                                                      
   vcom  "$QSYS_SIMDIR/submodules/nios_sysid_qsys_0.vho"                                                                      -work sysid_qsys_0                                                                     
   vcom  "$QSYS_SIMDIR/submodules/nios_action.vhd"                                                                            -work action                                                                           
   vcom  "$QSYS_SIMDIR/submodules/nios_buttons.vhd"                                                                           -work buttons                                                                          
@@ -236,6 +239,7 @@ alias com {
   vcom  "$QSYS_SIMDIR/nios_onchip_memory2_0_s1_translator.vhd"                                                                                                                                                      
   vcom  "$QSYS_SIMDIR/nios_switch_s1_translator.vhd"                                                                                                                                                                
   vcom  "$QSYS_SIMDIR/nios_sysid_qsys_0_control_slave_translator.vhd"                                                                                                                                               
+  vcom  "$QSYS_SIMDIR/nios_jtag_uart_0_avalon_jtag_slave_translator.vhd"                                                                                                                                            
   vcom  "$QSYS_SIMDIR/nios_rst_controller.vhd"                                                                                                                                                                      
   vcom  "$QSYS_SIMDIR/nios_rst_controller_001.vhd"                                                                                                                                                                  
 }
@@ -244,14 +248,14 @@ alias com {
 # Elaborate top level design
 alias elab {
   echo "\[exec\] elab"
-  vsim +access +r  -t ps -L work -L irq_mapper -L rsp_xbar_mux_001 -L rsp_xbar_mux -L rsp_xbar_demux_002 -L rsp_xbar_demux -L cmd_xbar_mux -L cmd_xbar_demux_001 -L cmd_xbar_demux -L rst_controller -L limiter -L id_router_002 -L id_router -L addr_router_001 -L addr_router -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent -L nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent -L nios2_qsys_0_jtag_debug_module_translator -L nios2_qsys_0_instruction_master_translator -L sysid_qsys_0 -L action -L buttons -L switch -L nios2_qsys_0 -L onchip_memory2_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev $TOP_LEVEL_NAME
+  vsim +access +r  -t ps -L work -L irq_mapper -L rsp_xbar_mux_001 -L rsp_xbar_mux -L rsp_xbar_demux_002 -L rsp_xbar_demux -L cmd_xbar_mux -L cmd_xbar_demux_001 -L cmd_xbar_demux -L rst_controller -L limiter -L id_router_002 -L id_router -L addr_router_001 -L addr_router -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent -L nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent -L nios2_qsys_0_jtag_debug_module_translator -L nios2_qsys_0_instruction_master_translator -L jtag_uart_0 -L sysid_qsys_0 -L action -L buttons -L switch -L nios2_qsys_0 -L onchip_memory2_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
 # Elaborate the top level design with -dbg -O2 option
 alias elab_debug {
   echo "\[exec\] elab_debug"
-  vsim -dbg -O2 +access +r -t ps -L work -L irq_mapper -L rsp_xbar_mux_001 -L rsp_xbar_mux -L rsp_xbar_demux_002 -L rsp_xbar_demux -L cmd_xbar_mux -L cmd_xbar_demux_001 -L cmd_xbar_demux -L rst_controller -L limiter -L id_router_002 -L id_router -L addr_router_001 -L addr_router -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent -L nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent -L nios2_qsys_0_jtag_debug_module_translator -L nios2_qsys_0_instruction_master_translator -L sysid_qsys_0 -L action -L buttons -L switch -L nios2_qsys_0 -L onchip_memory2_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev $TOP_LEVEL_NAME
+  vsim -dbg -O2 +access +r -t ps -L work -L irq_mapper -L rsp_xbar_mux_001 -L rsp_xbar_mux -L rsp_xbar_demux_002 -L rsp_xbar_demux -L cmd_xbar_mux -L cmd_xbar_demux_001 -L cmd_xbar_demux -L rst_controller -L limiter -L id_router_002 -L id_router -L addr_router_001 -L addr_router -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo -L nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent -L nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent -L nios2_qsys_0_jtag_debug_module_translator -L nios2_qsys_0_instruction_master_translator -L jtag_uart_0 -L sysid_qsys_0 -L action -L buttons -L switch -L nios2_qsys_0 -L onchip_memory2_0 -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------

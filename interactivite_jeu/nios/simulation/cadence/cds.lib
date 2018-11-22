@@ -22,6 +22,7 @@ DEFINE id_router                                                                
 DEFINE addr_router_001                                                                   ./libraries/addr_router_001/                                                                  
 DEFINE addr_router                                                                       ./libraries/addr_router/                                                                      
 DEFINE nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo ./libraries/nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo/
+DEFINE jtag_uart_0                                                                       ./libraries/jtag_uart_0/                                                                      
 DEFINE sysid_qsys_0                                                                      ./libraries/sysid_qsys_0/                                                                     
 DEFINE action                                                                            ./libraries/action/                                                                           
 DEFINE buttons                                                                           ./libraries/buttons/                                                                          

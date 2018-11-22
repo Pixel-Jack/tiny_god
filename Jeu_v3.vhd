@@ -23,12 +23,12 @@ architecture a of jeu_v3 is
 		signal cellules_vivantes_a_cote : cells;
 		signal cellules_prec : std_logic_vector(15 downto 0);
 		signal position_curseur_prec : std_logic_vector(6 downto 1);
-		constant lgrille : integer := to_integer(unsigned(largeur_grille));
-		constant hgrille : integer := to_integer(unsigned(hauteur_grille));
+		constant lgrille : integer := 4;
+		constant hgrille : integer := 4;
 		signal compteur_v_map : integer := 0;
 begin
 	
-	process(rst, pause, type_grille, action, clock, d_haut, d_bas, d_gauche, d_droite, largeur_grille, hauteur_grille, cellules_temp, position_curseur_prec, cellules_initiales)
+	process(rst, pause, type_grille, action, clock, d_haut, d_bas, d_gauche, d_droite, cellules_temp, cellules_prec, position_curseur_prec, cellules_initiales)
 		
 	begin
 		if rst = '0' then 
@@ -368,6 +368,7 @@ begin
 						for c in 0 to lgrille*hgrille-1 loop
 							if cellules_vivantes_a_cote(c)=3 then
 								cellules_temp(c)<='1';
+								--compteur_v_map <= compteur_v_map + 1;
 							elsif cellules_vivantes_a_cote(c)>3 then
 								cellules_temp(c)<='0';
 							end if;
@@ -420,7 +421,7 @@ begin
 				end if; -- pause
 --				compteur_v_map <= compteur_v_map + 1;
 --				cellules <= std_logic_vector(unsigned(cellules_temp) + to_unsigned(compteur_v_map,16));
-				cellules_temp(3)<='1';
+--				cellules_temp(3)<='1';
 				cellules <= cellules_temp;
 			end if; -- clock
 		end if; --rst	

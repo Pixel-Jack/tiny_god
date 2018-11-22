@@ -2,6 +2,7 @@
 <LOG_ROOT>
 	<PROJECT NAME="tiny_god">
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|C5G_HDMI_VPG:inst5|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_65m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|nios:inst4|nios_jtag_uart_0:jtag_uart_0|nios_jtag_uart_0_scfifo_r:the_nios_jtag_uart_0_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_3291.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|C5G_HDMI_VPG:inst5|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_3dm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_ic_data_module:nios_nios2_qsys_0_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_spj1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_ic_tag_module:nios_nios2_qsys_0_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_1on1.tdf"/>
@@ -11,6 +12,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|nios:inst4|nios_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_j3j1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|C5G_HDMI_VPG:inst5|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_3dm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|C5G_HDMI_VPG:inst5|vpg:u_vpg|vga_generator:u_vga_generator|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_65m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|nios:inst4|nios_jtag_uart_0:jtag_uart_0|nios_jtag_uart_0_scfifo_w:the_nios_jtag_uart_0_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_3291.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_bht_module:nios_nios2_qsys_0_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_kbn1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_dc_data_module:nios_nios2_qsys_0_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_4kl1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|tiny_god|nios:inst4|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_dc_tag_module:nios_nios2_qsys_0_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_40n1.tdf"/>

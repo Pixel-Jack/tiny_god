@@ -32,7 +32,7 @@ entity nios_switch is
                  signal address : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
                  signal chipselect : IN STD_LOGIC;
                  signal clk : IN STD_LOGIC;
-                 signal in_port : IN STD_LOGIC;
+                 signal in_port : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
                  signal reset_n : IN STD_LOGIC;
                  signal write_n : IN STD_LOGIC;
                  signal writedata : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
@@ -46,22 +46,27 @@ end entity nios_switch;
 
 architecture europa of nios_switch is
                 signal clk_en :  STD_LOGIC;
-                signal data_in :  STD_LOGIC;
-                signal irq_mask :  STD_LOGIC;
-                signal read_mux_out :  STD_LOGIC;
+                signal d1_data_in :  STD_LOGIC_VECTOR (1 DOWNTO 0);
+                signal d2_data_in :  STD_LOGIC_VECTOR (1 DOWNTO 0);
+                signal data_in :  STD_LOGIC_VECTOR (1 DOWNTO 0);
+                signal edge_capture :  STD_LOGIC_VECTOR (1 DOWNTO 0);
+                signal edge_capture_wr_strobe :  STD_LOGIC;
+                signal edge_detect :  STD_LOGIC_VECTOR (1 DOWNTO 0);
+                signal irq_mask :  STD_LOGIC_VECTOR (1 DOWNTO 0);
+                signal read_mux_out :  STD_LOGIC_VECTOR (1 DOWNTO 0);
 
 begin
 
   clk_en <= std_logic'('1');
   --s1, which is an e_avalon_slave
-  read_mux_out <= ((to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000000")))) AND data_in)) OR ((to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000010")))) AND irq_mask));
+  read_mux_out <= (((A_REP(to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000000")))), 2) AND data_in)) OR ((A_REP(to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000010")))), 2) AND irq_mask))) OR ((A_REP(to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000011")))), 2) AND edge_capture));
   process (clk, reset_n)
   begin
     if reset_n = '0' then
       readdata <= std_logic_vector'("00000000000000000000000000000000");
     elsif clk'event and clk = '1' then
       if std_logic'(clk_en) = '1' then 
-        readdata <= std_logic_vector'("00000000000000000000000000000000") OR (std_logic_vector'("0000000000000000000000000000000") & (A_TOSTDLOGICVECTOR(read_mux_out)));
+        readdata <= std_logic_vector'("00000000000000000000000000000000") OR (std_logic_vector'("000000000000000000000000000000") & (read_mux_out));
       end if;
     end if;
 
@@ -71,16 +76,64 @@ begin
   process (clk, reset_n)
   begin
     if reset_n = '0' then
-      irq_mask <= std_logic'('0');
+      irq_mask <= std_logic_vector'("00");
     elsif clk'event and clk = '1' then
       if std_logic'(((chipselect AND NOT write_n) AND to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000010")))))) = '1' then 
-        irq_mask <= writedata(0);
+        irq_mask <= writedata(1 DOWNTO 0);
       end if;
     end if;
 
   end process;
 
-  irq <= data_in AND irq_mask;
+  irq <= or_reduce(((edge_capture AND irq_mask)));
+  edge_capture_wr_strobe <= (chipselect AND NOT write_n) AND to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000011"))));
+  process (clk, reset_n)
+  begin
+    if reset_n = '0' then
+      edge_capture(0) <= std_logic'('0');
+    elsif clk'event and clk = '1' then
+      if std_logic'(clk_en) = '1' then 
+        if std_logic'(edge_capture_wr_strobe) = '1' then 
+          edge_capture(0) <= std_logic'('0');
+        elsif std_logic'(edge_detect(0)) = '1' then 
+          edge_capture(0) <= Vector_To_Std_Logic(-SIGNED(std_logic_vector'("00000000000000000000000000000001")));
+        end if;
+      end if;
+    end if;
+
+  end process;
+
+  process (clk, reset_n)
+  begin
+    if reset_n = '0' then
+      edge_capture(1) <= std_logic'('0');
+    elsif clk'event and clk = '1' then
+      if std_logic'(clk_en) = '1' then 
+        if std_logic'(edge_capture_wr_strobe) = '1' then 
+          edge_capture(1) <= std_logic'('0');
+        elsif std_logic'(edge_detect(1)) = '1' then 
+          edge_capture(1) <= Vector_To_Std_Logic(-SIGNED(std_logic_vector'("00000000000000000000000000000001")));
+        end if;
+      end if;
+    end if;
+
+  end process;
+
+  process (clk, reset_n)
+  begin
+    if reset_n = '0' then
+      d1_data_in <= std_logic_vector'("00");
+      d2_data_in <= std_logic_vector'("00");
+    elsif clk'event and clk = '1' then
+      if std_logic'(clk_en) = '1' then 
+        d1_data_in <= data_in;
+        d2_data_in <= d1_data_in;
+      end if;
+    end if;
+
+  end process;
+
+  edge_detect <= d1_data_in XOR d2_data_in;
 
 end europa;
 

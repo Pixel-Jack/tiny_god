@@ -15,6 +15,7 @@ id_router:                                                                      
 addr_router_001:                                                                   ./libraries/addr_router_001/                                                                  
 addr_router:                                                                       ./libraries/addr_router/                                                                      
 nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: ./libraries/nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo/
+jtag_uart_0:                                                                       ./libraries/jtag_uart_0/                                                                      
 sysid_qsys_0:                                                                      ./libraries/sysid_qsys_0/                                                                     
 action:                                                                            ./libraries/action/                                                                           
 buttons:                                                                           ./libraries/buttons/                                                                          
