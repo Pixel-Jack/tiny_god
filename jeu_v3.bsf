@@ -128,6 +128,20 @@ applicable agreement for further details.
 		(text "cellules[15..0]" (rect 193 43 243 55)(font "Arial" ))
 		(line (pt 264 48)(pt 248 48)(line_width 3))
 	)
+	(port
+		(pt 264 64)
+		(output)
+		(text "cel_prec[15..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "cel_prec[15..0]" (rect 186 59 243 71)(font "Arial" ))
+		(line (pt 264 64)(pt 248 64)(line_width 3))
+	)
+	(port
+		(pt 264 80)
+		(output)
+		(text "cel_temp[15..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "cel_temp[15..0]" (rect 183 75 243 87)(font "Arial" ))
+		(line (pt 264 80)(pt 248 80)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 248 256)(line_width 1))
 	)

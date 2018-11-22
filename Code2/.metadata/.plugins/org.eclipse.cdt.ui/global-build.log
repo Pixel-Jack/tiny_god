@@ -1434,3 +1434,83 @@ make --no-print-directory -C ../test_bsp/
 [test build complete]
 
 **** Build Finished ****
+
+**** Build of configuration Nios II for project test ****
+
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project test ****
+
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project test ****
+
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project test ****
+
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project test ****
+
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project test ****
+
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project test ****
+
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project test ****
+
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+
+**** Build Finished ****

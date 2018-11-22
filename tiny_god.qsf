@@ -98,9 +98,9 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_AC9 -to SW0
 set_location_assignment PIN_AE10 -to SW1
 set_location_assignment PIN_AE19 -to SW9
+set_global_assignment -name VHDL_FILE Jeu_v4.vhd
 set_global_assignment -name VERILOG_FILE interactivite_jeu/nios/synthesis/submodules/nios_jtag_uart_0.v
 set_global_assignment -name VHDL_FILE interactivite_jeu/nios/synthesis/nios_jtag_uart_0_avalon_jtag_slave_translator.vhd
-set_global_assignment -name VHDL_FILE Jeu_v3.vhd
 set_global_assignment -name VERILOG_FILE affichage_jdv/sys_pll/sys_pll_0002.v
 set_global_assignment -name VERILOG_FILE affichage_jdv/vpg_source/pll/pll_0002.v
 set_global_assignment -name VERILOG_FILE affichage_jdv/vpg_source/pll_reconfig/altera_pll_reconfig_top.v
