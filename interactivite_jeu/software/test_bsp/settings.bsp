@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>22 nov. 2018 14:47:04</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1542894424468</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>26 nov. 2018 17:59:46</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1543251586751</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>D:\tiny_god\interactivite_jeu\software\test_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>D:\tiny_god\interactivite_jeu\nios.sopcinfo</SopcDesignFile>

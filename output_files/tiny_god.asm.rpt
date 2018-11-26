@@ -1,5 +1,5 @@
 Assembler report for tiny_god
-Thu Nov 22 17:50:25 2018
+Mon Nov 26 17:57:13 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 22 17:50:25 2018 ;
+; Assembler Status      ; Successful - Mon Nov 26 17:57:13 2018 ;
 ; Revision Name         ; tiny_god                              ;
 ; Top-level Entity Name ; tiny_god                              ;
 ; Family                ; Cyclone V                             ;
@@ -104,8 +104,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                     ;
 +----------------+-------------------------------------------------------------+
 ; Device         ; 5CGXFC5C6F27C7                                              ;
-; JTAG usercode  ; 0x067ED469                                                  ;
-; Checksum       ; 0x067ED469                                                  ;
+; JTAG usercode  ; 0x067EDDB5                                                  ;
+; Checksum       ; 0x067EDDB5                                                  ;
 +----------------+-------------------------------------------------------------+
 
 
@@ -115,15 +115,15 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Thu Nov 22 17:50:10 2018
+    Info: Processing started: Mon Nov 26 17:56:59 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off tiny_god -c tiny_god
 Info (115030): Assembler is generating device programming files
 Info (115017): Design contains a time-limited core -- only a single, time-limited programming file can be generated
 Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 693 megabytes
-    Info: Processing ended: Thu Nov 22 17:50:25 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 697 megabytes
+    Info: Processing ended: Mon Nov 26 17:57:13 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
 
 
