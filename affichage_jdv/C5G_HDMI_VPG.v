@@ -68,7 +68,7 @@ output		          		HDMI_TX_VS;
 
 
 
-input [15:0]	vecteur_map;
+input [1405:0]	vecteur_map;
 input 			select_affichage;
 input	[31:0]	largeur_grille;
 input	[31:0]	hauteur_grille;

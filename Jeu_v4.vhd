@@ -11,23 +11,24 @@ port(
 	mode_jeu, action : in std_logic;-- :='0';
 	type_grille, pause : in std_logic;-- :='1';
 	clock, d_haut, d_bas, d_gauche, d_droite : in std_logic;
-	cellules_initiales : in std_logic_vector(15 downto 0);
-	position_curseur : out std_logic_vector(6 downto 1);--:="000101";--12
+	cellules_initiales : in std_logic_vector(1405 downto 0);
+	cellules : out std_logic_vector(1405 downto 0);--:="0000000000000000"--4096
 	h_position : out std_logic_vector(31 downto 0);
 	v_position : out std_logic_vector(31 downto 0);
-	cellules : out std_logic_vector(15 downto 0);--:="0000000000000000"--4096
+	position_curseur : out std_logic_vector(10 downto 1);--:="000101";--12
 	clk_50 : in std_logic
 	);
 end jeu_v4;
 	
 architecture a of jeu_v4 is
-		type cells is array (0 to 15) of integer range 0 to 8;
-		signal cellules_temp : std_logic_vector(15 downto 0);
+		type cells is array (0 to 1405) of integer range 0 to 8;
+		signal cellules_temp : std_logic_vector(1405 downto 0);
 		signal cellules_vivantes_a_cote : cells;
-		signal cellules_prec : std_logic_vector(15 downto 0);
-		signal position_curseur_prec : std_logic_vector(6 downto 1);
-		constant lgrille : integer := 4;
-		constant hgrille : integer := 4;
+		signal cellules_prec : std_logic_vector(1405 downto 0);
+		signal position_curseur_prec : std_logic_vector(10 downto 1);
+		signal position_curseur_next : std_logic_vector(10 downto 1);
+		constant lgrille : integer := 38;
+		constant hgrille : integer := 37;
 		signal compteur_v_map : integer := 0;
 begin
 	
@@ -35,10 +36,10 @@ begin
 	begin
 	-- on test si on vient de reset le jeu, si c'est le cas on met tout à 0
 	if rst = '0' then
-		cellules <=  x"0000";
+		cellules <=  (others => '0');
 		--position_curseur <= "000001";
 		cellules_temp <= cellules_initiales;
-		cellules_prec <= x"0000";
+		cellules_prec <= (others => '0');
 		--position_curseur_prec <= "000001";
 		for c in 0 to lgrille*hgrille-1 loop
 			cellules_vivantes_a_cote(c)<=0;
@@ -136,6 +137,10 @@ begin
 							cellules_temp(c)<='1';
 						elsif cellules_vivantes_a_cote(c)>3 then
 							cellules_temp(c)<='0';
+						--elsif cellules_vivantes_a_cote(c)=1 then
+							--cellules_temp(c)<='0';
+						--elsif cellules_vivantes_a_cote(c)=0 then
+							--cellules_temp(c)<='0';
 						end if;
 					end loop;
 				else
@@ -144,6 +149,8 @@ begin
 							cellules_temp(c)<='1';
 						elsif cellules_vivantes_a_cote(c)>2 then
 							cellules_temp(c)<='0';
+						--elsif cellules_vivantes_a_cote(c)<1 then
+						--	cellules_temp(c)<='0';
 						end if;
 					end loop;
 				end if;
@@ -206,33 +213,42 @@ begin
 				--mouvement de la position du curseur
 					if d_droite='1' then
 						if to_integer(unsigned(position_curseur_prec))=lgrille*hgrille-1 then
-							position_curseur<= std_logic_vector(to_unsigned(1,6));
+							position_curseur<= std_logic_vector(to_unsigned(1,10));
+							position_curseur_next<= std_logic_vector(to_unsigned(1,10));
 						else
-							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))+1,6));
+							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))+1,10));
+							position_curseur_next<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))+1,10));
 						end if;
 					elsif d_gauche='1' then
 						if to_integer(unsigned(position_curseur_prec))=0 then
-							position_curseur<= std_logic_vector(to_unsigned(lgrille*hgrille,6));
+							position_curseur<= std_logic_vector(to_unsigned(lgrille*hgrille,10));
+							position_curseur_next<= std_logic_vector(to_unsigned(lgrille*hgrille,10));
 						else
-							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))-1,6));
+							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))-1,10));
+							position_curseur_next<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))-1,10));
 						end if;
 					elsif d_bas='1' then
 						if to_integer(unsigned(position_curseur_prec))<=lgrille*hgrille-1 
 								and to_integer(unsigned(position_curseur_prec))>lgrille*(hgrille-1) then
-							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec)) mod lgrille,6));
+							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec)) mod lgrille,10));
+							position_curseur_next<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec)) mod lgrille,10));
 						else
-							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))+lgrille,6));
+							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))+lgrille,10));
+							position_curseur_next<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))+lgrille,10));
 						end if;
 					elsif d_haut='1' then
 						if to_integer(unsigned(position_curseur_prec))<=lgrille then
-							position_curseur<= std_logic_vector(to_unsigned(lgrille*(hgrille-1)+to_integer(unsigned(position_curseur_prec)),6));
+							position_curseur<= std_logic_vector(to_unsigned(lgrille*(hgrille-1)+to_integer(unsigned(position_curseur_prec)),10));
+							position_curseur_next<= std_logic_vector(to_unsigned(lgrille*(hgrille-1)+to_integer(unsigned(position_curseur_prec)),10));
 						else
-							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))-lgrille,6));
+							position_curseur<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))-lgrille,10));
+							position_curseur_next<= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))-lgrille,10));
 						end if;
 					end if; -- d
 				end if; --action
 				h_position <= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec)) mod lgrille,32));
 				v_position <= std_logic_vector(to_unsigned(to_integer(unsigned(position_curseur_prec))/lgrille,32));
+				position_curseur_prec <= position_curseur_next;
 			end if; -- pause
 		end if; -- clk_50
 	end if; --rst

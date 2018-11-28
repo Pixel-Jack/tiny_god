@@ -68,8 +68,8 @@ applicable agreement for further details.
 	(port
 		(pt 176 128)
 		(output)
-		(text "map_init[15..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "map_init[15..0]" (rect 99 123 155 135)(font "Arial" ))
+		(text "map_init[1405..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "map_init[1405..0]" (rect 88 123 155 135)(font "Arial" ))
 		(line (pt 176 128)(pt 160 128)(line_width 3))
 	)
 	(drawing

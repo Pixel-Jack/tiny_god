@@ -82,8 +82,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 160)
 		(input)
-		(text "vecteur_map[15..0]" (rect 0 0 77 12)(font "Arial" ))
-		(text "vecteur_map[15..0]" (rect 21 155 98 167)(font "Arial" ))
+		(text "vecteur_map[1405..0]" (rect 0 0 88 12)(font "Arial" ))
+		(text "vecteur_map[1405..0]" (rect 21 155 109 167)(font "Arial" ))
 		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port

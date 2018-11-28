@@ -46,7 +46,7 @@ module vga_generator(
   input       [11:0] v_active_34, 
   
   
-  input [15:0] vecteur_map,
+  input [1405:0] vecteur_map,
   input [31:0] largeur_grille,
   input [31:0] hauteur_grille,
   input [31:0] h_position_du_curseur,
@@ -77,7 +77,7 @@ wire              h_max, hs_end, hr_start, hr_end;
 wire              v_max, vs_end, vr_start, vr_end;
 wire              v_act_14, v_act_24, v_act_34;
 
-reg			  [15:0]	vecteur_map_current;			
+reg			  [1405:0]	vecteur_map_current;			
 
 
 
